@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+		<title>Мобильное приложение «Pink»</title>
+	  <base href="https://htmlacademy-adaptive.github.io/1337837-pink-19/3/">
+</head>
+	<body>
+		<header class="page-header">
+			<a class="page-header__logo" href="index.html">
+				<img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип мобильного приложения «Pink»">
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__toogle" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+				</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item">
+							<a href="index.html">Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="photo.html">Фотографии</a>
+						</li>
+						<li class="site-list__item site-list__item-active">
+							<a>Конкурс</a>
+						</li>
+						<li class="site-list__item">
+							<a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<h1>Конкурс на самое безбашенное путешествие с Пинк</h1>
+			<p>Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+			<form action="https://echo.htmlacademy.ru" method="post">
+				<h2 class="visually-hidden">Форма для загрузки вашей фотографии.</h2>
+				<div>
+					<div>
+						<label>
+							Фамилия<input type="text" name="name" placeholder="Укажите фамилию *" required/>
+						</label>
+					</div>
+					<div>
+						<label>
+							Имя<input type="text" name="name" placeholder="Введите ваше имя *" required/>
+						</label>
+					</div>
+					<div>
+						<label>
+							Отчество<input type="text" name="name" placeholder="Ну и отчество тоже"/>
+						</label>
+					</div>
+				</div>
+				<fieldset>
+					<legend>Ваши безбашенные достижения в путешествии</legend>
+					<ul>
+						<li>
+							<label>
+								<input type="checkbox" name="self_and_shark" checked/>Сделал селфи с акулой
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="fire_beach" checked/>Обгорел на пляже
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="Chack_Norris"/>Видел Чака Норриса
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="souvenir"/>Накупил сувениров
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="hold_tower" checked/>Удержал башню
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox" name="broke_hotel"/>Разгромил отель
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<div>
+					<label>
+						Номер телефона<input type="tel" name="phone" placeholder="Номер, пожалуйста"/>
+					</label>
+				</div>
+				<div>
+					<label>
+						Адрес почты<input type="email" name="email" placeholder="Введите почту *" required/>
+					</label>
+				</div>
+				<fieldset>
+					<legend>С каким приложением путешествовали?</legend>
+					<ul>
+						<li>
+						<label>
+								<input type="radio" name="app-type" value="ios" />Pink для iOS
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" name="app-type" value="android" checked/>Pink на Android
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="radio" name="app-type" value="wnd_phone" />Windows Phone
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+				<div>
+					<label>
+						Опишите свои эмоции<textarea name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+					</label>
+				</div>
+				<button type="submit">Отправить форму</button>
+				<p>* — Обязательные поля</p>
+			</form>
+		</main>
+		<footer class="page-footer">
+			<a href="index.html">
+				<img src="https://via.placeholder.com/147x40" width="147" height="40" alt="Логотип мобильного приложения «Pink»">
+			</a>
+			<ul class="social__list">
+				<li class="social__item">
+					<a href=""><span class="visually-hidden">Твиттер</span></a>
+				</li>
+				<li class="social__item">
+					<a href=""><span class="visually-hidden">Фейсбук</span></a>
+				</li>
+				<li class="social__item">
+					<a href=""><span class="visually-hidden">Ютаб</span></a>
+				</li>
+			</ul>
+			<a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+		</footer>
+	</body>
+</html>
