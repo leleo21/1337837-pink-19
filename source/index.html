@@ -1,12 +1,186 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="IE=edge" />
+		<title>Мобильное приложение «Pink»</title>
+	</head>
+	<body>
+		<header class="page-header">
+			<a class="page-header__logo">
+				<img class="page-header__logo-image" src="https://via.placeholder.com/75x22" width="75" height="22" alt="Логотип мобильного приложения «Pink»">
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__toogle" type="button">
+					<span class="visually-hidden">Открыть меню</span>
+				</button>
+				<div class="main-nav__wrapper">
+					<ul class="main-nav__list site-list">
+						<li class="site-list__item site-list__item-active">
+							<a>Главная</a>
+						</li>
+						<li class="site-list__item">
+							<a href="photo.html">Фотографии</a>
+						</li>
+						<li class="site-list__item">
+							<a href="form.html">Конкурс</a>
+						</li>
+						<li class="site-list__item">
+							<a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main class="page-main">
+			<h1 class="visually-hidden">Мобильное приложение «Pink»</h1>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+			<!--Скачать приложение-->
+			<section>
+				<h2 class="visually-hidden">Ссылки для скачивания мобильного приложения «Pink»</h2>
+				<strong>Взгляните на жизнь иначе!</strong>
+				<a href="">Скачать приложение</a>
+				<ul class="download-list">
+					<li class="download-list__item">
+						<a href=""><img src="https://via.placeholder.com/47x56" width="47" height="56" alt="Загрузка для Apple-устройств"></a>
+					</li>
+					<li class="download-list__item">
+						<a href=""><img src="https://via.placeholder.com/43x47" width="43" height="47" alt="Загрузка для Android-устройств"></a>
+					</li>
+					<li class="download-list__item">
+						<a href=""><img src="https://via.placeholder.com/44x41" width="44" height="41" alt="Загрузка для Windows-mobile-устройств"></a>
+					</li>
+				</ul>
+				<p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+			</section>
 
-  </body>
+			<!--Приемущества-->
+			<section class="advantages"> 
+				<h2 class="visually-hidden">Приемущества нашего приложения!</h2>
+				<strong>Устали от серости мегаполиса?</strong>
+				<strong>Нам есть, что вам предложить!</strong>
+				<div class="advantages__wrapper">
+					<div class="advantages__item">
+						<h3>Поднимает настроение</h3>
+						<p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+					</div>
+					<div class="advantages__item">
+						<h3>Меняет мир вокруг</h3>
+						<p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+					</div>
+					<div class="advantages__item">
+						<h3>Заводит новых друзей</h3>
+						<p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+					</div>
+					<img class="advantages__image" src="https://via.placeholder.com/157x277" width="157" height="277" alt="Всем привет!">
+				</div>
+			</section>
+
+			<!--Слайдер с отзывами-->
+			<section> 
+				<h2 class="visually-hidden">Отзывы об мобильном приложении «Pink»</h2>
+				<div class="slider reviews">
+					<input class="visually-hidden" type="radio" name="reviews-toggle" id="reviews-1" checked/>
+					<input class="visually-hidden" type="radio" name="reviews-toggle" id="reviews-2"/>
+					<input class="visually-hidden" type="radio" name="reviews-toggle" id="reviews-3"/>
+					<div class="slider__controls reviews__controls">
+						<label class="slider__control" for="reviews-1"><span class="visually-hidden">Переключатель на первый слайд</span></label>
+						<label class="slider__control" for="reviews-2"><span class="visually-hidden">Переключатель на второй слайд</span></label>
+						<label class="slider__control" for="reviews-3"><span class="visually-hidden">Переключатель на третий слайд</span></label>
+					</div>
+					<div class="slider__list reviews__list">
+						<div class="slider__item reviews__item">
+							<h3>Николай Петров</h3>
+							<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</div>
+						<div class="slider__item reviews__item">
+							<h3>Николай Петров</h3>
+							<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</div>
+						<div class="slider__item reviews__item">
+							<h3>Николай Петров</h3>
+							<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!--Слайдер с тарифами-->
+			<section>
+				<h2 class="visually-hidden">Тарифы мобильного приложения «Pink»</h2>
+				<div class="slider price">
+					<input class="visually-hidden" type="radio" name="price-toggle" id="price-1" checked/>
+					<input class="visually-hidden" type="radio" name="price-toggle" id="price-2"/>
+					<input class="visually-hidden" type="radio" name="price-toggle" id="price-3"/>
+					<div class="slider__controls price__controls">
+						<label class="slider__control" for="price-1"><span class="visually-hidden">Переключатель на первый слайд</span></label>
+						<label class="slider__control" for="price-2"><span class="visually-hidden">Переключатель на второй слайд</span></label>
+						<label class="slider__control" for="price-3"><span class="visually-hidden">Переключатель на третий слайд</span></label>
+					</div>
+					<table class="slider__list price__list">
+						<tr>
+							<th colspan="2">
+								<span class="price__title">Стандарт</span>
+								<span class="price__price">3,99 USD</span>
+							</th>
+							<th colspan="2">
+								<span class="price__title">Стандарт</span>
+								<span class="price__price">3,99 USD</span>
+							</th>
+							<th colspan="2">
+								<span class="price__title">Стандарт</span>
+								<span class="price__price">3,99 USD</span>
+							</th>
+						</tr>
+						<tr>
+							<td>Розовый фильтр</td>
+							<td>Да</td>
+							<td>Розовый фильтр</td>
+							<td>Да</td>
+							<td>Розовый фильтр</td>
+							<td>Да</td>
+						</tr>
+						<tr>
+							<td>Смайлики</td>
+							<td>Да</td>
+							<td>Смайлики</td>
+							<td>Да</td>
+							<td>Смайлики</td>
+							<td>Да</td>
+						</tr>
+						<tr>
+							<td>Комментарии</td>
+							<td>Нет</td>
+							<td>Комментарии</td>
+							<td>Нет</td>
+							<td>Комментарии</td>
+							<td>Нет</td>
+						</tr>
+					</table>
+				</div>
+			</section>
+
+			<!--Обратная связь-->		
+			<section>
+				<h2 class="visually-hidden">Как с нами связаться!</h2>
+				<strong>Остались вопросы?</strong>
+				<strong>Свяжитесь с нами!</strong>
+				<ul>
+					<li>
+						<strong>Звоните:</strong>
+						<a href="tel:+78125556666">+7 (812) 555-66-66</a>
+					</li>
+					<li>
+						<strong>Пишите:</strong>
+						<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+					</li>
+					<li>
+						<strong>Приезжайте в гости:</strong>
+						<address>ул. Большая Конюшенная, 19/8</address>
+					</li>
+				</ul>
+				<img src="https://via.placeholder.com/320x645" width="320" height="645" alt="Офис по адрессу г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8">
+			</section>
+		</main>
+	</body>
 </html>
