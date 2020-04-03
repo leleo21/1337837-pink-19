@@ -1,0 +1,234 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/opensans.woff") format("woff");
+  src: url("../fonts/opensans.woff2") format("woff2"); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/opensansbold.woff") format("woff");
+  src: url("../fonts/opensansbold.woff2") format("woff2"); }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: pink;
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "OpenSans", "Arial", sans-serif; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  padding: 0;
+  margin: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+
+/* Начало хедера */
+.page-header {
+  background-color: #283645;
+  color: white;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.page-header__logo {
+  padding: 20px;
+  border-bottom: 1px solid black; }
+
+.main-nav__toogle {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.site-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.site-list__item {
+  padding: 20px 0;
+  border-bottom: 1px solid black;
+  border-top: 1px solid #485461;
+  text-align: center; }
+
+.site-list__item a {
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700; }
+
+/* Конец хедера */
+/* Начало секции загрузки приложения */
+.download {
+  color: white;
+  background-color: #1d2631;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.download__wrapper {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.download__wrapper p {
+  margin: 0;
+  padding: 30px;
+  text-align: center; }
+
+.download-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 28px 20px;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 15px; }
+
+.download-list {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.download > p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 20px;
+  text-align: center; }
+
+/* Конец секции загрузки приложения */
+/* Начало секции с приемуществами */
+.advantages {
+  background-color: white;
+  padding-top: 20px;
+  text-align: center; }
+
+.advantages > p {
+  margin: 0;
+  padding: 15px 0;
+  font-size: 24px;
+  color: #283645; }
+
+.advantages__wrapper {
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+.advantages__item {
+  margin: 20px 0; }
+
+.advantages__item h3 {
+  font-size: 18px;
+  line-height: 24px; }
+
+.advantages__item p {
+  font-size: 14px;
+  line-height: 24px; }
+
+/* Конец секции с приемуществами */
+/* Начало секции с отзывами */
+.reviews {
+  background-color: white;
+  text-align: center;
+  padding: 20px; }
+
+/* Конец секции с отзывами */
+.slider__controls {
+  text-align: center; }
+
+/* Начало секции с ценами */
+.price {
+  background-color: #f2f2f2; }
+
+/* Конец секции с ценами */
+/* Начало секции с контактами */
+.feedback {
+  background-color: white;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  text-align: center;
+  padding-bottom: 240px; }
+
+.feedback__wrapper {
+  background-color: white;
+  padding: 20px; }
+
+.feedback__wrapper > p {
+  font-size: 24px;
+  margin: 0;
+  padding: 20px 0; }
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.feedback__item {
+  padding: 10px 0; }
+
+.feedback__item p {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0; }
+
+.feedback__item a,
+.feedback__item address {
+  font-size: 24px;
+  color: #d22856;
+  font-style: normal; }
+
+/* Конец секции с контактами */
+
+/*# sourceMappingURL=style.css.map */
