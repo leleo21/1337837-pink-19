@@ -22,7 +22,9 @@ body {
   min-width: 320px;
   margin: 0;
   padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif; }
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-style: normal; }
 
 img {
   max-width: 100%;
@@ -118,7 +120,8 @@ a {
 .download__wrapper p {
   margin: 0;
   padding: 30px;
-  text-align: center; }
+  text-align: center;
+  font-size: 24px; }
 
 .download-button {
   font-size: 18px;
@@ -198,6 +201,8 @@ a {
 .feedback {
   background-color: white;
   background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
   text-align: center;
   padding-bottom: 240px; }
 
