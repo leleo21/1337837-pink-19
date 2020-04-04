@@ -34,7 +34,7 @@ html {
 
 body {
   background: pink;
-  width: 320px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
   font-family: "OpenSans", "Arial", sans-serif;
@@ -131,7 +131,7 @@ a {
 
 .download__wrapper p {
   margin: 0;
-  padding: 30px;
+  padding: 25px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -310,7 +310,8 @@ a {
 .photos h2 {
   color: white;
   margin: 0;
-  padding: 35px 0px 85px 0px;
+  min-height: 170px;
+  padding: 35px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -447,11 +448,12 @@ a {
 .scale-controls {
   position: relative;
   margin: 15px auto;
+  padding: 0 20px;
 }
 
 .scale-bar {
   height: 2px;
-  color: #283645;
+  background-color: #283645;
   width: 240px;
 }
 
@@ -459,6 +461,7 @@ a {
   position: absolute;
   width: 10px;
   height: 10px;
+  background-color: white;
   border: 2px solid #d22856;
   border-radius: 50%;
   left: 200px;
@@ -509,4 +512,143 @@ a {
 .page-footer__html p {
   margin: 0;
   padding-right: 15px;
+}
+
+
+/* Страница с формой */
+
+.page-form {
+  background-color: white;
+}
+
+.page-form h2 {
+  color: white;
+  margin: 0;
+  min-height: 170px;
+  padding: 35px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: black;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+}
+
+.page-form > p {
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.form__user {
+  padding: 35px 20px;
+}
+
+.form__user > div {
+  margin-bottom: 20px;
+}
+
+.form__user > div:last-child {
+  margin-bottom: 40px;
+}
+
+.form__user label {
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__user input {
+  padding: 20px;
+  min-width: 280px;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  color: #283645;
+}
+
+.form__wrapper {
+  background-color: #f2f2f2;
+  padding: 40px 20px;
+}
+
+.options {
+  border: 0;
+  padding: 0;
+}
+
+.options legend {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.options__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.options__item {
+  padding: 20px 0;
+}
+
+.options__item label {
+  padding-left: 30px;
+}
+
+.form__text {
+  padding: 35px 20px;
+  text-align: center;
+}
+
+.form__text label {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.form__text textarea {
+  margin-top: 20px;
+  min-width: 280px;
+  min-height: 200px;
+  padding: 20px;
+  font-size: 18px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  color: #283645;
+}
+
+
+.form__button {
+  min-width: 280px;
+  margin: 20px;
+  padding: 20px;
+  color: white;
+  background-color: #2aab6d;
+  border: 0;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.form > p {
+  margin: 0;
+  text-align: center;
+}
+
+.form span {
+  color: #d22856;
 }
