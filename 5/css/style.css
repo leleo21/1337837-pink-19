@@ -13,18 +13,30 @@
   src: url("../fonts/opensansbold.woff") format("woff");
   src: url("../fonts/opensansbold.woff2") format("woff2"); }
 
+@font-face {
+  font-family: "OpenSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/opensanslight.woff") format("woff");
+  src: url("../fonts/opensanslight.woff2") format("woff2"); }
+
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
 body {
   background: pink;
-  min-width: 320px;
+  width: 320px;
   margin: 0;
   padding: 0;
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
-  font-style: normal; }
+  font-style: normal;
+  color: #283645; }
 
 img {
   max-width: 100%;
@@ -121,7 +133,8 @@ a {
   margin: 0;
   padding: 30px;
   text-align: center;
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 300; }
 
 .download-button {
   font-size: 18px;
@@ -151,7 +164,8 @@ a {
   font-size: 14px;
   line-height: 24px;
   padding: 0 20px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 300; }
 
 /* Конец секции загрузки приложения */
 /* Начало секции с приемуществами */
@@ -164,7 +178,8 @@ a {
   margin: 0;
   padding: 15px 0;
   font-size: 24px;
-  color: #283645; }
+  color: #283645;
+  font-weight: 300; }
 
 .advantages__wrapper {
   background-color: #f2f2f2;
@@ -187,6 +202,14 @@ a {
   background-color: white;
   text-align: center;
   padding: 20px; }
+
+.reviews__item h3 {
+  font-size: 18px;
+  line-height: 24px; }
+
+.reviews__item p {
+  font-size: 14px;
+  line-height: 24px; }
 
 /* Конец секции с отзывами */
 .slider__controls {
@@ -211,9 +234,10 @@ a {
   padding: 20px; }
 
 .feedback__wrapper > p {
-  font-size: 24px;
   margin: 0;
-  padding: 20px 0; }
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 300; }
 
 .feedback__list {
   list-style: none;
@@ -232,8 +256,231 @@ a {
 .feedback__item address {
   font-size: 24px;
   color: #d22856;
+  font-weight: 300;
   font-style: normal; }
 
 /* Конец секции с контактами */
+/* Страница с фотографиями */
+/* Начало сеекции с фотографиями */
+.page-photo {
+  background-color: white; }
+
+.photos {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645; }
+
+.photos h2 {
+  color: white;
+  margin: 0;
+  padding: 35px 0px 85px 0px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  background-color: black;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%; }
+
+.photos > p {
+  text-align: center;
+  margin: 0;
+  padding: 45px 35px;
+  line-height: 30px; }
+
+.photos__list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* Начало фотографий пользователей */
+.photos__item {
+  background-color: #f2f2f2;
+  margin: 20px; }
+
+.author {
+  padding: 25px 13px; }
+
+.photos__like {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 15px;
+  color: #d22856;
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.author__name {
+  color: #283645;
+  font-size: 14px;
+  font-weight: 700; }
+
+.author__time {
+  padding: 0 4px;
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase; }
+
+.author p {
+  margin: 0;
+  width: 100%; }
+
+/* Конец фотографий пользователей */
+/* Фотография дня */
+.photos__day {
+  position: relative;
+  margin: 0px; }
+  .photos__day .photos__author {
+    margin: 0 20px; }
+
+.photos__day-flag {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: white;
+  background-color: #d22856;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 20px; }
+
+/* -- */
+.download-photo p {
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+  padding: 0 20px; }
+
+.download-photo__wrapper {
+  background-color: #f2f2f2;
+  padding: 20px; }
+
+.download-photo__list {
+  margin: 35px 20px;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.download-photo__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.download-photo__controls button {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 6px 0;
+  color: #d22856;
+  border: 3px solid #d22856;
+  background-color: white; }
+
+.scale-controls {
+  position: relative;
+  margin: 15px auto; }
+
+.scale-bar {
+  height: 2px;
+  color: #283645;
+  width: 240px; }
+
+.scale-controls__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  left: 200px;
+  top: -4px; }
+
+.page-footer {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-footer__logo {
+  margin: 40px auto; }
+
+.social {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.social__item {
+  margin: 0 6px;
+  width: 45px;
+  height: 45px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.page-footer__html {
+  margin: 40px auto;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-footer__html p {
+  margin: 0;
+  padding-right: 15px; }
 
 /*# sourceMappingURL=style.css.map */
