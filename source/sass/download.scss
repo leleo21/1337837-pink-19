@@ -1,0 +1,51 @@
+.download {
+  color: white;
+  background-color: #1d2631;
+  display: flex;
+  flex-direction: column;
+}
+
+.download__wrapper {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+}
+
+.download__wrapper p {
+  margin: 0;
+  padding: 25px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.download-button {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin: 28px 20px;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.download-list {
+  margin: 0 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.download > p {
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 20px;
+  text-align: center;
+  font-weight: 300;
+}

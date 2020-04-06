@@ -1,0 +1,77 @@
+.download-photo p {
+  font-size: 14px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.download-photo__wrapper {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.download-photo__list {
+  margin: 35px 20px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.download-photo__controls {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.download-photo__controls button {
+  flex-grow: 1;
+  margin: 6px 0;
+  color: #d22856;
+  border: 3px solid #d22856;
+  background-color: white;
+}
+
+.scale-controls {
+  position: relative;
+  margin: 15px auto;
+  padding: 0 20px;
+}
+
+.scale-bar {
+  height: 2px;
+  background-color: #283645;
+  width: 240px;
+}
+
+.scale-controls__toggle {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid #d22856;
+  border-radius: 50%;
+  left: 200px;
+  top: -4px;
+}
+
+
+.download-photo__option svg {
+  opacity: 0.3;
+}
+
+.download-photo__option:hover svg {
+  opacity: 0.5;
+}
+
+#option_1:checked ~ label[for="option_1"] svg,
+#option_2:checked ~ label[for="option_2"] svg,
+#option_3:checked ~ label[for="option_3"] svg {
+  opacity: 1;
+  fill: #d22856;
+}
+
+
