@@ -105,6 +105,7 @@ a {
   font-weight: 700; }
 
 /* Конец хедера */
+/*index.html*/
 /* Начало секции загрузки приложения */
 .download {
   color: white;
@@ -211,10 +212,10 @@ a {
   font-size: 14px;
   line-height: 24px; }
 
-/* Конец секции с отзывами */
 .slider__controls {
   text-align: center; }
 
+/* Конец секции с отзывами */
 /* Начало секции с ценами */
 .price {
   background-color: #f2f2f2; }
@@ -260,11 +261,11 @@ a {
   font-style: normal; }
 
 /* Конец секции с контактами */
-/* Страница с фотографиями */
-/* Начало сеекции с фотографиями */
+/* phono.html */
 .page-photo {
   background-color: white; }
 
+/* Начало секции с фотографиями пользователей */
 .photos {
   font-size: 14px;
   line-height: 24px;
@@ -295,7 +296,6 @@ a {
   margin: 0;
   padding: 0; }
 
-/* Начало фотографий пользователей */
 .photos__item {
   background-color: #f2f2f2;
   margin: 20px; }
@@ -337,7 +337,6 @@ a {
   margin: 0;
   width: 100%; }
 
-/* Конец фотографий пользователей */
 /* Фотография дня */
 .photos__day {
   position: relative;
@@ -356,7 +355,8 @@ a {
   text-align: center;
   padding: 6px 20px; }
 
-/* -- */
+/* Конец секции с фотографиями пользователей */
+/* Начало секции с загрузкой своей фотографии */
 .download-photo p {
   font-size: 14px;
   line-height: 30px;
@@ -421,6 +421,20 @@ a {
   left: 200px;
   top: -4px; }
 
+.download-photo__option svg {
+  opacity: 0.3; }
+
+.download-photo__option:hover svg {
+  opacity: 0.5; }
+
+#option_1:checked ~ label[for="option_1"] svg,
+#option_2:checked ~ label[for="option_2"] svg,
+#option_3:checked ~ label[for="option_3"] svg {
+  opacity: 1;
+  fill: #d22856; }
+
+/* Конец секции с загрузкой своей фотографии */
+/* Начало футера */
 .page-footer {
   background-color: white;
   display: -webkit-box;
@@ -486,11 +500,12 @@ a {
   margin: 0;
   padding-right: 15px; }
 
-/* Страница с формой */
+/* Конец футера */
+/* form.html */
 .page-form {
   background-color: white; }
 
-.page-form h2 {
+.page-form > h2 {
   color: white;
   margin: 0;
   min-height: 170px;
@@ -503,6 +518,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 20%; }
 
+/* Начало секции с формой для конкурса */
 .page-form > p {
   margin: 0;
   padding: 20px;
@@ -606,5 +622,7 @@ a {
 
 .form span {
   color: #d22856; }
+
+/* Конец секции с формой для конкурса */
 
 /*# sourceMappingURL=style.css.map */
