@@ -1,133 +1,63 @@
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/opensans.woff") format("woff");
-  src: url("../fonts/opensans.woff2") format("woff2");
-}
+@import "scaffolding.less";
 
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/opensansbold.woff") format("woff");
-  src: url("../fonts/opensansbold.woff2") format("woff2");
-}
+@import "blocks/button.scss";
 
-@font-face {
-  font-family: "OpenSans";
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/opensanslight.woff") format("woff");
-  src: url("../fonts/opensanslight.woff2") format("woff2");
-}
-
-html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-
-body {
-  background: pink;
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-  font-family: "OpenSans", "Arial", sans-serif;
-  font-size: 18px;
-  font-style: normal;
-  color: #283645;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  padding: 0;
-  margin: 0;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
+@import "blocks/slider.scss";
 
 /* Начало хедера */
-@import "page-header.scss";
+@import "blocks/page-header.scss";
 /* Конец хедера */
+
+/* Начало основной навигации */
+@import "blocks/main-nav.scss";
+/* Конец основной навигации */
 
 
 /*index.html*/
 
 /* Начало секции загрузки приложения */
-@import "download.scss";
+@import "blocks/download.scss";
 /* Конец секции загрузки приложения */
 
 /* Начало секции с приемуществами */
-@import "advantages.scss";
+@import "blocks/advantages.scss";
 /* Конец секции с приемуществами */
 
 /* Начало секции с отзывами */
-@import "reviews.scss";
+@import "blocks/reviews.scss";
 /* Конец секции с отзывами */
 
 /* Начало секции с ценами */
-@import "price.scss";
+@import "blocks/price.scss";
 /* Конец секции с ценами */
 
 /* Начало секции с контактами */
-@import "feedback.scss";
+@import "blocks/feedback.scss";
 /* Конец секции с контактами */
 
 
 /* phono.html */
-
-.page-photo {
-  background-color: white;
-}
+@import "blocks/page-photo.scss";
 
 /* Начало секции с фотографиями пользователей */
-@import "photos.scss";
+@import "blocks/photos.scss";
+@import "blocks/author.scss";
 /* Конец секции с фотографиями пользователей */
 
 /* Начало секции с загрузкой своей фотографии */
-@import "download-photo.scss";
+@import "blocks/user-photo.scss";
 /* Конец секции с загрузкой своей фотографии */
 
 /* Начало футера */
-@import "page-footer.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
 /* Конец футера */
 
 
 /* form.html */
+@import "blocks/page-form.scss";
 
-.page-form {
-  background-color: white;
-}
-
-.page-form > h2 {
-  color: white;
-  margin: 0;
-  min-height: 170px;
-  padding: 35px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 300;
-  background-color: black;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-}
 /* Начало секции с формой для конкурса */
-@import "form.scss"
+@import "blocks/form.scss";
+@import "blocks/options.scss";
 /* Конец секции с формой для конкурса */

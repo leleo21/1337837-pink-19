@@ -1,0 +1,27 @@
+.options {
+  border: 0;
+  padding: 0;
+}
+
+.options legend {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.options__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.options__item {
+  padding: 20px 0;
+}
+
+.options__item label {
+  padding-left: 30px;
+}

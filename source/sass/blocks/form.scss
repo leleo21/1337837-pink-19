@@ -1,11 +1,3 @@
-.page-form > p {
-  margin: 0;
-  padding: 20px;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-}
-
 .form__user {
   padding: 35px 20px;
 }
@@ -42,34 +34,6 @@
   padding: 40px 20px;
 }
 
-.options {
-  border: 0;
-  padding: 0;
-}
-
-.options legend {
-  padding: 0 20px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #d22856;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.options__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.options__item {
-  padding: 20px 0;
-}
-
-.options__item label {
-  padding-left: 30px;
-}
-
 .form__text {
   padding: 35px 20px;
   text-align: center;
@@ -94,7 +58,6 @@
   border-radius: 2px;
   color: #283645;
 }
-
 
 .form__button {
   min-width: 280px;

@@ -37,10 +37,6 @@
   margin: 20px;
 }
 
-.author {
-  padding: 25px 13px;
-}
-
 .photos__like {
   display: flex;
   flex-wrap: wrap;
@@ -48,30 +44,6 @@
   color: #d22856;
   font-size: 12px;
   text-transform: uppercase;
-}
-
-.author {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.author__name {
-  color: #283645;
-  font-size: 14px;
-  font-weight: 700;
-}
-
-.author__time {
-  padding: 0 4px;
-  color: #d22856;
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: uppercase;
-}
-
-.author p {
-  margin: 0;
-  width: 100%;
 }
 
 /* Фотография дня */

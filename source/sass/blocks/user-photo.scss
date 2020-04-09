@@ -1,4 +1,4 @@
-.download-photo p {
+.user-photo p {
   font-size: 14px;
   line-height: 30px;
   margin: 0;
@@ -6,12 +6,12 @@
   padding: 0 20px;
 }
 
-.download-photo__wrapper {
+.user-photo__wrapper {
   background-color: #f2f2f2;
   padding: 20px;
 }
 
-.download-photo__list {
+.user-photo__list {
   margin: 35px 20px;
   padding: 0;
   list-style: none;
@@ -20,34 +20,30 @@
   justify-content: space-around;
 }
 
-.download-photo__controls {
+.user-photo__buttons {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-
 }
 
-.download-photo__controls button {
+.user-photo__button {
   flex-grow: 1;
   margin: 6px 0;
-  color: #d22856;
-  border: 3px solid #d22856;
-  background-color: white;
 }
 
-.scale-controls {
+.user-photo__controls {
   position: relative;
   margin: 15px auto;
   padding: 0 20px;
 }
 
-.scale-bar {
+.user-photo__bar {
   height: 2px;
   background-color: #283645;
   width: 240px;
 }
 
-.scale-controls__toggle {
+.user-photo__toggle {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -58,12 +54,11 @@
   top: -4px;
 }
 
-
-.download-photo__option svg {
+.user-photo__option svg {
   opacity: 0.3;
 }
 
-.download-photo__option:hover svg {
+.user-photo__option:hover svg {
   opacity: 0.5;
 }
 
