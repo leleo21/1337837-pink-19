@@ -54,6 +54,24 @@ a {
   height: 1px;
   overflow: hidden; }
 
+.button {
+  color: white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 25px;
+  padding: 15px; }
+
+.button--pink {
+  color: #d22856;
+  border: 3px solid #d22856;
+  background-color: white; }
+
+.slider__controls {
+  text-align: center; }
+
 /* Начало хедера */
 .page-header {
   background-color: #283645;
@@ -71,6 +89,8 @@ a {
   padding: 20px;
   border-bottom: 1px solid black; }
 
+/* Конец хедера */
+/* Начало основной навигации */
 .main-nav__toogle {
   position: absolute;
   top: 0;
@@ -79,9 +99,7 @@ a {
 .main-nav__list {
   list-style: none;
   margin: 0;
-  padding: 0; }
-
-.site-list {
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,13 +108,13 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.site-list__item {
+.main-nav__item {
   padding: 20px 0;
   border-bottom: 1px solid black;
   border-top: 1px solid #485461;
   text-align: center; }
 
-.site-list__item a {
+.main-nav__item a {
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -104,7 +122,7 @@ a {
   line-height: 18px;
   font-weight: 700; }
 
-/* Конец хедера */
+/* Конец основной навигации */
 /*index.html*/
 /* Начало секции загрузки приложения */
 .download {
@@ -137,18 +155,10 @@ a {
   font-size: 24px;
   font-weight: 300; }
 
-.download-button {
-  font-size: 18px;
-  line-height: 18px;
-  font-weight: 700;
-  color: white;
-  text-align: center;
-  margin: 28px 20px;
-  border: 3px solid white;
-  border-radius: 25px;
-  padding: 15px; }
+.download__button {
+  margin: 28px 20px; }
 
-.download-list {
+.download__list {
   margin: 0 20px;
   padding: 0;
   list-style: none;
@@ -211,9 +221,6 @@ a {
 .reviews__item p {
   font-size: 14px;
   line-height: 24px; }
-
-.slider__controls {
-  text-align: center; }
 
 /* Конец секции с отзывами */
 /* Начало секции с ценами */
@@ -300,9 +307,6 @@ a {
   background-color: #f2f2f2;
   margin: 20px; }
 
-.author {
-  padding: 25px 13px; }
-
 .photos__like {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -314,7 +318,26 @@ a {
   font-size: 12px;
   text-transform: uppercase; }
 
+/* Фотография дня */
+.photos__day {
+  position: relative;
+  margin: 0px; }
+  .photos__day .photos__author {
+    margin: 0 20px; }
+
+.photos__day-flag {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  color: white;
+  background-color: #d22856;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 20px; }
+
 .author {
+  padding: 25px 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,38 +360,20 @@ a {
   margin: 0;
   width: 100%; }
 
-/* Фотография дня */
-.photos__day {
-  position: relative;
-  margin: 0px; }
-  .photos__day .photos__author {
-    margin: 0 20px; }
-
-.photos__day-flag {
-  position: absolute;
-  top: 0;
-  right: 20px;
-  color: white;
-  background-color: #d22856;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 6px 20px; }
-
 /* Конец секции с фотографиями пользователей */
 /* Начало секции с загрузкой своей фотографии */
-.download-photo p {
+.user-photo p {
   font-size: 14px;
   line-height: 30px;
   margin: 0;
   text-align: center;
   padding: 0 20px; }
 
-.download-photo__wrapper {
+.user-photo__wrapper {
   background-color: #f2f2f2;
   padding: 20px; }
 
-.download-photo__list {
+.user-photo__list {
   margin: 35px 20px;
   padding: 0;
   list-style: none;
@@ -381,7 +386,7 @@ a {
   -ms-flex-pack: distribute;
       justify-content: space-around; }
 
-.download-photo__controls {
+.user-photo__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -392,26 +397,23 @@ a {
       -ms-flex-direction: column;
           flex-direction: column; }
 
-.download-photo__controls button {
+.user-photo__button {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  margin: 6px 0;
-  color: #d22856;
-  border: 3px solid #d22856;
-  background-color: white; }
+  margin: 6px 0; }
 
-.scale-controls {
+.user-photo__controls {
   position: relative;
   margin: 15px auto;
   padding: 0 20px; }
 
-.scale-bar {
+.user-photo__bar {
   height: 2px;
   background-color: #283645;
   width: 240px; }
 
-.scale-controls__toggle {
+.user-photo__toggle {
   position: absolute;
   width: 10px;
   height: 10px;
@@ -421,10 +423,10 @@ a {
   left: 200px;
   top: -4px; }
 
-.download-photo__option svg {
+.user-photo__option svg {
   opacity: 0.3; }
 
-.download-photo__option:hover svg {
+.user-photo__option:hover svg {
   opacity: 0.5; }
 
 #option_1:checked ~ label[for="option_1"] svg,
@@ -450,6 +452,20 @@ a {
 
 .page-footer__logo {
   margin: 40px auto; }
+
+.page-footer__html {
+  margin: 40px auto;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.page-footer__html p {
+  margin: 0;
+  padding-right: 15px; }
 
 .social {
   list-style: none;
@@ -486,24 +502,17 @@ a {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.page-footer__html {
-  margin: 40px auto;
-  font-size: 14px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-
-.page-footer__html p {
-  margin: 0;
-  padding-right: 15px; }
-
 /* Конец футера */
 /* form.html */
 .page-form {
   background-color: white; }
+
+.page-form > p {
+  margin: 0;
+  padding: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center; }
 
 .page-form > h2 {
   color: white;
@@ -519,13 +528,6 @@ a {
   background-position: 50% 20%; }
 
 /* Начало секции с формой для конкурса */
-.page-form > p {
-  margin: 0;
-  padding: 20px;
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center; }
-
 .form__user {
   padding: 35px 20px; }
 
@@ -560,29 +562,6 @@ a {
 .form__wrapper {
   background-color: #f2f2f2;
   padding: 40px 20px; }
-
-.options {
-  border: 0;
-  padding: 0; }
-
-.options legend {
-  padding: 0 20px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #d22856;
-  text-transform: uppercase;
-  text-align: center; }
-
-.options__list {
-  margin: 0;
-  padding: 0;
-  list-style: none; }
-
-.options__item {
-  padding: 20px 0; }
-
-.options__item label {
-  padding-left: 30px; }
 
 .form__text {
   padding: 35px 20px;
@@ -622,6 +601,29 @@ a {
 
 .form span {
   color: #d22856; }
+
+.options {
+  border: 0;
+  padding: 0; }
+
+.options legend {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center; }
+
+.options__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.options__item {
+  padding: 20px 0; }
+
+.options__item label {
+  padding-left: 30px; }
 
 /* Конец секции с формой для конкурса */
 

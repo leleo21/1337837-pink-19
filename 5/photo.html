@@ -7,7 +7,6 @@
     <meta name="format-detection" content="telephone=no">
 		<title>Мобильное приложение «Pink»</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
 	  <base href="https://htmlacademy-adaptive.github.io/1337837-pink-19/5/">
 </head>
 	<body>
@@ -27,17 +26,17 @@
 					<span class="visually-hidden">Открыть меню</span>
 				</button>
 				<div class="main-nav__wrapper">
-					<ul class="main-nav__list site-list">
-						<li class="site-list__item">
+					<ul class="main-nav__list">
+						<li class="main-nav__item">
 							<a href="index.html">Главная</a>
 						</li>
-						<li class="site-list__item site-list__item-active">
+						<li class="main-nav__item main-nav__item--active">
 							<a>Фотографии</a>
 						</li>
-						<li class="site-list__item">
+						<li class="main-nav__item">
 							<a href="form.html">Конкурс</a>
 						</li>
-						<li class="site-list__item">
+						<li class="main-nav__item">
 							<a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
 						</li>
 					</ul>
@@ -143,16 +142,15 @@
 					</li>
 				</ul>
 			</section>
-
-			<section class="download-photo">
+			<section class="user-photo">
 				<h2 class="visually-hidden">Загружайте свои фотографии.</h2>
 				<p>Затмите их всех!</p>
 				<p>Выкладывайте все, что накопилось в телефоне!</p>
-				<div class="download-photo__wrapper">
+				<div class="user-photo__wrapper">
 					<form action="https://echo.htmlacademy.ru" method="post">
-						<img class="download-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваша фотография">
-						<ul class="download-photo__list">
-							<li class="download-photo__option">
+						<img class="user-photo__image" src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Ваша фотография">
+						<ul class="user-photo__list">
+							<li class="user-photo__option">
                 <input class="visually-hidden" type="radio" id="option_1" name="photo_filter" checked/>
                 <label for="option_1">
                   <span class="visually-hidden">Фильтр 1</span>
@@ -162,7 +160,7 @@
                   </svg>
                 </label>
               </li>
-							<li class="download-photo__option">
+							<li class="user-photo__option">
                 <input class="visually-hidden" type="radio" id="option_2" name="photo_filter">
                 <label for="option_2">
                   <span class="visually-hidden">Фильтр 2</span>
@@ -173,7 +171,7 @@
                   </svg>
                 </label>
               </li>
-							<li class="download-photo__option">
+							<li class="user-photo__option">
                 <input class="visually-hidden" type="radio" id="option_3" name="photo_filter">
                 <label for="option_3">
                   <span class="visually-hidden">Фильтр 3</span>
@@ -184,18 +182,17 @@
                 </label>
               </li>
 						</ul>
-						<div class="scale-controls">
-							<div class="scale-bar"></div>
-							<div class="scale-controls__toggle"></div>
+						<div class="user-photo__controls">
+							<div class="user-photo__bar"></div>
+							<div class="user-photo__toggle"></div>
 						</div>
-            <div class="download-photo__controls">
-						  <button class="download-button button-pink" type="submit">Запостить</button>
-						  <button class="download-button button-pink" type="button" disabled>Отмена</button>
+            <div class="user-photo__buttons">
+						  <button class="button user-photo__button button--pink" type="submit">Запостить</button>
+						  <button class="button user-photo__button button--pink" type="button" disabled>Отмена</button>
             </div>
 					</form>
 				</div>
 			</section>
-
 		</main>
 		<footer class="page-footer">
 			<a class="page-footer__logo" href="index.html">
