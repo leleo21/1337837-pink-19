@@ -1,0 +1,63 @@
+@import "scaffolding.less";
+
+@import "blocks/button.scss";
+
+@import "blocks/slider.scss";
+
+/* Начало хедера */
+@import "blocks/page-header.scss";
+/* Конец хедера */
+
+/* Начало основной навигации */
+@import "blocks/main-nav.scss";
+/* Конец основной навигации */
+
+
+/*index.html*/
+
+/* Начало секции загрузки приложения */
+@import "blocks/download.scss";
+/* Конец секции загрузки приложения */
+
+/* Начало секции с приемуществами */
+@import "blocks/advantages.scss";
+/* Конец секции с приемуществами */
+
+/* Начало секции с отзывами */
+@import "blocks/reviews.scss";
+/* Конец секции с отзывами */
+
+/* Начало секции с ценами */
+@import "blocks/price.scss";
+/* Конец секции с ценами */
+
+/* Начало секции с контактами */
+@import "blocks/feedback.scss";
+/* Конец секции с контактами */
+
+
+/* phono.html */
+@import "blocks/page-photo.scss";
+
+/* Начало секции с фотографиями пользователей */
+@import "blocks/photos.scss";
+@import "blocks/author.scss";
+/* Конец секции с фотографиями пользователей */
+
+/* Начало секции с загрузкой своей фотографии */
+@import "blocks/user-photo.scss";
+/* Конец секции с загрузкой своей фотографии */
+
+/* Начало футера */
+@import "blocks/page-footer.scss";
+@import "blocks/social.scss";
+/* Конец футера */
+
+
+/* form.html */
+@import "blocks/page-form.scss";
+
+/* Начало секции с формой для конкурса */
+@import "blocks/form.scss";
+@import "blocks/options.scss";
+/* Конец секции с формой для конкурса */

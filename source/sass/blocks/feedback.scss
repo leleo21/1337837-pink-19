@@ -1,0 +1,45 @@
+.feedback {
+  background-color: white;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  text-align: center;
+  padding-bottom: 240px;
+}
+
+.feedback__wrapper {
+  background-color: white;
+  padding: 20px;
+}
+
+.feedback__wrapper > p {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 24px;
+  font-weight: 300;
+
+}
+
+.feedback__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.feedback__item {
+  padding: 10px 0;
+}
+
+.feedback__item p {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.feedback__item a,
+.feedback__item address {
+  font-size: 24px;
+  color: #d22856;
+  font-weight: 300;
+  font-style: normal;
+}
