@@ -5,7 +5,7 @@
   color: #283645;
 }
 
-.photos h2 {
+.photos__title {
   color: white;
   margin: 0;
   min-height: 170px;
@@ -17,6 +17,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 20%;
+  background-size: cover;
 }
 
 .photos > p {
@@ -29,12 +30,10 @@
 .photos__list {
   list-style: none;
   margin: 0;
-  padding: 0;
 }
 
 .photos__item {
-  background-color: #f2f2f2;
-  margin: 20px;
+  margin: 20px 0;
 }
 
 .photos__like {
