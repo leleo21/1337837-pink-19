@@ -87,6 +87,7 @@
   border-bottom: 1px solid black;
   border-top: 1px solid #485461;
   text-align: center;
+  flex-grow: 1;
 }
 
 .main-nav__item a {
@@ -111,7 +112,7 @@
 }
 
 
-@media (max-width: $mobile-width-only) {
+@media (max-width: $device-width-only) {
   .main-nav--closed .main-nav__item {
     display: none;
   }
@@ -121,5 +122,22 @@
   }
   .main-nav--nojs .main-nav__item {
     display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+    flex-grow: 1;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

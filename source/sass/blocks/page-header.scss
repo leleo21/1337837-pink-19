@@ -12,3 +12,9 @@
   line-height: 20px;
 }
 
+@media (min-width: $desktop-width) {
+  .page-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
