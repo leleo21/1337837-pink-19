@@ -1,18 +1,15 @@
 .download {
   color: white;
   background-color: #1d2631;
+}
+
+.download__container {
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
-.download__wrapper {
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
-}
-
-.download__wrapper p {
+.download__tagline {
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -21,7 +18,7 @@
 }
 
 .download__button {
-  margin: 28px 0;
+  margin-bottom: 28px;
 }
 
 .download__list {
@@ -36,6 +33,7 @@
 .download__app {
   display: flex;
   flex-direction: column;
+  padding: 28px 20px;
 }
 
 .download__app p {
@@ -43,4 +41,34 @@
   line-height: 24px;
   text-align: center;
   font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .download__container img {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+  }
+
+  .download__container {
+    min-height: 620px;
+    justify-content: space-between;
+  }
+
+  .download__tagline {
+    font-size: 40px;
+    padding: 20px 40px;
+  }
+
+  .download__app{
+    width: 300px;
+    padding-bottom: 100px;
+  }
+
+  .download__tagline {
+    width: 300px;
+    padding-top: 100px;
+  }
 }

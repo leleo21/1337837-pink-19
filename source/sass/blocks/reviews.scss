@@ -1,7 +1,16 @@
 .reviews {
   background-color: white;
   text-align: center;
-  padding: 20px;
+  padding: 20px 0;
+}
+
+.reviews__list {
+  padding: 0 20px;
+}
+
+.reviews__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__item h3 {
@@ -11,5 +20,20 @@
 
 .reviews__item p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+
+@media (min-width: $tablet-width) {
+  .reviews__item p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__item h3 {
+    font-size: 20px;
+    line-height: 30px;
+    order: 2;
+  }
 }
