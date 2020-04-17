@@ -1,0 +1,43 @@
+.time-effect {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  align-items: center;
+  display: none;
+
+}
+
+.time-effect__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 310px;
+}
+
+.time-effect__tagline {
+  margin: 0;
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: black;
+}
+
+.time-effect__text {
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-bluegrey;
+}
+
+.time-effect__link {
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-darkred;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+  .time-effect {
+    display: flex;
+  }
+}
