@@ -6,11 +6,11 @@
 }
 
 .page-footer__logo {
-  margin: 40px auto;
+  margin: 40px 0;
 }
 
 .page-footer__html {
-  margin: 40px auto;
+  margin: 40px 0;
   font-size: 14px;
   display: flex;
   align-items: center;
@@ -19,4 +19,20 @@
 .page-footer__html p {
   margin: 0;
   padding-right: 15px;
+}
+
+.page-footer__index {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__index {
+    display: block;
+  }
+
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

@@ -24,6 +24,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .feedback__item {
@@ -42,4 +44,24 @@
   color: #d22856;
   font-weight: 300;
   font-style: normal;
+}
+
+
+@media (min-width: $tablet-width) {
+  .feedback__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .feedback__item {
+    width: 250px;
+  }
+
+  .feedback {
+    background-color: white;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
