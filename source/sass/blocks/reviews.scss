@@ -13,9 +13,14 @@
   flex-direction: column;
 }
 
-.reviews__item h3 {
+.reviews__name h3 {
   font-size: 18px;
   line-height: 24px;
+  margin: 0;
+}
+
+.reviews__name p {
+  display: none;
 }
 
 .reviews__item p {
@@ -29,11 +34,30 @@
   .reviews__item p {
     font-size: 18px;
     line-height: 30px;
+    order: -1;
   }
 
-  .reviews__item h3 {
+  .reviews__name h3 {
     font-size: 20px;
     line-height: 30px;
-    order: 2;
+  }
+
+  .reviews__name p {
+    display: block;
+    font-size: 14px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__name h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__name p {
+    display: block;
+    font-size: 18px;
+    margin: 0;
   }
 }

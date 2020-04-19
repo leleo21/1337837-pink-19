@@ -3,7 +3,7 @@
 }
 
 .price__list {
-  padding-top: 100px;
+  border-collapse: collapse;
 }
 
 .price__list th {
@@ -20,7 +20,6 @@
   font-size: 14px;
   color: $color-bluegrey;
   text-align: left;
-  border-collapse: collapse;
   padding: 15px;
 }
 
@@ -38,11 +37,11 @@
 
 @media (min-width: $tablet-width) {
   .price__list td:nth-child(1) {
-    display: block;
+    display: table-cell;
   }
 
   .price__list th:nth-child(1) {
-    display: block;
+    display: table-cell;
     background-color: #f2f2f2;
   }
 
@@ -56,9 +55,5 @@
 
   .price__controls {
     display: none;
-  }
-
-  .price__list {
-    padding-bottom: 90px;
   }
 }

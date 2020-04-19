@@ -41,3 +41,24 @@
     display: flex;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .time-effect__img {
+    width: 298px;
+    height: auto;
+  }
+
+  .time-effect__list {
+    width: 520px;
+  }
+
+  .time-effect__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .time-effect__link {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

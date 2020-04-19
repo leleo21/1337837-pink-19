@@ -1,23 +1,23 @@
 .feedback {
-  background-color: white;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
   padding-bottom: 240px;
+  background-color: white;
 }
 
 .feedback__wrapper {
   background-color: white;
-  padding: 20px;
 }
 
-.feedback__wrapper > p {
+.feedback__tagline {
   margin: 0;
-  padding: 20px 0;
+  padding: 0;
   font-size: 24px;
+  line-height: 30px;
   font-weight: 300;
-
+  text-align: center;
 }
 
 .feedback__list {
@@ -63,5 +63,30 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    padding-bottom: 370px;
+  }
+
+  .feedback__tagline {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    background-color: white;
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 500px;
+  }
+
+  .feedback__item:nth-child(2) {
+    order: 3;
+  }
+
+  .feedback__tagline {
+    font-size: 50px;
+    line-height: 60px;
   }
 }
