@@ -1,3 +1,32 @@
-.slider__controls {
-  text-align: center;
+.slider__toggles {
+  display: flex;
+  margin: 0;
+  line-height: 0;
+}
+
+.slider__toggle {
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding: 0;
+  background-color: #bec2c7;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider__toggle button:not(:last-child) {
+  margin-right: 13px;
+}
+
+.slider__toggle--active {
+  background-color: #fff;
+  border-color: $color-bluegrey;
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    position: relative;
+    padding: 0 22px;
+  }
 }

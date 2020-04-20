@@ -1,59 +1,201 @@
 .price {
+  padding: 125px 0 45px 0;
   background-color: #f2f2f2;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: 100%;
 }
 
-.price__list {
-  border-collapse: collapse;
+.price__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
 }
 
-.price__list th {
+.price__table {
+  margin: 0 0 45px 0;
+}
+
+.price__table-heading {
+  position: relative;
+  min-width: 275px;
+  padding: 19px 0 19px 0;
+  color: #fff;
+  text-transform: uppercase;
   background-color: $color-bluegrey;
-  color: white;
-  padding: 20px;
-  empty-cells: hide;
-
 }
 
-.price__list td {
-  border: 2px solid #e5e5e5;
-  background-color: white;
+.price__table-heading--empty {
+  min-width: 0;
+  margin: 0;
+  pading: 0;
+  font-size: 0;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.price__table-heading--hit::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 74px;
+  height: 73px;
+  background-image: url("../img/bg-hit.svg");
+}
+
+.price__table-heading--hit::after {
+  position: absolute;
+  top: 8px;
+  left: 6px;
+  content: "хит";
+  font-weight: 400;
   font-size: 14px;
-  color: $color-bluegrey;
-  text-align: left;
-  padding: 15px;
+  width: 74px;
+  height: 73px;
+  transform: rotate(-45deg);
 }
 
-.price__list td:nth-child(1) {
-  display: none;
+.price__table-title {
+  display: block;
+  font-size: 18px;
 }
 
-.price__list th:nth-child(1) {
-  display: none;
+.price__table-price {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
 }
 
-.price__controls {
-  padding: 40px;
+.price__table tbody {
+  background-color: #fff;
+  border:2px solid #e5e5e5;
+}
+
+.price__table-value {
+  min-width: 275px;
+  padding: 15px 50px 15px 20px;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: right 18px top 50%;
+  background-size: 27px;
+}
+
+.price__table-value--not-include {
+  background-image: url("../img/icon-no.svg");
+}
+
+.price__table-value--include {
+  background-image: url("../img/icon-yes.svg");
+}
+
+.price__table-value--empty {
+  min-width: 0px;
+  margin: 0;
+  padding: 0;
+  font-size: 0px;
+  line-height: 0;
+  background: transparent;
+  border: none;
 }
 
 @media (min-width: $tablet-width) {
-  .price__list td:nth-child(1) {
-    display: table-cell;
+  .price {
+    padding: 75px 21px 70px 21px;
   }
 
-  .price__list th:nth-child(1) {
-    display: table-cell;
-    background-color: #f2f2f2;
-  }
-
-  .price__list td:not(:first-child) {
-    text-align: center;
-  }
-
-  .price__option {
+  .price__wrapper .price__toggles {
     display: none;
   }
 
-  .price__controls {
-    display: none;
+  .price__table {
+    margin: 0;
+  }
+
+  .price__table-heading {
+    overlflow: hidden;
+    min-width: 155px;
+    padding: 8px 0;
+  }
+
+  .price__table-heading--hit::before {
+    top: 0;
+    left: 0;
+    width: 61px;
+    height: 61px;
+    background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .price__table-heading--hit::after {
+    top: 0;
+    left: 0;
+  }
+
+  .price__table-title {
+    font-size: 16px;
+  }
+
+  .price__table-price {
+    font-size: 18px;
+  }
+
+  .price__table-value {
+    min-width: 155px;
+    padding: 17px 15px;
+    font-size: 0px;
+    text-transform: capitalize;
+    background-position: 50% 50%;
+  }
+
+  .price__table-value--empty {
+    font-size: 14px;
+    background-image: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price {
+    padding: 150px 21px 95px 21px;
+  }
+
+  .price__wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .price__table-heading {
+    min-width: 235px;
+    padding: 17px 0;
+  }
+
+  .price__table--heading--hit::before {
+    left: 0px;
+  }
+
+  .price__table-heading--hit::after {
+    top: 5px;
+    left: 5px;
+  }
+
+  .price__table-title {
+    font-size: 18px;
+  }
+
+  .price__table-price {
+    font-size: 24px;
+  }
+
+  .price__table-value {
+    min-width: 235px;
+    padding: 15px 22px;
+  }
+
+  .price__table-value--empty {
+    font-size: 18px;
+    line-height: 30px;
+    background-image: none;
   }
 }

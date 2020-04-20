@@ -164,81 +164,84 @@
 
 			<!--Слайдер с тарифами-->
 			<section class="price">
-        <div class=" container">
 				<h2 class="visually-hidden">Тарифы мобильного приложения «Pink»</h2>
-				<div class="slider">
-					<table class="slider__list price__list">
-						<tr>
-              <th class="visually-hidden">
-              </th>
-							<th>
-								<div class="price__title">База</div>
-								<div class="price__price">1,99 USD</div>
-							</th>
-							<th>
-								<div class="price__title">Стандарт</div>
-								<div class="price__price">3,99 USD</div>
-							</th>
-							<th>
-								<div class="price__title">Анлим</div>
-								<div class="price__price">9,99 USD</div>
-							</th>
-						</tr>
-						<tr>
-              <td>Розовый фильтр</td>
-							<td>
-                <span class="price__option">Розовый фильтр</span>
-                <span>Да</span>
-              </td>
-							<td>
-                <span class="price__option">Розовый фильтр</span>
-                <span>Да</span>
-              </td>
-              <td>
-                <span class="price__option">Розовый фильтр</span>
-                <span>Да</span>
-              </td>
-						</tr>
-						<tr>
-              <td>Смайлики</td>
-							<td>
-                <span class="price__option">Смайлики</span>
-                <span>Нет</span>
-              </td>
-							<td>
-                <span class="price__option">Смайлики</span>
-                <span>Да</span>
-              </td>
-              <td>
-                <span class="price__option">Смайлики</span>
-                <span>Да</span>
-              </td>
-						</tr>
-						<tr>
-              <td>Комментарии</td>
-							<td>
-                <span class="price__option">Комментарии</span>
-                <span>Нет</span>
-              </td>
-							<td>
-                <span class="price__option">Комментарии</span>
-                <span>Нет</span>
-              </td>
-              <td>
-                <span class="price__option">Комментарии</span>
-                <span>Да</span>
-              </td>
-						</tr>
-					</table>
-          <div class="slider__controls price__controls">
-            <button class="slider__control" type="button" >1</button>
-            <button class="slider__control" type="button" >2</button>
-            <button class="slider__control" type="button" >3</button>
+				<div class="price__wrapper slider">
+					<table class="price__table">
+						<thead>
+              <tr>
+                <th class="price__table-heading price__table-heading--empty slider__item"></th>
+                <th class="price__table-heading slider__item">
+                  <span class="price__table-title">База</span>
+                  <span class="price__table-price">1,99 USD</span>
+                </th>
+                <th class="price__table-heading price__table-heading--hit slider__item">
+                  <span class="price__table-title">Стандарт</span>
+                  <span class="price__table-price">3,99 USD</span>
+                </th>
+                <th class="price__table-heading slider__item">
+                  <span class="price__table-title">Анлим</span>
+                  <span class="price__table-price">9,99 USD</span>
+                </th>
+              </tr>
+            </thead>
+						<tbody>
+              <tr>
+                <td class="price__table-value price__table-value--include price__table-value--empty">
+                  Розовый фильтр
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Розовый фильтр
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Розовый фильтр
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Розовый фильтр
+                </td>
+              </tr>
+              <tr>
+                <td class="price__table-value price__table-value--include price__table-value--empty">
+                  Смайлики
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Смайлики
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Смайлики
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Смайлики
+                </td>
+              </tr>
+              <tr>
+                <td class="price__table-value price__table-value--not-include price__table-value--empty">
+                  Комментарии
+                </td>
+                <td class="price__table-value price__table-value--not-include">
+                  Комментарии
+                </td>
+                <td class="price__table-value price__table-value--not-include">
+                  Комментарии
+                </td>
+                <td class="price__table-value price__table-value--include">
+                  Комментарии
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="slider__toggles price__toggles">
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Первый слайд</span>
+            </button>
+            <button class="slider__toggle slider__toggle--active" type="button">
+              <span class="visually-hidden">Второй слайд</span>
+            </button>
+            <button class="slider__toggle" type="button">
+              <span class="visually-hidden">Третий слайд</span>
+            </button>
           </div>
 				</div>
-        </div>
 			</section>
-
 			<!--Обратная связь и контакты-->
 			<section class="feedback">
 				<h2 class="visually-hidden">Как с нами связаться!</h2>
