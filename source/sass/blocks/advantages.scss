@@ -15,6 +15,21 @@
 .advantages__wrapper {
   position: relative;
   background-color: #f2f2f2;
+  padding-top: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.advantages__wrapper::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 125px;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 .advantages__list {
@@ -23,8 +38,9 @@
 }
 
 .advantages__item {
-  margin: 20px 0;
+  margin: 0;
   padding: 0 20px;
+  z-index: 2;
 }
 
 .advantages__item h3 {
@@ -39,6 +55,7 @@
 
 .advantages__image {
   margin: 0 auto;
+  z-index: 2;
 }
 
 .advantages__image--desktop {
@@ -46,6 +63,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__wrapper {
+    padding-top: 20px;
+  }
+
   .advantages__tagline {
     font-size: 40px;
     line-height: 48px;
@@ -70,6 +91,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .advantages__wrapper {
+    padding-top: 0;
+  }
+
   .advantages__tagline {
     font-size: 50px;
     line-height: 60px;

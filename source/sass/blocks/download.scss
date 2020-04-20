@@ -15,6 +15,7 @@
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+  z-index: 2;
 }
 
 .download__button {
@@ -34,6 +35,7 @@
   display: flex;
   flex-direction: column;
   padding: 28px 20px;
+  z-index: 2;
 }
 
 .download__app p {
@@ -49,7 +51,9 @@
   .download__container img {
     position: absolute;
     bottom: 0;
-    right: 20%;
+    right: 0;
+    height: 545px;
+    width: auto;
   }
 
   .download__container {
@@ -74,6 +78,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .download__container {
+    min-height: 740px;
+  }
+
+  .download__container img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 645px;
+    width: auto;
+  }
+
   .download__tagline {
     font-size: 50px;
     padding-left: 0;
