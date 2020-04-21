@@ -59,6 +59,9 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
+.display-none {
+  display: none; }
+
 .button {
   color: white;
   font-size: 18px;
@@ -138,11 +141,11 @@ a {
 
 @media (min-width: 660px) {
   .container {
-    width: 660px; } }
+    width: 620px; } }
 
 @media (min-width: 960px) {
   .container {
-    width: 960px; } }
+    width: 940px; } }
 
 /* Начало хедера */
 .page-header {
@@ -952,14 +955,11 @@ a {
 
 .photos__tagline {
   text-align: center;
-  margin: 0;
   padding: 45px 35px;
   line-height: 30px; }
 
 .photos__list {
-  list-style: none;
-  margin: 0;
-  padding: 0 20px; }
+  list-style: none; }
 
 .photos__item {
   margin-top: 20px;
@@ -969,12 +969,14 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  padding: 0 20px; }
 
 .photos__author {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
-          flex-grow: 1; }
+          flex-grow: 1;
+  background-color: #f2f2f2; }
 
 .photos__like {
   display: -webkit-box;
@@ -989,9 +991,8 @@ a {
 /* Фотография дня */
 .photos__day {
   position: relative;
-  margin: 0px; }
-  .photos__day .photos__author {
-    margin: 0 20px; }
+  max-width: 320px;
+  margin: 0 auto; }
 
 .photos__day-flag {
   position: absolute;
@@ -1021,7 +1022,9 @@ a {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .photos__item {
-    width: 300px; }
+    width: 300px;
+    margin-right: 20px;
+    padding: 0; }
   .photos__like {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -1036,16 +1039,30 @@ a {
   .photos__day .photos__like {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
-            flex-grow: 0; } }
+            flex-grow: 0; }
+  .photos__day {
+    margin: 0 auto;
+    max-width: 700px; }
+  .photos__item:nth-of-type(2n) {
+    margin-right: 0; } }
 
 @media (min-width: 960px) {
   .photos__tagline {
     padding: 100px 180px 75px; }
   .photos__day-flag {
-    right: 130px; } }
+    right: 130px; }
+  .photos__day {
+    margin: 0 auto;
+    max-width: 1200px; }
+  .photos__item {
+    width: 300px;
+    margin-right: 20px; }
+  .photos__item:nth-of-type(2n) {
+    margin-right: 20px; }
+  .photos__item:nth-of-type(3n) {
+    margin-right: 0; } }
 
 .author {
-  background-color: #f2f2f2;
   padding: 25px 13px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1068,6 +1085,9 @@ a {
   margin: 0;
   width: 100%; }
 
+.author--day {
+  margin: 0 20px; }
+
 @media (min-width: 660px) {
   .author--day {
     -webkit-box-pack: justify;
@@ -1076,7 +1096,15 @@ a {
   .author--day .author__comment {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
-            order: 3; } }
+            order: 3; }
+  .author--day {
+    width: 620px;
+    margin: 0 auto; } }
+
+@media (min-width: 960px) {
+  .author--day {
+    width: 940px;
+    margin: 0 auto; } }
 
 /* Конец секции с фотографиями пользователей */
 /* Начало секции с загрузкой своей фотографии */
@@ -1194,7 +1222,11 @@ a {
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap; } }
+        flex-wrap: nowrap; }
+  .user-photo__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 0; } }
 
 /* Конец секции с загрузкой своей фотографии */
 /* Начало футера */
