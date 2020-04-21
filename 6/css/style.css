@@ -142,7 +142,7 @@ a {
 
 @media (min-width: 960px) {
   .container {
-    width: 940px; } }
+    width: 960px; } }
 
 /* Начало хедера */
 .page-header {
@@ -912,6 +912,37 @@ a {
 .page-photo {
   background-color: white; }
 
+.page-photo__wrapper {
+  background-color: black;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  background-size: 100%; }
+
+.page-photo__title {
+  color: white;
+  min-height: 170px;
+  padding: 35px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300; }
+
+@media (min-width: 660px) {
+  .page-photo__wrapper {
+    background-image: url("../img/bg-back-tablet@1x.jpg"); }
+  .page-photo__title {
+    padding: 80px;
+    min-height: 330px;
+    font-size: 50px;
+    line-height: 60px; } }
+
+@media (min-width: 960px) {
+  .page-photo__wrapper {
+    background-image: url("../img/bg-back-desktop@1x.jpg"); }
+  .page-photo__title {
+    padding: 75px 250px 0;
+    min-height: 285px; } }
+
 /* Начало секции с фотографиями пользователей */
 .photos {
   font-size: 14px;
@@ -919,21 +950,7 @@ a {
   font-weight: 400;
   color: #283645; }
 
-.photos__title {
-  color: white;
-  margin: 0;
-  min-height: 170px;
-  padding: 35px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 300;
-  background-color: black;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: cover; }
-
-.photos > p {
+.photos__tagline {
   text-align: center;
   margin: 0;
   padding: 45px 35px;
@@ -941,10 +958,23 @@ a {
 
 .photos__list {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+  padding: 0 20px; }
 
 .photos__item {
-  margin: 20px 0; }
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.photos__author {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
 
 .photos__like {
   display: -webkit-box;
@@ -952,7 +982,6 @@ a {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-top: 15px;
   color: #d22856;
   font-size: 12px;
   text-transform: uppercase; }
@@ -975,6 +1004,46 @@ a {
   text-align: center;
   padding: 6px 20px; }
 
+@media (min-width: 660px) {
+  .photos__tagline {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 100px 80px 75px; }
+  .photos__day-flag {
+    top: 55px; }
+  .photos__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .photos__item {
+    width: 300px; }
+  .photos__like {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .photos__day .photos__like {
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0; } }
+
+@media (min-width: 960px) {
+  .photos__tagline {
+    padding: 100px 180px 75px; }
+  .photos__day-flag {
+    right: 130px; } }
+
 .author {
   background-color: #f2f2f2;
   padding: 25px 13px;
@@ -990,19 +1059,31 @@ a {
   font-weight: 700; }
 
 .author__time {
-  padding: 0 4px;
   color: #d22856;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase; }
 
-.author p {
+.author__comment {
   margin: 0;
   width: 100%; }
 
+@media (min-width: 660px) {
+  .author--day {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .author--day .author__comment {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3; } }
+
 /* Конец секции с фотографиями пользователей */
 /* Начало секции с загрузкой своей фотографии */
-.user-photo p {
+.user-photo__tagline {
+  padding: 30px 0; }
+
+.user-photo__tagline p {
   font-size: 14px;
   line-height: 30px;
   margin: 0;
@@ -1012,6 +1093,15 @@ a {
 .user-photo__wrapper {
   background-color: #f2f2f2;
   padding: 20px; }
+
+.user-photo__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
 
 .user-photo__list {
   margin: 35px 20px;
@@ -1025,6 +1115,9 @@ a {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around; }
+
+.user-photo__image {
+  margin: 0 auto; }
 
 .user-photo__buttons {
   display: -webkit-box;
@@ -1074,6 +1167,34 @@ a {
 #option_3:checked ~ label[for="option_3"] svg {
   opacity: 1;
   fill: #d22856; }
+
+@media (min-width: 660px) {
+  .user-photo__tagline p {
+    font-size: 18px;
+    line-height: 30px; }
+  .user-photo__tagline {
+    padding: 55px 0; }
+  .user-photo__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+  .user-photo__menu {
+    width: 50%; }
+  .user-photo__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
+
+@media (min-width: 960px) {
+  .user-photo__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; } }
 
 /* Конец секции с загрузкой своей фотографии */
 /* Начало футера */
