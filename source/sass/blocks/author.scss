@@ -12,14 +12,24 @@
 }
 
 .author__time {
-  padding: 0 4px;
   color: #d22856;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.author p {
+.author__comment {
   margin: 0;
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .author--day {
+    justify-content: space-between;
+  }
+
+  .author--day .author__comment {
+    order: 3;
+  }
+
 }
