@@ -1,5 +1,4 @@
 .author {
-  background-color: #f2f2f2;
   padding: 25px 13px;
   display: flex;
   flex-wrap: wrap;
@@ -23,6 +22,10 @@
   width: 100%;
 }
 
+.author--day {
+  margin: 0 20px;
+}
+
 @media (min-width: $tablet-width) {
   .author--day {
     justify-content: space-between;
@@ -32,4 +35,15 @@
     order: 3;
   }
 
+  .author--day {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author--day {
+    width: 940px;
+    margin: 0 auto;
+  }
 }
