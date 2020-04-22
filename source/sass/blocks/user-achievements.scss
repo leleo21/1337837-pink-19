@@ -1,0 +1,53 @@
+.user-achievements {
+
+}
+
+.user-achievements__form {
+  border: 0;
+  padding: 0 20px;
+}
+
+.user-achievements__form legend {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.user-achievements__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-achievements__item {
+  padding: 20px 0;
+}
+
+.user-achievements__item label {
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-achievements__form {
+    border: 2px solid #e5e5e5;
+    padding: 50px 55px;
+  }
+
+  .user-achievements {
+    order: 4;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-achievements__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .user-achievements__item {
+    width: 270px;
+  }
+}

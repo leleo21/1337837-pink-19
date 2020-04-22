@@ -1,0 +1,47 @@
+.user-app__form {
+  border: 0;
+  padding: 0 20px;
+}
+
+.user-app__form legend {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.user-app__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.user-app__item {
+  padding: 20px 0;
+}
+
+.user-app__item label {
+  padding-left: 30px;
+}
+
+@media (min-width: $tablet-width) {
+  .user-app__form {
+    border: 2px solid #e5e5e5;
+    padding: 0 55px;
+  }
+
+  .user-app {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-app {
+    width: 435px;
+    .container {
+    width: 435px;
+    }
+  }
+}
