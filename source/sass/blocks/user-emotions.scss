@@ -1,0 +1,28 @@
+.user-emotions {
+  border: 0;
+  padding: 0 20px;
+}
+
+.user-emotions legend {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .user-emotions {
+    border: 2px solid #e5e5e5;
+    padding: 10px 55px 30px;
+  }
+
+  .user-emotions legend {
+    display: block;
+  }
+
+  .user-emotions {
+    order: 5;
+  }
+}

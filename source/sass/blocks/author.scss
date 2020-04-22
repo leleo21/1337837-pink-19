@@ -11,14 +11,39 @@
 }
 
 .author__time {
-  padding: 0 4px;
   color: #d22856;
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
-.author p {
+.author__comment {
   margin: 0;
   width: 100%;
+}
+
+.author--day {
+  margin: 0 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .author--day {
+    justify-content: space-between;
+  }
+
+  .author--day .author__comment {
+    order: 3;
+  }
+
+  .author--day {
+    width: 620px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .author--day {
+    width: 940px;
+    margin: 0 auto;
+  }
 }

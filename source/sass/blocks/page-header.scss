@@ -1,13 +1,26 @@
 .page-header {
-  background-color: #283645;
+  background-color: $color-bluegrey;
   color: white;
-  position: relative;
-  display: flex;
-  flex-direction: column;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .page-header__logo {
+  width: 115px;
   padding: 20px;
-  border-bottom: 1px solid black;
+  line-height: 20px;
+  display: block;
 }
 
+@media (min-width: $desktop-width) {
+  .page-header__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

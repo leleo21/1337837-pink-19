@@ -1,8 +1,12 @@
-@import "scaffolding.less";
+@import "scaffolding.scss";
+
+@import "variables.scss";
 
 @import "blocks/button.scss";
 
 @import "blocks/slider.scss";
+
+@import "blocks/container.scss";
 
 /* Начало хедера */
 @import "blocks/page-header.scss";
@@ -22,6 +26,10 @@
 /* Начало секции с приемуществами */
 @import "blocks/advantages.scss";
 /* Конец секции с приемуществами */
+
+/* Начало секции с диаграмой */
+@import "blocks/time-effect.scss";
+/* Конец секции с диаграмой */
 
 /* Начало секции с отзывами */
 @import "blocks/reviews.scss";
@@ -59,5 +67,9 @@
 
 /* Начало секции с формой для конкурса */
 @import "blocks/form.scss";
-@import "blocks/options.scss";
+@import "blocks/user-name.scss";
+@import "blocks/user-achievements.scss";
+@import "blocks/user-contacts.scss";
+@import "blocks/user-app.scss";
+@import "blocks/user-emotions.scss";
 /* Конец секции с формой для конкурса */
