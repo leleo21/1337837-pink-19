@@ -1,10 +1,8 @@
-.time-effect {
-  display: flex;
+.time-effect__container {
   justify-content: space-between;
   padding: 50px 20px;
   align-items: center;
   display: none;
-
 }
 
 .time-effect__list {
@@ -37,12 +35,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .time-effect {
+  .time-effect__container {
     display: flex;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .time-effect {
+    background-color: $color-lightgrey;
+  }
+
   .time-effect__img {
     width: 298px;
     height: auto;
