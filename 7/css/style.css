@@ -431,9 +431,7 @@ a {
 .advantages__wrapper {
   position: relative;
   background-color: #f2f2f2;
-  padding-top: 50px;
-  max-width: 1200px;
-  margin: 0 auto; }
+  padding-top: 50px; }
 
 .advantages__wrapper::before {
   position: absolute;
@@ -522,10 +520,7 @@ a {
 
 /* Конец секции с приемуществами */
 /* Начало секции с диаграмой */
-.time-effect {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.time-effect__container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -561,12 +556,14 @@ a {
   cursor: pointer; }
 
 @media (min-width: 660px) {
-  .time-effect {
+  .time-effect__container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
 
 @media (min-width: 960px) {
+  .time-effect {
+    background-color: #f2f2f2; }
   .time-effect__img {
     width: 298px;
     height: auto; }
