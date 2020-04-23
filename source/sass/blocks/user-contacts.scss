@@ -80,12 +80,14 @@
 }
 
 @media (min-width: $desktop-width) {
-  .user-contacts {
+  .user-contacts__wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .user-contacts__item {
     width: 375px;
+    margin-bottom: 0;
   }
 }

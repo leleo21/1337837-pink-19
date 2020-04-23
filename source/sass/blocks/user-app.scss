@@ -29,7 +29,10 @@
 @media (min-width: $tablet-width) {
   .user-app__form {
     border: 2px solid #e5e5e5;
-    padding: 0 55px;
+  }
+
+  .user-app__item {
+    padding-left: 40px;
   }
 
   .user-app {
