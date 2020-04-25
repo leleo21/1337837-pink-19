@@ -3,24 +3,26 @@
   color: white;
 }
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.page-header__logo {
-  width: 115px;
+.page-header__logo img {
   padding: 20px;
   line-height: 20px;
   display: block;
+}
+
+
+@media (min-width: $tablet-width) {
+
 }
 
 @media (min-width: $desktop-width) {
   .page-header__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .page-header {
+    display: flex;
     justify-content: space-between;
   }
 }
