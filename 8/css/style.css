@@ -1132,9 +1132,7 @@ a {
           flex-direction: column; }
 
 .user-photo__list {
-  margin: 35px 20px;
-  padding: 0;
-  list-style: none;
+  padding: 35px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1156,47 +1154,63 @@ a {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column; }
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .user-photo__button {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  width: 280px;
   margin: 6px 0; }
 
 .user-photo__controls {
-  position: relative;
-  margin: 15px auto;
-  padding: 0 20px; }
+  text-align: center;
+  margin-bottom: 30px; }
 
 .user-photo__bar {
+  -webkit-appearance: none;
   height: 2px;
-  background-color: #283645;
-  width: 240px; }
+  width: 240px;
+  background-color: #283645; }
+  .user-photo__bar:focus {
+    outline: none; }
 
-.user-photo__toggle {
-  position: absolute;
-  width: 10px;
-  height: 10px;
+.user-photo__bar::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 14px;
+  height: 14px;
   background-color: white;
   border: 2px solid #d22856;
   border-radius: 50%;
-  left: 200px;
   top: -4px; }
 
-.user-photo__option svg {
+.user-photo__control {
+  display: none; }
+
+#option-1:checked ~ .user-photo__controls .editor-crop {
+  display: block; }
+
+#option-2:checked ~ .user-photo__controls .editor-fill {
+  display: block; }
+
+#option-3:checked ~ .user-photo__controls .editor-contrast {
+  display: block; }
+
+.user-photo__item svg {
   opacity: 0.3; }
 
-.user-photo__option:hover svg {
+.user-photo__item:hover svg {
   opacity: 0.5; }
 
-#option_1:checked ~ label[for="option_1"] svg,
-#option_2:checked ~ label[for="option_2"] svg,
-#option_3:checked ~ label[for="option_3"] svg {
+#option-1:checked ~ .user-photo__list label[for="option-1"] svg,
+#option-2:checked ~ .user-photo__list label[for="option-2"] svg,
+#option-3:checked ~ .user-photo__list label[for="option-3"] svg {
   opacity: 1;
   fill: #d22856; }
 
 @media (min-width: 660px) {
+  .user-photo__wrapper {
+    padding: 55px 0; }
   .user-photo__tagline p {
     font-size: 18px;
     line-height: 30px; }
@@ -1206,16 +1220,71 @@ a {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; }
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .user-photo__menu {
-    width: 50%; }
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .user-photo__image {
+    margin: 0 40px 0 20px; }
   .user-photo__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 9px 0; }
+  .user-photo__control {
+    display: block; }
+  .user-photo__options {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .user-photo__item svg {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
+    fill: #d22856; }
+  .user-photo__item:hover svg {
+    opacity: 1; }
+  .user-photo__item {
+    padding: 20px 0; }
+  .user-photo__controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .user-photo__controls .user-photo__control {
+      padding: 20px; }
+  .user-photo__bar {
+    width: 202px; }
+  .user-photo__button {
+    width: 260px; } }
 
 @media (min-width: 960px) {
+  .user-photo__form.container {
+    width: 100%; }
+  .user-photo__item svg {
+    width: 44px;
+    height: 44px; }
   .user-photo__buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1223,10 +1292,17 @@ a {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
+  .user-photo__button {
+    width: 183px;
+    margin-right: 40px; }
+    .user-photo__button:last-child {
+      margin-right: 0; }
   .user-photo__wrapper {
     width: 940px;
     margin: 0 auto;
-    padding: 0; } }
+    padding: 60px; }
+  .user-photo__bar {
+    width: 288px; } }
 
 /* Конец секции с загрузкой своей фотографии */
 /* Начало футера */
@@ -1263,6 +1339,10 @@ a {
 .page-footer__index {
   display: none; }
 
+.page-footer__html svg,
+.page-footer__social svg {
+  fill: #d22856; }
+
 @media (min-width: 660px) {
   .page-footer__index {
     display: block; }
@@ -1277,6 +1357,10 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; } }
+
+@media (min-width: 960px) {
+  .page-footer {
+    padding: 60px 0; } }
 
 .social {
   list-style: none;
