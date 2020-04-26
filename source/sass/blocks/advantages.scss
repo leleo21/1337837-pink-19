@@ -37,8 +37,10 @@
 
 .advantages__item {
   margin: 0;
-  padding: 0 20px;
   z-index: 2;
+  p, h3 {
+    padding: 0 20px;
+  }
 }
 
 .advantages__item h3 {
@@ -52,6 +54,7 @@
 }
 
 .advantages__image {
+  height: 277px;
   margin: 0 auto;
   z-index: 2;
 }
@@ -83,8 +86,7 @@
   }
 
   .advantages__image {
-    width: 268px;
-    height: auto;
+    height: 481px;
   }
 }
 
@@ -121,5 +123,6 @@
 
   .advantages__image--desktop {
     display: block;
+    margin: 0 auto;
   }
 }

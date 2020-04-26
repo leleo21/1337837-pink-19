@@ -16,6 +16,9 @@
   position: relative;
 }
 
+.download__image {
+}
+
 .download__tagline {
   margin: 0;
   padding: 20px;
@@ -65,10 +68,10 @@
     }
   }
 
-  .download__container img {
+  .download__image {
     position: absolute;
     bottom: 0;
-    right: 0;
+    overflow: hidden;
   }
 
   .download__container {
@@ -107,10 +110,7 @@
     min-height: 740px;
   }
 
-  .download__container img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  .download__image {
   }
 
   .download__tagline {
