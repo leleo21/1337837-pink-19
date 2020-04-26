@@ -3,24 +3,28 @@
   color: white;
 }
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.page-header__logo {
-  width: 115px;
+.page-header__logo img {
   padding: 20px;
   line-height: 20px;
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__container {
+    min-height: 110px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .page-header__container {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header {
+    display: flex;
     justify-content: space-between;
   }
 }

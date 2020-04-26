@@ -1,12 +1,22 @@
 .download {
   color: white;
   background-color: #1d2631;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center -40%;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .download__container {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.download__image {
 }
 
 .download__tagline {
@@ -48,12 +58,20 @@
 }
 
 @media (min-width: $tablet-width) {
-  .download__container img {
+  .download {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
+  }
+
+  .download__image {
     position: absolute;
     bottom: 0;
-    right: 0;
-    height: 545px;
-    width: auto;
+    overflow: hidden;
   }
 
   .download__container {
@@ -78,16 +96,21 @@
 }
 
 @media (min-width: $desktop-width) {
+  .download {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: center -110px;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: 2560px auto;
+    }
+  }
+
   .download__container {
     min-height: 740px;
   }
 
-  .download__container img {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 645px;
-    width: auto;
+  .download__image {
   }
 
   .download__tagline {

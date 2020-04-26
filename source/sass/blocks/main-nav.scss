@@ -41,16 +41,14 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  top: -35px;
-  right: 20px;
   width: 23px;
   height: 23px;
   &::before,
   &::after {
     content: "";
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: -3px;
     width: 30px;
     height: 5px;
     background-color: #ffffff;
@@ -137,6 +135,7 @@
 
   .main-nav__item {
     border-bottom: none;
+    box-shadow: none;
   }
 
   .main-nav__toggle {
