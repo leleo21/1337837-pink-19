@@ -400,10 +400,10 @@ a {
       background-size: 1200px auto; } }
 
 @media (min-width: 660px) {
-  .download__container img {
+  .download__image {
     position: absolute;
     bottom: 0;
-    right: 0; }
+    overflow: hidden; }
   .download__container {
     min-height: 620px;
     -webkit-box-pack: justify;
@@ -432,10 +432,6 @@ a {
 @media (min-width: 960px) {
   .download__container {
     min-height: 740px; }
-  .download__container img {
-    position: absolute;
-    bottom: 0;
-    right: 0; }
   .download__tagline {
     font-size: 50px;
     padding-left: 0;
@@ -477,8 +473,9 @@ a {
 
 .advantages__item {
   margin: 0;
-  padding: 0 20px;
   z-index: 2; }
+  .advantages__item p, .advantages__item h3 {
+    padding: 0 20px; }
 
 .advantages__item h3 {
   font-size: 18px;
@@ -489,6 +486,7 @@ a {
   line-height: 24px; }
 
 .advantages__image {
+  height: 277px;
   margin: 0 auto;
   z-index: 2; }
 
@@ -516,8 +514,7 @@ a {
     text-align: left;
     width: 310px; }
   .advantages__image {
-    width: 268px;
-    height: auto; } }
+    height: 481px; } }
 
 @media (min-width: 960px) {
   .advantages__wrapper {
@@ -543,7 +540,8 @@ a {
     font-size: 30px;
     line-height: 30px; }
   .advantages__image--desktop {
-    display: block; } }
+    display: block;
+    margin: 0 auto; } }
 
 /* Конец секции с приемуществами */
 /* Начало секции с диаграмой */
