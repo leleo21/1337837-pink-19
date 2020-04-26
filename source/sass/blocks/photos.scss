@@ -35,6 +35,18 @@
   color: #d22856;
   font-size: 12px;
   text-transform: uppercase;
+  align-items: center;
+}
+
+.photos__like button {
+  width: 13px;
+  height: 12px;
+  margin: 0 18px;
+  cursor: pointer;
+  border: 0;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 /* Фотография дня */
