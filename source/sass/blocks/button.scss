@@ -6,6 +6,7 @@
   border-radius: 25px;
   padding: 15px;
   width: 100%;
+  outline: none;
 }
 
 
@@ -13,7 +14,8 @@
   color: #d22856;
   border: 3px solid $color-darkred;
   background-color: white;
-  &:hover {
+  &:hover,
+  &:focus {
     color: white;
     background-color: $color-darkred;
   }
@@ -28,7 +30,8 @@
   border: 3px solid $color-bluegrey;
   background-color: white;
   opacity: 0.1;
-  &:hover {
+  &:hover,
+  &:focus {
     opacity: 0.3;
   }
   &:active {
@@ -41,7 +44,8 @@
 .button--white {
   color: white;
   border: 3px solid white;
-  &:hover {
+  &:hover,
+  &:focus {
     color: $color-darkred;
     background-color: white;
   }
