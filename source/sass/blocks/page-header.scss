@@ -3,6 +3,11 @@
   color: white;
 }
 
+.page-header__logo {
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
 .page-header__logo img {
   padding: 20px;
   line-height: 20px;
@@ -10,8 +15,12 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header__container {
+  .page-header__logo {
     min-height: 110px;
+  }
+
+  .page-header__logo img {
+    padding: 27px 20px 40px;
   }
 }
 
