@@ -11,6 +11,41 @@
 
 .button--pink {
   color: #d22856;
-  border: 3px solid #d22856;
+  border: 3px solid $color-darkred;
   background-color: white;
+  &:hover {
+    color: white;
+    background-color: $color-darkred;
+  }
+  &:active {
+    color: rgba(255,255,255,0.3);
+    background-color: $color-darkred;
+  }
+}
+
+.button--grey {
+  color: $color-bluegrey;
+  border: 3px solid $color-bluegrey;
+  background-color: white;
+  opacity: 0.1;
+  &:hover {
+    opacity: 0.3;
+  }
+  &:active {
+    background-color: $color-bluegrey;
+    color: rgba(255,255,255,0.3);
+    opacity: 0.3;
+  }
+}
+
+.button--white {
+  color: white;
+  border: 3px solid white;
+  &:hover {
+    color: $color-darkred;
+    background-color: white;
+  }
+  &:active {
+    color: rgba(210,40,86,0.3);
+  }
 }
