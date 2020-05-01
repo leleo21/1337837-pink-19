@@ -19,32 +19,7 @@
     padding: 0 22px;
   }
 
-  .reviews__toggles .slider__toggle {
-    display: none;
-  }
 
-  .reviews__toggles :first-child.slider__toggle, .reviews__toggles :last-child.slider__toggle {
-    position: absolute;
-    top: 20%;
-    transform: translateY(50%);
-    display: block;
-    width: 22px;
-    height: 41px;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    border: 0;
-    cursor: pointer;
-  }
 
-  .reviews__toggles :first-child.slider__toggle {
-    left: 0px;
-    background-image: url("../img/icon-review-arrow-left.svg");
-  }
 
-  .reviews__toggles :last-child.slider__toggle {
-    right: 0px;
-    background-image: url("../img/icon-review-arrow-right.svg");
-  }
 }

@@ -11,13 +11,27 @@
   position: relative;
 }
 
+.reviews__inner {
+  overflow: hidden;
+  margin: 0 0 40px 0;
+  width: 280px;
+}
+
 .reviews__list {
-  padding: 0 20px;
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease;
 }
 
 .reviews__item {
+  padding: 0;
   display: flex;
   flex-direction: column;
+  width: 280px;
+}
+
+.reviews__name {
+  margin: 25px 0;
 }
 
 .reviews__name h3 {
@@ -34,6 +48,7 @@
   font-size: 14px;
   line-height: 30px;
   font-weight: 400;
+  margin: 0;
 }
 
 /*слайдер*/
@@ -45,16 +60,16 @@
   box-shadow: 0 0 0 3px $color-bluegrey;
 }
 
-#review-1:checked ~ .price__table {
-  transform: translate(33.33%);
+#review-1:checked ~ .reviews__inner .reviews__list {
+  transform: translate(0);
 }
 
-#review-2:checked ~ .price__table {
-  transform: translate(0px);
+#review-2:checked ~ .reviews__inner .reviews__list {
+  transform: translate(-33.33333%);
 }
 
-#review-3:checked ~ .price__table {
-  transform: translate(-33.33%);
+#review-3:checked ~ .reviews__inner .reviews__list {
+  transform: translate(-66.66666%);
 }
 
 
@@ -63,6 +78,18 @@
     font-size: 18px;
     line-height: 30px;
     order: -1;
+  }
+
+  .reviews__item {
+    width: 620px;
+  }
+
+  .reviews__inner {
+    width: 620px;
+  }
+
+  .reviews__name {
+    margin-bottom: 0;
   }
 
   .reviews__name h3 {
@@ -78,6 +105,17 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews__wrapper::before {
+    content: "";
+    poisiton: absolute;
+    width: 80px;
+    height: 65px;
+    top: 0;
+    background-image: url("../img/icon-quotes.svg");
+    background-repeat: np-repeat;
+    background-position: 0 0;
+  }
+
   .reviews__name h3 {
     font-size: 24px;
     line-height: 30px;
@@ -89,7 +127,58 @@
     margin: 0;
   }
 
-  .reviews__list {
-    padding: 0 120px;
+  .reviews__item {
+    width: 700px;
+  }
+
+  .reviews__inner {
+    width: 700px;
+    padding-top: 50px;
+  }
+
+  #review-1:checked ~ .reviews__toggles label[for="review-1"],
+  #review-2:checked ~ .reviews__toggles label[for="review-2"],
+  #review-3:checked ~ .reviews__toggles label[for="review-3"] {
+  box-shadow: none;
+  }
+
+  .reviews__toggles .slider__toggle {
+    display: none;
+  }
+
+  #review-1:checked ~ .reviews__toggles label[for="review-3"],
+  #review-2:checked ~ .reviews__toggles label[for="review-1"],
+  #review-3:checked ~ .reviews__toggles label[for="review-2"] {
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border: 0;
+    cursor: pointer;
+    left: 0px;
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  #review-1:checked ~ .reviews__toggles label[for="review-2"],
+  #review-2:checked ~ .reviews__toggles label[for="review-3"],
+  #review-3:checked ~ .reviews__toggles label[for="review-1"] {
+    position: absolute;
+    top: 40%;
+    display: block;
+    width: 22px;
+    height: 41px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    border: 0;
+    cursor: pointer;
+    right: 0px;
+    background-image: url("../img/icon-review-arrow-right.svg");
   }
 }
