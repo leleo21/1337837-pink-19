@@ -138,22 +138,25 @@
 			<section class="reviews">
 				<h2 class="visually-hidden">Отзывы об мобильном приложении «Pink»</h2>
 				<div class="reviews__wrapper slider container">
-					<div class="slider__list reviews__list">
-						<div class="slider__item reviews__item">
+          <input class="display-none" type="radio" id="review-1" name="review-toggle" checked/>
+          <input class="display-none" type="radio" id="review-2" name="review-toggle"/>
+          <input class="display-none" type="radio" id="review-3" name="review-toggle"/>
+					<div class="reviews__list">
+						<div class="reviews__item">
 							<div class="reviews__name">
                 <h3>Николай Петров</h3>
                 <p>25 лет, водитель трамвая</p>
               </div>
 							<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 						</div>
-						<div class="slider__item reviews__item visually-hidden">
+						<div class="reviews__item">
 							<div class="reviews__name">
                 <h3>Николай Петров</h3>
                 <p>25 лет, водитель трамвая</p>
               </div>
 							<p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
 						</div>
-						<div class="slider__item reviews__item visually-hidden">
+						<div class="reviews__item">
 							<div class="reviews__name">
                 <h3>Николай Петров</h3>
                 <p>25 лет, водитель трамвая</p>
@@ -162,15 +165,9 @@
 						</div>
 					</div>
           <div class="slider__toggles reviews__toggles">
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Первый слайд</span>
-            </button>
-            <button class="slider__toggle slider__toggle--active" type="button">
-              <span class="visually-hidden">Второй слайд</span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Третий слайд</span>
-            </button>
+            <label class="slider__toggle" for="review-1"><span class="visually-hidden">Первый слайд</span></label>
+            <label class="slider__toggle" for="review-2"><span class="visually-hidden">Второй слайд</span></label>
+            <label class="slider__toggle" for="review-3"><span class="visually-hidden">Третий слайд</span></label>
           </div>
 				</div>
 			</section>
@@ -179,19 +176,22 @@
 			<section class="price">
 				<h2 class="visually-hidden">Тарифы мобильного приложения «Pink»</h2>
 				<div class="price__wrapper slider">
+          <input class="display-none" type="radio" id="product-1" name="price-toggle"/>
+          <input class="display-none" type="radio" id="product-2" name="price-toggle" checked/>
+          <input class="display-none" type="radio" id="product-3" name="price-toggle"/>
 					<table class="price__table">
 						<thead>
               <tr>
-                <th class="price__table-heading price__table-heading--empty slider__item"></th>
-                <th class="price__table-heading slider__item">
+                <th class="price__table-heading price__table-heading--empty"></th>
+                <th class="price__table-heading">
                   <span class="price__table-title">База</span>
                   <span class="price__table-price">1,99 USD</span>
                 </th>
-                <th class="price__table-heading price__table-heading--hit slider__item">
+                <th class="price__table-heading price__table-heading--hit">
                   <span class="price__table-title">Стандарт</span>
                   <span class="price__table-price">3,99 USD</span>
                 </th>
-                <th class="price__table-heading slider__item">
+                <th class="price__table-heading">
                   <span class="price__table-title">Анлим</span>
                   <span class="price__table-price">9,99 USD</span>
                 </th>
@@ -243,15 +243,9 @@
             </tbody>
           </table>
           <div class="slider__toggles price__toggles">
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Первый слайд</span>
-            </button>
-            <button class="slider__toggle slider__toggle--active" type="button">
-              <span class="visually-hidden">Второй слайд</span>
-            </button>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Третий слайд</span>
-            </button>
+            <label class="slider__toggle" for="product-1"><span class="visually-hidden">Первый слайд</span></label>
+            <label class="slider__toggle" for="product-2"><span class="visually-hidden">Второй слайд</span></label>
+            <label class="slider__toggle" for="product-3"><span class="visually-hidden">Третий слайд</span></label>
           </div>
 				</div>
 			</section>

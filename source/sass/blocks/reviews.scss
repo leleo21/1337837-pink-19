@@ -36,7 +36,25 @@
   font-weight: 400;
 }
 
-.reviews__toggles {
+/*слайдер*/
+
+#review-1:checked ~ .reviews__toggles label[for="review-1"],
+#review-2:checked ~ .reviews__toggles label[for="review-2"],
+#review-3:checked ~ .reviews__toggles label[for="review-3"] {
+  background-color: #fff;
+  box-shadow: 0 0 0 3px $color-bluegrey;
+}
+
+#review-1:checked ~ .price__table {
+  transform: translate(33.33%);
+}
+
+#review-2:checked ~ .price__table {
+  transform: translate(0px);
+}
+
+#review-3:checked ~ .price__table {
+  transform: translate(-33.33%);
 }
 
 
