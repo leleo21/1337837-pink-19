@@ -162,6 +162,13 @@
     cursor: pointer;
     left: 0px;
     background-image: url("../img/icon-review-arrow-left.svg");
+    opacity: 0.3;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   #review-1:checked ~ .reviews__toggles label[for="review-2"],
@@ -180,5 +187,12 @@
     cursor: pointer;
     right: 0px;
     background-image: url("../img/icon-review-arrow-right.svg");
+    opacity: 0.3;
+    &:hover {
+      opacity: 0.6;
+    }
+    &:active {
+      opacity: 0.1;
+    }
   }
 }

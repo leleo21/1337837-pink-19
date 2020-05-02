@@ -12,9 +12,7 @@
 }
 
 .page-header__logo img {
-  padding: 20px;
-  line-height: 20px;
-  display: block;
+  margin: 20px;
 }
 
 @media (min-width: $tablet-width) {
@@ -23,7 +21,7 @@
   }
 
   .page-header__logo img {
-    padding: 27px 20px 40px;
+    margin: 27px 20px 40px;
   }
 }
 
