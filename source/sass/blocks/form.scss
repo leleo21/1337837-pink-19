@@ -22,6 +22,13 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   color: #283645;
+  &:hover {
+    border-color: $color-bluegrey;
+  }
+  &:focus {
+    outline: none;
+    border-color: $color-darkred;
+  }
 }
 
 .form__wrapper {
@@ -52,6 +59,13 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   color: #283645;
+  &:hover {
+    border-color: $color-bluegrey;
+  }
+  &:focus {
+    outline: none;
+    border-color: $color-darkred;
+  }
 }
 
 .form__button {
