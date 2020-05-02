@@ -113,6 +113,7 @@
 #product-3:checked ~ .price__toggles label[for="product-3"] {
   background-color: #fff;
   box-shadow: 0 0 0 3px $color-bluegrey;
+  opacity: 1;
 }
 
 #product-1:checked ~ .price__table {

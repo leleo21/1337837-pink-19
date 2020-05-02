@@ -7,10 +7,17 @@
   height: 6px;
   margin: 0 9px;
   padding: 0;
-  background-color: #bec2c7;
+  background-color: $color-bluegrey;
   border: 0;
   border-radius: 50%;
   cursor: pointer;
+  opacity: 0.3;
+  &:hover {
+    opacity: 0.6;
+  }
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -18,8 +25,4 @@
     position: relative;
     padding: 0 22px;
   }
-
-
-
-
 }

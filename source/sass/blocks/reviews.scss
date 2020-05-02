@@ -58,6 +58,7 @@
 #review-3:checked ~ .reviews__toggles label[for="review-3"] {
   background-color: #fff;
   box-shadow: 0 0 0 3px $color-bluegrey;
+  opacity: 1;
 }
 
 #review-1:checked ~ .reviews__inner .reviews__list {
