@@ -18,4 +18,30 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    border-color: $color-bluegrey;
+    transition: 0.3s;
+  }
+  &:active {
+    border-color: #bec2c7;
+    opacity: 0.3;
+  }
+}
+
+.social__item--twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__item--facebook {
+  background-image: url(../img/icon-facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__item--youtube {
+  background-image: url(../img/icon-youtube.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
