@@ -103,11 +103,13 @@
   &:hover,
   &:focus {
     color: $color-darkred;
+    transition: 0.3s;
   }
 
   &:active {
     color: $color-darkred;
     opacity: 0.3;
+    transition: 0.3s;
   }
 }
 
