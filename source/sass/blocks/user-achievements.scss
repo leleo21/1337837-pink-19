@@ -23,12 +23,52 @@
 }
 
 .user-achievements__item {
-  padding: 20px 0;
+  padding: 20px 0 20px 40px;
 }
 
-.user-achievements__item label {
-  padding-left: 20px;
+.user-achievements__item input {
+  display: none;
 }
+
+.user-achievements__item input + label {
+  padding-left: 20px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 39px;
+    left: -39px;
+    top: -5px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: white;
+  }
+}
+
+.user-achievements__item input:hover + label::before {
+  border-color: $color-bluegrey;
+  transition: 0.3s;
+}
+
+.user-achievements__item input:active + label::before {
+  border-color: $color-darkred;
+}
+
+.user-achievements__item input:checked + label {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 17px;
+    left: -30px;
+    top: 5px;
+    background-image: url("../img/icon-yes--red.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
   .user-achievements__form {
