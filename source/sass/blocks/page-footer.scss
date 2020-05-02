@@ -32,7 +32,8 @@
 
 .page-footer__html {
   fill: $color-darkred;
-  &:hover svg {
+  &:hover svg,
+  &:focus svg {
     fill: $color-bluegrey;
     transition: 0.3s;
   }
