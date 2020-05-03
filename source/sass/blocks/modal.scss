@@ -3,7 +3,6 @@
   text-align: center;
   z-index: 3;
   width: 320px;
-  padding: 45px 20px 50px;
   box-shadow: 0 10px 10px rgba(0,0,0,0.7);
   top: 25%;
   left: 50%;
@@ -24,6 +23,14 @@
   color: $color-bluegrey;
 }
 
+.modal__wrapper {
+  padding: 48px 20px 52px;
+}
+
+.modal--successful .modal__wrapper {
+  background-color: $color-lightgrey;
+}
+
 .modal__button {
   font-size: 18px;
   text-transform: uppercase;
@@ -32,9 +39,17 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 2px;
-}
-
-.modal--successful {
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    outline: none;
+    transition: 0.3s;
+  }
+  &:active {
+    color: rgba(255,255,255,0.3);
+    background-color: #1c9b5e;
+    transition: 0.3s;
+  }
 }
 
 .modal--show {
@@ -47,12 +62,24 @@
     width: 460px;
     margin-left: -230px;
   }
+
+  .modal__wrapper {
+    padding: 48px 80px 52px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .modal {
     width: 780px;
     margin-left: -390px;
+  }
+
+  .modal__wrapper {
+    padding: 48px 240px 52px;
+  }
+
+  .modal--failed .modal__wrapper {
+    background-color: $color-lightgrey;
   }
 }
 
