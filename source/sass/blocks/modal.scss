@@ -3,7 +3,7 @@
   text-align: center;
   z-index: 3;
   width: 320px;
-  box-shadow: 0 10px 10px rgba(0,0,0,0.7);
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
   top: 25%;
   left: 50%;
   margin-left: -160px;
@@ -14,13 +14,22 @@
 .modal__title {
   margin: 0;
   font-size: 18px;
+  line-height: 24px;
   color: black;
+  padding: 40px 20px 30px;
+
 }
 
 .modal__text {
   margin: 0;
   font-size: 14px;
+  line-height: 24px;
   color: $color-bluegrey;
+  padding: 0 20px;
+}
+
+.modal--successful .modal__text {
+  padding-bottom: 30px;
 }
 
 .modal__wrapper {
@@ -38,7 +47,9 @@
   color: white;
   background-color: #2aab6d;
   border: none;
-  border-radius: 2px;
+  border-radius: 3px;
+  padding: 21px;
+  width: 100%;
   &:hover,
   &:focus {
     background-color: #1c9b5e;
@@ -66,6 +77,18 @@
   .modal__wrapper {
     padding: 48px 80px 52px;
   }
+
+  .modal__title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 40px 100px 30px;
+  }
+
+  .modal__text {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0 75px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -76,6 +99,18 @@
 
   .modal__wrapper {
     padding: 48px 240px 52px;
+  }
+
+  .modal__title {
+    padding: 40px 190px 30px;
+  }
+
+  .modal__text {
+    padding: 0 190px 60px;
+  }
+
+  .modal--successful .modal__wrapper {
+    padding: 48px 160px 52px;
   }
 
   .modal--failed .modal__wrapper {
