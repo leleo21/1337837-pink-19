@@ -1,7 +1,5 @@
 var form = document.querySelector(".form");
 
-var modalClick = document.querySelector(".form__button");
-
 var modalSuccessful = document.querySelector(".modal--successful");
 var buttonSuccessful = document.querySelector(".modal__button--successful");
 
