@@ -97,7 +97,7 @@ a {
   .button--grey:active {
     background-color: #283645;
     color: rgba(255, 255, 255, 0.3);
-    opacity: 0.5; }
+    opacity: 0.3; }
 
 .button--white {
   color: white;
