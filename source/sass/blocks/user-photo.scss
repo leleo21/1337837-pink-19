@@ -55,7 +55,7 @@
 
 .user-photo__button {
   width: 280px;
-  margin: 6px 0;
+  margin-top: 12px;
 }
 
 .user-photo__bar {
@@ -109,7 +109,7 @@
 
 @media (min-width: $tablet-width) {
   .user-photo__wrapper {
-    padding: 55px 0;
+    padding: 57px 0;
   }
 
   .user-photo__tagline p {
@@ -122,7 +122,7 @@
   }
 
   .user-photo__form {
-    padding: 20px 0;
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -195,10 +195,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-photo__wrapper {
+    width: 940px;
+    margin: 0 auto;
+    padding: 57px 60px 57px 80px;
+  }
+
   .user-photo__form {
     &.container {
       width: 100%;
     }
+  }
+
+  .user-photo__image {
+    margin-right: 90px;
+  }
+
+  .user-photo__options {
+    margin-top: -12px;
+  }
+
+  .user-photo__item {
+    padding: 13px 0;
   }
 
   .user-photo__item svg {
@@ -213,16 +231,10 @@
 
   .user-photo__button {
     width: 183px;
-    margin-right: 40px;
+    margin: 0 40px 0 0;
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  .user-photo__wrapper {
-    width: 940px;
-    margin: 0 auto;
-    padding: 60px;
   }
 
   .user-photo__bar {
