@@ -15,23 +15,34 @@
 
 .user-photo__wrapper {
   background-color: #f2f2f2;
-  padding: 20px;
 }
 
 .user-photo__form {
+  padding: 20px;
   display: flex;
   flex-direction: column;
 }
 
-.user-photo__list {
-  padding: 35px 20px;
+.user-photo__options {
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
 }
 
-.user-photo__image {
-  margin: 0 auto;
+.user-photo__control {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.user-photo__border {
+  height: 1px;
+  width: 100%;
+  margin: 35px 0;
+  background-color: #dddfe0;
 }
 
 .user-photo__buttons {
@@ -46,12 +57,8 @@
   margin: 6px 0;
 }
 
-.user-photo__controls {
-  text-align: center;
-  margin-bottom: 30px;
-}
-
 .user-photo__bar {
+  margin: 0;
   appearance: none;
   height: 2px;
   width: 240px;
@@ -71,19 +78,15 @@
   top: -4px;
 }
 
-.user-photo__control {
-  display: none;
-}
-
-#option-1:checked ~ .user-photo__controls .editor-crop {
+#option-1:checked ~ .user-photo__item .editor-crop {
   display: block;
 }
 
-#option-2:checked ~ .user-photo__controls .editor-fill {
+#option-2:checked ~ .user-photo__item .editor-fill {
   display: block;
 }
 
-#option-3:checked ~ .user-photo__controls .editor-contrast {
+#option-3:checked ~ .user-photo__item .editor-contrast {
   display: block;
 }
 
@@ -95,9 +98,9 @@
   opacity: 0.5;
 }
 
-#option-1:checked ~ .user-photo__list label[for="option-1"] svg,
-#option-2:checked ~ .user-photo__list label[for="option-2"] svg,
-#option-3:checked ~ .user-photo__list label[for="option-3"] svg {
+#option-1:checked ~ .user-photo__item label[for="option-1"] svg,
+#option-2:checked ~ .user-photo__item label[for="option-2"] svg,
+#option-3:checked ~ .user-photo__item label[for="option-3"] svg {
   opacity: 1;
   fill: $color-darkred;
 }
@@ -131,18 +134,8 @@
     margin: 0 40px 0 20px;
   }
 
-  .user-photo__list {
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 9px 0;
-  }
-
   .user-photo__control {
     display: block;
-  }
-
-  .user-photo__options {
-    display: flex;
   }
 
   .user-photo__item svg {
@@ -158,15 +151,6 @@
 
   .user-photo__item {
     padding: 20px 0;
-  }
-
-  .user-photo__controls {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .user-photo__control {
-      padding: 20px;
-    }
   }
 
   .user-photo__bar {
