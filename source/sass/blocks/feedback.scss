@@ -1,14 +1,26 @@
 .feedback {
+position: relative;
   background-image: url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   text-align: center;
-  padding-bottom: 240px;
+  padding-bottom: 200px;
   background-color: white;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
     background-size: 320px auto;
   }
+  &::before {
+  content: "";
+  position: absolute;
+  bottom: 70px;
+  width: 36px;
+  height: 36px;
+  margin-left: -18px;
+  border-radius: 50%;
+  background-color: $color-darkred;
+  border: 10px solid white;
+}
 }
 
 .feedback__wrapper {
@@ -29,6 +41,8 @@
   background-repeat: no-repeat;
   background-size: 100%;
 }
+
+.feedback__wrapper
 
 .feedback__tagline {
   margin: 0;
@@ -96,11 +110,14 @@
     background-color: white;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 370px;
+    background-position: center -100px;
+    padding-bottom: 375px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-tablet@2x.jpg");
       background-size: 700px auto;
+    }
+    &::before {
+      bottom: 147px;
     }
   }
 
@@ -115,11 +132,14 @@
     background-color: white;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -110px;;
     padding-bottom: 500px;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-map-desktop@2x.jpg");
       background-size: 1200px auto;
+    }
+    &::before {
+      bottom: 205px;
     }
   }
 
