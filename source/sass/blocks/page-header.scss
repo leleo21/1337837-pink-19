@@ -12,21 +12,6 @@
   }
 }
 
-@keyframes slide-up {
-  0% {
-    transform: translateY(-2000px);
-  }
-
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.page-header--menu-show {
-  animation: slide-up 0.0s;
-}
-
-
 .page-header__logo {
   border-bottom: 1px solid black;
   display: flex;
