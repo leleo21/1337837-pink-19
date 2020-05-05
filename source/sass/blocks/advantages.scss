@@ -99,6 +99,11 @@
     padding: 0;
   }
 
+  .advantages__item--no-desktop {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .advantages__image {
     width: 268px;
     height: 481px;
@@ -139,13 +144,13 @@
   .advantages__item h3 {
     font-size: 30px;
     line-height: 30px;
-    padding: 0 35px;
+    padding: 0 37px;
   }
 
   .advantages__item p {
     font-size: 18px;
     line-height: 30px;
-    padding: 0 35px;
+    padding: 0 37px;
   }
 
   .advantages__image--desktop {
