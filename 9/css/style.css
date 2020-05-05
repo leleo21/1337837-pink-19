@@ -491,12 +491,13 @@ a {
 /* Начало секции с приемуществами */
 .advantages {
   background-color: white;
-  padding-top: 20px;
-  text-align: center; }
+  padding-top: 40px;
+  text-align: center;
+  overflow: hidden; }
 
 .advantages__tagline {
   margin: 0;
-  padding: 15px 0;
+  padding-bottom: 30px;
   font-size: 24px;
   color: #283645;
   font-weight: 300; }
@@ -519,7 +520,8 @@ a {
 
 .advantages__list {
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  margin: 0 0 40px; }
 
 .advantages__item {
   margin: 0;
@@ -529,15 +531,15 @@ a {
 
 .advantages__item h3 {
   font-size: 18px;
-  line-height: 24px; }
+  line-height: 24px;
+  color: black; }
 
 .advantages__item p {
   font-size: 14px;
   line-height: 24px; }
 
 .advantages__image {
-  height: 277px;
-  margin: 0 auto;
+  margin: 0 auto -43px;
   z-index: 2; }
 
 .advantages__image--desktop {
@@ -545,11 +547,13 @@ a {
 
 @media (min-width: 660px) {
   .advantages__wrapper {
-    padding-top: 20px; }
+    padding-top: 0; }
   .advantages__tagline {
     font-size: 40px;
     line-height: 48px;
     padding: 0; }
+    .advantages__tagline:last-of-type {
+      padding-bottom: 45px; }
   .advantages__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -562,9 +566,25 @@ a {
         -ms-flex-order: 1;
             order: 1;
     text-align: left;
-    width: 310px; }
+    width: 310px;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .advantages__item h3,
+  .advantages__item p {
+    padding: 0; }
   .advantages__image {
-    height: 481px; } }
+    width: 268px;
+    height: 481px;
+    margin-bottom: 0; } }
 
 @media (min-width: 960px) {
   .advantages__wrapper {
@@ -576,9 +596,10 @@ a {
   .advantages__image {
     display: none; }
   .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     width: 100%;
     text-align: center; }
   .advantages__item {
@@ -586,12 +607,21 @@ a {
         -ms-flex-positive: 1;
             flex-grow: 1;
     width: 33%; }
+  .advantages__item--no-desktop {
+    display: none; }
   .advantages__item h3 {
     font-size: 30px;
-    line-height: 30px; }
+    line-height: 30px;
+    padding: 0 35px; }
+  .advantages__item p {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 0 35px; }
   .advantages__image--desktop {
     display: block;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    width: 292px;
+    height: 302px; } }
 
 /* Конец секции с приемуществами */
 /* Начало секции с диаграмой */
@@ -656,7 +686,7 @@ a {
 .reviews {
   background-color: white;
   text-align: center;
-  padding: 20px 0; }
+  padding: 25px 0 40px; }
 
 .reviews__wrapper {
   display: -webkit-box;
@@ -673,7 +703,7 @@ a {
 
 .reviews__inner {
   overflow: hidden;
-  margin: 0 0 40px 0;
+  margin: 0 0 30px 0;
   width: 280px; }
 
 .reviews__list {
@@ -698,7 +728,7 @@ a {
   width: 280px; }
 
 .reviews__name {
-  margin: 25px 0; }
+  margin: 20px 0; }
 
 .reviews__name h3 {
   font-size: 18px;
@@ -839,7 +869,7 @@ a {
 /* Конец секции с отзывами */
 /* Начало секции с ценами */
 .price {
-  padding: 125px 0 45px 0;
+  padding: 90px 0 45px 0;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -1080,7 +1110,7 @@ a {
   margin: 0;
   padding: 45px 20px 35px;
   font-size: 24px;
-  line-height: 30px;
+  line-height: 28px;
   font-weight: 300;
   text-align: center; }
 
@@ -1152,7 +1182,7 @@ a {
     .feedback::before {
       bottom: 143px; }
   .feedback__tagline {
-    padding: 55px 120px 45px;
+    padding: 50px 120px 45px;
     font-size: 40px;
     line-height: 48px; }
   .feedback__map {
