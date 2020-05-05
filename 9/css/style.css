@@ -150,10 +150,35 @@ a {
 
 /* Начало хедера */
 .page-header {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: #283645;
   color: white;
   position: relative;
   z-index: 3; }
+
+.page-header--menu-hide {
+  background-color: rgba(0, 0, 0, 0.3); }
+  .page-header--menu-hide .page-header__logo {
+    border: none; }
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(-2000px);
+            transform: translateY(-2000px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+.page-header--menu-show {
+  -webkit-animation: slide-up 0.0s;
+          animation: slide-up 0.0s; }
 
 .page-header__logo {
   border-bottom: 1px solid black;
@@ -361,7 +386,7 @@ a {
           flex-direction: column;
   position: relative; }
 
-.download__tagline {
+.download__title {
   margin: 0;
   padding: 85px 20px 310px;
   text-align: center;
@@ -372,8 +397,8 @@ a {
   background-repeat: no-repeat;
   background-position: left bottom; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .download__tagline {
-      background-image: url("../img/bg-back-mobile@2x.jpg");
+    .download__title {
+      background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
       background-size: 320px auto; } }
 
 .download__button {
@@ -432,14 +457,14 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
-  .download__tagline {
+  .download__title {
     font-size: 40px;
     padding: 20px 40px;
     background-image: none; }
   .download__app {
     width: 300px;
     padding-bottom: 100px; }
-  .download__tagline {
+  .download__title {
     width: 300px;
     padding-top: 210px; } }
 
@@ -456,7 +481,7 @@ a {
 @media (min-width: 960px) {
   .download__container {
     min-height: 853px; }
-  .download__tagline {
+  .download__title {
     font-size: 50px;
     padding-left: 0;
     padding-right: 0; } }
@@ -1172,44 +1197,47 @@ a {
   background-color: white; }
 
 .page-photo__wrapper {
-  background-color: black;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: 100%; }
-  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .page-photo__wrapper {
-      background-image: url("../img/bg-back-mobile@2x.jpg"); } }
+  background-color: #1d2631;
+  margin-top: -66px; }
 
 .page-photo__title {
   color: white;
   min-height: 170px;
-  padding: 35px;
+  padding: 100px 35px 35px;
   text-align: center;
   font-size: 24px;
-  font-weight: 300; }
+  font-weight: 300;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left top; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-photo__title {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 320px auto; } }
 
 @media (min-width: 660px) {
   .page-photo__wrapper {
     margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 0;
-    background-size: 1200px auto; } }
+    background-repeat: no-repeat;
+    background-position: center top; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .page-photo__wrapper {
-      background-image: url("../img/bg-back-tablet@2x.jpg"); } }
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto; } }
 
 @media (min-width: 660px) {
   .page-photo__title {
     padding: 180px 70px 70px;
     min-height: 440px;
     font-size: 50px;
-    line-height: 60px; } }
+    line-height: 60px;
+    background-image: none; } }
 
 @media (min-width: 960px) {
   .page-photo__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 0;
+    background-position: center top;
     background-size: 2560px auto; } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .page-photo__wrapper {
@@ -1761,14 +1789,23 @@ a {
   background-color: white; }
 
 .page-form__wrapper {
-  background-color: black;
+  background-color: #1d2631;
+  margin-top: -66px; }
+
+.page-form__title {
+  color: white;
+  min-height: 170px;
+  padding: 100px 35px 35px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: 100%; }
+  background-position: left top; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
-    .page-form__wrapper {
-      background-image: url("../img/bg-back-mobile@2x.jpg"); } }
+    .page-form__title {
+      background-image: url("../img/bg-back-mobile@2x.jpg");
+      background-size: 320px auto; } }
 
 .page-form__tagline {
   width: 280px;
@@ -1778,30 +1815,24 @@ a {
   line-height: 30px;
   text-align: center; }
 
-.page-form__title {
-  color: white;
-  min-height: 170px;
-  padding: 35px;
-  text-align: center;
-  font-size: 24px;
-  font-weight: 300; }
-
 @media (min-width: 660px) {
   .page-form__wrapper {
     margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center 0;
-    background-size: 1200px auto; } }
+    background-repeat: no-repeat;
+    background-position: center top; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .page-form__wrapper {
-      background-image: url("../img/bg-back-tablet@2x.jpg"); } }
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto; } }
 
 @media (min-width: 660px) {
   .page-form__title {
     padding: 180px 70px 70px;
     min-height: 440px;
     font-size: 50px;
-    line-height: 60px; }
+    line-height: 60px;
+    background-image: none; }
   .page-form__tagline {
     font-size: 18px;
     line-height: 30px;
@@ -1812,7 +1843,7 @@ a {
 @media (min-width: 960px) {
   .page-form__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center 0;
+    background-position: center top;
     background-size: 2560px auto; } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .page-form__wrapper {
