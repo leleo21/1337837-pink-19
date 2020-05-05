@@ -160,26 +160,6 @@ a {
   .page-header--menu-hide .page-header__logo {
     border: none; }
 
-@-webkit-keyframes slide-up {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-@keyframes slide-up {
-  0% {
-    -webkit-transform: translateY(-2000px);
-            transform: translateY(-2000px); }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
-
-.page-header--menu-show {
-  -webkit-animation: slide-up 0.0s;
-          animation: slide-up 0.0s; }
-
 .page-header__logo {
   border-bottom: 1px solid black;
   display: -webkit-box;
@@ -399,7 +379,7 @@ a {
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .download__title {
       background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
-      background-size: 320px auto; } }
+      background-size: 258px auto, 320px auto; } }
 
 .download__button {
   margin-bottom: 28px; }
@@ -445,7 +425,7 @@ a {
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .download {
       background-image: url("../img/iphone-hand-tablet@2x.png"), url("../img/bg-back-tablet@2x.jpg");
-      background-size: 1200px auto; } }
+      background-size: 700px auto, 1200px auto; } }
 
 @media (min-width: 660px) {
   .download__image {
@@ -476,7 +456,7 @@ a {
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .download {
       background-image: url("../img/iphone-hand-desktop@2x.png"), url("../img/bg-back-desktop@2x.jpg");
-      background-size: 2560px auto; } }
+      background-size: 1050px auto, 2560px auto; } }
 
 @media (min-width: 960px) {
   .download__container {
