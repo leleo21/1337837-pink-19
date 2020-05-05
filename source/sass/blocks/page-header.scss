@@ -1,12 +1,31 @@
 .page-header {
-  background-color: rgba(0,0,0,0.3);
+  background-color: #283645;
   color: white;
   position: relative;
   z-index: 3;
 }
 
-.page-header__container {
+.page-header--menu-hide {
+  background-color: rgba(0,0,0,0.3);
+  .page-header__logo {
+    border: none;
+  }
 }
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.page-header--menu-show {
+  animation: slide-up 0.0s;
+}
+
 
 .page-header__logo {
   border-bottom: 1px solid black;
