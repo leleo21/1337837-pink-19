@@ -142,6 +142,11 @@
     background-color: transparent;
   }
 
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .main-nav__item {
     border-bottom: none;
     box-shadow: none;
@@ -153,11 +158,6 @@
 
   .main-nav__toggle {
     display: none;
-  }
-
-  .main-nav__list {
-    flex-direction: row;
-    justify-content: space-around;
   }
 
   .main-nav__item a {
