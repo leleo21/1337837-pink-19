@@ -150,8 +150,10 @@ a {
 
 /* Начало хедера */
 .page-header {
-  background-color: #283645;
-  color: white; }
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  position: relative;
+  z-index: 3; }
 
 .page-header__logo {
   border-bottom: 1px solid black;
@@ -191,12 +193,15 @@ a {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; } }
+            justify-content: space-between; }
+  .page-header__logo {
+    border: none; } }
 
 /* Конец хедера */
 /* Начало основной навигации */
 .main-nav {
-  position: relative; }
+  position: relative;
+  background-color: #283645; }
 
 .main-nav__toggle {
   position: absolute;
@@ -313,7 +318,8 @@ a {
     margin: 0;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
-            flex-grow: 1; }
+            flex-grow: 1;
+    background-color: transparent; }
   .main-nav__item {
     border-bottom: none;
     -webkit-box-shadow: none;
@@ -342,7 +348,8 @@ a {
 /* Начало секции загрузки приложения */
 .download {
   color: white;
-  background-color: #1d2631; }
+  background-color: #1d2631;
+  margin-top: -66px; }
 
 .download__container {
   display: -webkit-box;
@@ -356,7 +363,7 @@ a {
 
 .download__tagline {
   margin: 0;
-  padding: 20px 20px 300px;
+  padding: 85px 20px 310px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
@@ -406,6 +413,7 @@ a {
 
 @media (min-width: 660px) {
   .download {
+    margin-top: -110px;
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: center bottom; } }
@@ -420,7 +428,7 @@ a {
     bottom: 0;
     overflow: hidden; }
   .download__container {
-    min-height: 620px;
+    min-height: 730px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
@@ -433,7 +441,7 @@ a {
     padding-bottom: 100px; }
   .download__tagline {
     width: 300px;
-    padding-top: 100px; } }
+    padding-top: 210px; } }
 
 @media (min-width: 960px) {
   .download {
@@ -447,7 +455,7 @@ a {
 
 @media (min-width: 960px) {
   .download__container {
-    min-height: 740px; }
+    min-height: 853px; }
   .download__tagline {
     font-size: 50px;
     padding-left: 0;
@@ -1042,10 +1050,9 @@ a {
   background-repeat: no-repeat;
   background-size: 100%; }
 
-.feedback__wrapper
 .feedback__tagline {
   margin: 0;
-  padding: 0;
+  padding: 45px 20px 35px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 300;
@@ -1064,7 +1071,7 @@ a {
           flex-direction: column; }
 
 .feedback__item {
-  padding: 10px 0; }
+  padding: 10px 20px; }
 
 .feedback__item p {
   font-size: 18px;
@@ -1103,12 +1110,12 @@ a {
         -ms-flex-pack: center;
             justify-content: center; }
   .feedback__item {
-    width: 250px; }
+    width: 300px; }
   .feedback {
     background-color: white;
     background-image: url("../img/bg-map-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -125px;
+    background-position: center 45px;
     padding-bottom: 380px; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .feedback {
@@ -1117,8 +1124,9 @@ a {
 
 @media (min-width: 660px) {
     .feedback::before {
-      bottom: 147px; }
+      bottom: 143px; }
   .feedback__tagline {
+    padding: 55px 120px 45px;
     font-size: 40px;
     line-height: 48px; }
   .feedback__map {
@@ -1133,7 +1141,7 @@ a {
     background-color: white;
     background-image: url("../img/bg-map-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -115px;
+    background-position: center 100px;
     padding-bottom: 520px; } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .feedback {
@@ -1142,12 +1150,13 @@ a {
 
 @media (min-width: 960px) {
     .feedback::before {
-      bottom: 200px; }
+      bottom: 205px; }
   .feedback__item:nth-child(2) {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3; }
   .feedback__tagline {
+    padding: 75px 220px 55px;
     font-size: 50px;
     line-height: 60px; }
   .feedback__map {
@@ -1182,8 +1191,9 @@ a {
 
 @media (min-width: 660px) {
   .page-photo__wrapper {
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center -110px;
+    background-position: center 0;
     background-size: 1200px auto; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .page-photo__wrapper {
@@ -1191,15 +1201,15 @@ a {
 
 @media (min-width: 660px) {
   .page-photo__title {
-    padding: 70px;
-    min-height: 330px;
+    padding: 180px 70px 70px;
+    min-height: 440px;
     font-size: 50px;
     line-height: 60px; } }
 
 @media (min-width: 960px) {
   .page-photo__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center -110px;
+    background-position: center 0;
     background-size: 2560px auto; } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .page-photo__wrapper {
@@ -1207,8 +1217,8 @@ a {
 
 @media (min-width: 960px) {
   .page-photo__title {
-    padding: 75px 230px;
-    min-height: 285px; } }
+    padding: 185px 230px 75px;
+    min-height: 395px; } }
 
 /* Начало секции с фотографиями пользователей */
 .photos {
@@ -1778,8 +1788,9 @@ a {
 
 @media (min-width: 660px) {
   .page-form__wrapper {
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center -110px;
+    background-position: center 0;
     background-size: 1200px auto; } }
   @media (min-width: 660px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 660px) and (min-resolution: 144dpi), (min-width: 660px) and (min-resolution: 1.5dppx) {
     .page-form__wrapper {
@@ -1787,8 +1798,8 @@ a {
 
 @media (min-width: 660px) {
   .page-form__title {
-    padding: 70px;
-    min-height: 330px;
+    padding: 180px 70px 70px;
+    min-height: 440px;
     font-size: 50px;
     line-height: 60px; }
   .page-form__tagline {
@@ -1801,7 +1812,7 @@ a {
 @media (min-width: 960px) {
   .page-form__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center -110px;
+    background-position: center 0;
     background-size: 2560px auto; } }
   @media (min-width: 960px) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 960px) and (min-resolution: 144dpi), (min-width: 960px) and (min-resolution: 1.5dppx) {
     .page-form__wrapper {
@@ -1809,8 +1820,8 @@ a {
 
 @media (min-width: 960px) {
   .page-form__title {
-    padding: 75px 230px;
-    min-height: 285px; }
+    padding: 185px 90px 75px;
+    min-height: 395px; }
   .page-form__tagline {
     width: 780px;
     padding: 100px 0 75px; } }
