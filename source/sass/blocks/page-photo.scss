@@ -24,8 +24,9 @@
 
 @media (min-width: $tablet-width) {
   .page-photo__wrapper {
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center -110px;
+    background-position: center 0;
     background-size: 1200px auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
@@ -33,8 +34,8 @@
   }
 
   .page-photo__title {
-    padding: 70px;
-    min-height: 330px;
+    padding: 180px 70px 70px;
+    min-height: 440px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -43,7 +44,7 @@
 @media (min-width: $desktop-width) {
   .page-photo__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center -110px;
+    background-position: center 0;
     background-size: 2560px auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -51,7 +52,7 @@
   }
 
   .page-photo__title {
-    padding: 75px 230px;
-    min-height: 285px;
+    padding: 185px 230px 75px;
+    min-height: 395px;
   }
 }

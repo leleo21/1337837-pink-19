@@ -1,6 +1,8 @@
 .page-header {
-  background-color: $color-bluegrey;
+  background-color: rgba(0,0,0,0.3);
   color: white;
+  position: relative;
+  z-index: 3;
 }
 
 .page-header__container {
@@ -38,5 +40,9 @@
   .page-header {
     display: flex;
     justify-content: space-between;
+  }
+
+  .page-header__logo {
+    border: none;
   }
 }

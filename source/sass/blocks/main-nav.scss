@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  background-color: #283645;
 }
 
 .main-nav__toggle {
@@ -138,6 +139,7 @@
     width: auto;
     margin: 0;
     flex-grow: 1;
+    background-color: transparent;
   }
 
   .main-nav__item {
