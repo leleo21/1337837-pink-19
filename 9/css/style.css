@@ -581,6 +581,13 @@ a {
   .advantages__item h3,
   .advantages__item p {
     padding: 0; }
+  .advantages__item--no-desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
   .advantages__image {
     width: 268px;
     height: 481px;
@@ -612,11 +619,11 @@ a {
   .advantages__item h3 {
     font-size: 30px;
     line-height: 30px;
-    padding: 0 35px; }
+    padding: 0 37px; }
   .advantages__item p {
     font-size: 18px;
     line-height: 30px;
-    padding: 0 35px; }
+    padding: 0 37px; }
   .advantages__image--desktop {
     display: block;
     margin: 0 auto;
