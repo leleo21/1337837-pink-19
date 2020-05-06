@@ -75,6 +75,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    padding: 40px 0 25px;
+  }
+
   .reviews__item p {
     font-size: 18px;
     line-height: 30px;
@@ -90,7 +94,7 @@
   }
 
   .reviews__name {
-    margin-bottom: 0;
+    margin: 35px 0 0;
   }
 
   .reviews__name h3 {
@@ -106,6 +110,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .reviews {
+    padding: 72px 0 40px;
+  }
+
   .reviews__wrapper::before {
     content: "";
     poisiton: absolute;
@@ -115,6 +123,10 @@
     background-image: url("../img/icon-quotes.svg");
     background-repeat: np-repeat;
     background-position: 0 0;
+  }
+
+  .reviews__inner {
+    margin: 0;
   }
 
   .reviews__name h3 {
@@ -155,6 +167,7 @@
     display: block;
     width: 22px;
     height: 41px;
+    margin: 0;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -180,6 +193,7 @@
     display: block;
     width: 22px;
     height: 41px;
+    margin: 0;
     background-color: transparent;
     background-repeat: no-repeat;
     background-position: 0 0;

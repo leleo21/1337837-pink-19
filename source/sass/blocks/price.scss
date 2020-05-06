@@ -21,7 +21,7 @@
   transition: transform 0.5s ease;
 }
 
-.price__table-heading {
+.price__table-head {
   position: relative;
   min-width: 275px;
   padding: 20px 0 20px 0;
@@ -30,7 +30,7 @@
   background-color: $color-bluegrey;
 }
 
-.price__table-heading--empty {
+.price__table-head--empty {
   min-width: 0;
   margin: 0;
   padding: 0;
@@ -40,7 +40,7 @@
   border: none;
 }
 
-.price__table-heading--hit::before {
+.price__table-head--hit::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -50,7 +50,7 @@
   background-image: url("../img/bg-hit.svg");
 }
 
-.price__table-heading--hit::after {
+.price__table-head--hit::after {
   position: absolute;
   top: 8px;
   left: 6px;
@@ -130,7 +130,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 75px 0 70px;
+    padding: 85px 0 68px;
   }
 
   .price__wrapper .price__toggles {
@@ -152,13 +152,13 @@
     transform: translate(0);
   }
 
-  .price__table-heading {
+  .price__table-head {
     overlflow: hidden;
     min-width: 150px;
     padding: 18px 0 15px;
   }
 
-  .price__table-heading--hit::before {
+  .price__table-head--hit::before {
     top: 0;
     left: 0;
     width: 61px;
@@ -166,7 +166,7 @@
     background-image: url("../img/bg-hit-tablet.svg");
   }
 
-  .price__table-heading--hit::after {
+  .price__table-head--hit::after {
     top: 0;
     left: 0;
   }
@@ -202,16 +202,16 @@
     width: 940px;
   }
 
-  .price__table-heading {
+  .price__table-head {
     min-width: 233px;
     padding: 20px 0;
   }
 
-  .price__table--heading--hit::before {
+  .price__table--head--hit::before {
     left: 0px;
   }
 
-  .price__table-heading--hit::after {
+  .price__table-head--hit::after {
     top: 5px;
     left: 5px;
   }
