@@ -2,7 +2,7 @@
 }
 
 .user-photo__tagline {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .user-photo__tagline p {
@@ -18,9 +18,14 @@
 }
 
 .user-photo__form {
-  padding: 20px;
+  padding: 20px 20px 41px;
   display: flex;
   flex-direction: column;
+}
+
+.user-photo__image {
+  width: 280px;
+  height: 374px;
 }
 
 .user-photo__options {
@@ -28,7 +33,11 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 0;
+  padding: 40px 0 37px;
+}
+
+.user-photo__item {
+  line-height: 0px;
 }
 
 .user-photo__control {
@@ -41,7 +50,7 @@
 .user-photo__border {
   height: 1px;
   width: 320px;
-  margin: 35px 0;
+  margin: 35px 0 38px;
   margin-left: -20px;
   background-color: #dddfe0;
 }
@@ -56,6 +65,9 @@
 .user-photo__button {
   width: 280px;
   margin-top: 12px;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .user-photo__bar {
@@ -153,7 +165,6 @@
   .user-photo__item {
     padding: 35px 0;
     display: flex;
-    line-height: 0px;
     align-items: center;
     border-bottom: 1px solid #dddfe0;
     width: 100%;

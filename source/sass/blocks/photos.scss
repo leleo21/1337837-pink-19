@@ -2,14 +2,15 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #283645;
+  color: $color-bluegrey;
 }
 
 .photos__tagline {
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding: 45px 15px;
+  padding: 50px 15px;
+  font-size: 14px;
   line-height: 30px;
 }
 
@@ -34,6 +35,7 @@
 }
 
 .photos__like {
+  margin-top: 10px;
   display: flex;
   flex-wrap: wrap;
   color: #d22856;
@@ -45,7 +47,7 @@
 .photos__like button {
   width: 13px;
   height: 12px;
-  margin: 0 18px;
+  margin: 0 18px 0 0;
   cursor: pointer;
   border: 0;
   background-image: url("../img/icon-heart.svg");
@@ -61,8 +63,14 @@
   margin: 0 auto;
 }
 
+.photos__day-image {
+  width: 320px;
+  height: 137px;
+}
+
 .photos__day-flag {
   position: absolute;
+  min-width: 140px;
   top: 0;
   right: 20px;
   color: white;
