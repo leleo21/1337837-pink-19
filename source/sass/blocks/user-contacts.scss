@@ -86,8 +86,16 @@
     justify-content: space-between;
   }
 
+  .user-contacts {
+    padding: 30px 60px 5px;
+  }
+
   .user-contacts__item {
     width: 375px;
     margin-bottom: 0;
+  }
+
+  .user-contacts legend {
+    padding: 0 30px;
   }
 }

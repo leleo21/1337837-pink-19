@@ -75,6 +75,10 @@
     border: 2px solid #e5e5e5;
   }
 
+  .user-achievements__list {
+    padding-left: 35px;
+  }
+
   .user-achievements__item {
     padding-left: 40px;
   }
@@ -85,6 +89,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-achievements {
+    margin-bottom: 60px;
+  }
+
   .user-achievements__list {
     display: flex;
     flex-wrap: wrap;
@@ -96,5 +104,13 @@
 
   .user-achievements__item:nth-child(even) {
     order: 2;
+  }
+
+  .user-achievements__form {
+    padding: 25px 0 35px 60px;
+  }
+
+  .user-achievements__form legend {
+    padding: 0 30px;
   }
 }

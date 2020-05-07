@@ -16,7 +16,7 @@
   font-size: 18px;
   line-height: 24px;
   color: black;
-  padding: 40px 20px 30px;
+  padding: 40px 20px 25px;
 
 }
 
@@ -33,7 +33,7 @@
 }
 
 .modal__wrapper {
-  padding: 48px 20px 52px;
+  padding: 40px 20px 52px;
 }
 
 .modal--successful .modal__wrapper {
@@ -75,19 +75,23 @@
   }
 
   .modal__wrapper {
-    padding: 48px 80px 52px;
+    padding: 40px 80px 52px;
   }
 
   .modal__title {
     font-size: 30px;
     line-height: 40px;
-    padding: 40px 100px 30px;
+    padding: 40px 100px 25px;
   }
 
   .modal__text {
     font-size: 18px;
     line-height: 24px;
     padding: 0 75px;
+  }
+
+  .modal__text br {
+    display: none;
   }
 }
 

@@ -168,8 +168,21 @@
     justify-content: space-between;
   }
 
+  .form__user {
+    padding: 0;
+    margin: 60px auto;
+  }
+
+  .form__wrapper {
+    padding: 0;
+  }
+
+  .form__text textarea {
+    min-height: 125px;
+  }
+
   .form__footer {
     margin-top: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }
