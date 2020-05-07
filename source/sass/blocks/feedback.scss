@@ -1,50 +1,16 @@
 .feedback {
-  position: relative;
-  background-image: url("../img/bg-map-mobile@1x.png");
-  background-repeat: no-repeat;
-  background-position: center bottom;
   text-align: center;
-  padding-bottom: 200px;
-  background-color: white;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-map-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 70px;
-    width: 36px;
-    height: 36px;
-    margin-left: -18px;
-    border-radius: 50%;
-    background-color: $color-darkred;
-    border: 10px solid white;
-  }
 }
 
 .feedback__wrapper {
   background-color: white;
-  position: relative;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
-.feedback__wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: -125px;
-  right: 0;
-  width: 100%;
-  height: 125px;
-  background-image: url("../img/bg-triangle-white-footer.svg");
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
 
 .feedback__tagline {
   margin: 0;
-  padding: 45px 20px 35px;
+  padding: 45px 20px 30px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 300;
@@ -104,21 +70,6 @@
     width: 300px;
   }
 
-  .feedback {
-    background-color: white;
-    background-image: url("../img/bg-map-tablet@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 45px;
-    padding-bottom: 380px;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-tablet@2x.jpg");
-      background-size: 700px auto;
-    }
-    &::before {
-      bottom: 143px;
-    }
-  }
-
   .feedback__tagline {
     padding: 50px 120px 45px;
     font-size: 40px;
@@ -137,21 +88,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .feedback {
-    background-color: white;
-    background-image: url("../img/bg-map-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: center 100px;
-    padding-bottom: 520px;
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-desktop@2x.jpg");
-      background-size: 1200px auto;
-    }
-    &::before {
-      bottom: 205px;
-    }
-  }
-
   .feedback__item:nth-child(2) {
     order: 3;
   }
