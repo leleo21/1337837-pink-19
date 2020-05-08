@@ -24,15 +24,15 @@ form.addEventListener("submit", function (evt) {
     buttonFailed.focus();
 
     if (!surname.value) {
-      surname.setAttribute("style", "border-color: red; border-width: 2px");
+      surname.setAttribute("style", "border-color: red; background-color: pink; border-width: 2px");
     }
 
     if (!name.value) {
-      name.setAttribute("style", "border-color: red; border-width: 2px");
+      name.setAttribute("style", "border-color: red; background-color: pink; border-width: 2px");
     }
 
     if (!email.value) {
-      email.setAttribute("style", "border-color: red; border-width: 2px");
+      email.setAttribute("style", "border-color: red; background-color: pink; border-width: 2px");
     }
 
   } else {
