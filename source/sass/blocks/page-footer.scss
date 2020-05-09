@@ -7,6 +7,27 @@
 
 .page-footer__logo {
   margin: 40px 0;
+  color: $color-bluegrey;
+}
+
+.page-footer__logo[href] {
+  &:hover {
+    color: $color-darkred;
+    transition: 0.3s;
+  }
+  &:active {
+    color: $color-bluegrey;
+    opacity: 0.3;
+    transition: 0.3s;
+  }
+}
+
+.page-footer__image {
+  display: block;
+}
+
+.page-footer__image--desktop {
+  display: none;
 }
 
 .page-footer__html {
@@ -67,6 +88,14 @@
 @media (min-width: $desktop-width) {
   .page-footer__logo {
     margin: 70px 0 87px;
+  }
+
+  .page-footer__image--mobile {
+    display: none;
+  }
+
+  .page-footer__image--desktop {
+    display: block;
   }
 
   .page-footer__html {

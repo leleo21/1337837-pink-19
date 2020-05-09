@@ -108,8 +108,7 @@
   }
 
   &:active {
-    color: $color-darkred;
-    opacity: 0.3;
+    color: rgba(255,255,255,0.3);
     transition: 0.3s;
   }
 }
