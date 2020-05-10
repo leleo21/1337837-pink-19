@@ -194,14 +194,27 @@
   }
 
   .user-photo__item svg {
-    width: 22px;
-    height: 22px;
     opacity: 1;
     fill: $color-darkred;
   }
 
   .user-photo__item:hover svg {
     opacity: 1;
+  }
+
+  .user-photo__image-filter--crop {
+    width: 24px;
+    height: 22px;
+  }
+
+  .user-photo__image-filter--fill {
+    width: 24px;
+    height: 22px;
+  }
+
+  .user-photo__image-filter--contrast {
+    width: 24px;
+    height: 16px;
   }
 
   .user-photo__buttons {
@@ -242,9 +255,20 @@
     padding: 13px 0;
   }
 
-  .user-photo__item svg {
-    width: 44px;
+  .user-photo__image-filter--crop {
+    width: 48px;
     height: 44px;
+  }
+
+  .user-photo__image-filter--fill {
+    width: 48px;
+    height: 44px;
+  }
+
+  .user-photo__image-filter--contrast {
+    width: 48px;
+    height: 44px;
+    padding: 6px 0;
   }
 
   .user-photo__buttons {
@@ -265,4 +289,3 @@
     width: 288px;
   }
 }
-
