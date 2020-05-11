@@ -1,12 +1,12 @@
 .time-effect__container {
-  justify-content: space-between;
-  padding: 50px 20px;
-  align-items: center;
   display: none;
+  justify-content: space-between;
+  padding: 60px 0;
+  align-items: center;
 }
 
 .time-effect__list {
-  padding: 0;
+  padding: 40px 0 0 0;
   margin: 0;
   list-style: none;
   width: 310px;
@@ -24,6 +24,8 @@
   font-size: 14px;
   line-height: 24px;
   color: $color-bluegrey;
+  padding-right: 10px;
+
 }
 
 .time-effect__link {
@@ -43,6 +45,10 @@
 @media (min-width: $desktop-width) {
   .time-effect {
     background-color: $color-lightgrey;
+  }
+
+  .time-effect__container {
+    padding: 50px 0 67px;
   }
 
   .time-effect__img {

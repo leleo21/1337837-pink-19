@@ -11,11 +11,36 @@
 
 .social__item {
   margin: 0 6px;
-  width: 45px;
-  height: 45px;
+  width: 51px;
+  height: 51px;
   border: 3px solid #e9ebec;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  &:hover,
+  &:focus {
+    border-color: $color-bluegrey;
+    transition: 0.3s;
+  }
+  &:active {
+    border-color: #b8bdc2;
+    opacity: 0.3;
+  }
+}
+
+.social__item--twitter {
+  background-image: url(../img/icon-twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__item--facebook {
+  background-image: url(../img/icon-facebook.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social__item--youtube {
+  background-image: url(../img/icon-youtube.svg);
+  background-position: center;
+  background-repeat: no-repeat;
 }

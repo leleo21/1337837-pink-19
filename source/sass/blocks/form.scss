@@ -1,10 +1,14 @@
 .form {
   display: flex;
   flex-direction: column;
+  margin-top: -30px;
+  background-color: white;
+  position: relative;
+  z-index: 2;
 }
 
 .form__user {
-  padding: 35px 20px;
+  padding: 35px 20px 45px;
 }
 
 .form__user label {
@@ -22,6 +26,15 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   color: #283645;
+  &:hover {
+    border-color: $color-bluegrey;
+    transition: 0.3s;
+  }
+  &:focus {
+    outline: none;
+    border-color: $color-darkred;
+    transition: 0.3s;
+  }
 }
 
 .form__wrapper {
@@ -47,11 +60,21 @@
   min-width: 280px;
   width: 100%;
   min-height: 200px;
-  padding: 20px 15px;
+  padding: 20px;
   font-size: 18px;
+  font-family: "OpenSans", "Arial", sans-serif;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   color: #283645;
+  &:hover {
+    border-color: $color-bluegrey;
+    transition: 0.3s;
+  }
+  &:focus {
+    outline: none;
+    border-color: $color-darkred;
+    transition: 0.3s;
+  }
 }
 
 .form__button {
@@ -62,10 +85,27 @@
   border: 0;
   text-transform: uppercase;
   border-radius: 2px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  &:hover,
+  &:focus {
+    background-color: #1c9b5e;
+    outline: none;
+    transition: 0.3s;
+  }
+  &:active {
+    color: rgba(255,255,255,0.3);
+    background-color: #1c9b5e;
+    transition: 0.3s;
+  }
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__footer {
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
@@ -73,8 +113,10 @@
 }
 
 .form__footer > p {
-  margin: 0;
+  margin: 40px 0 25px;
   text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
 }
 
 .form__footer span {
@@ -83,18 +125,40 @@
 
 @media (min-width: $tablet-width) {
   .form__wrapper {
+    padding: 60px 0;
     background-color: white;
   }
 
+  .form {
+    margin: 0;
+  }
+
   .form__user {
-    padding: 35px 0;
+    padding: 35px 0 0;
+  }
+
+  .form__text {
+    margin-top: 0;
+  }
+
+  .form__text textarea {
+    min-height: 190px;
+  }
+
+  .form__user label {
+    padding-top: 10px;
   }
 
   .form__footer {
     order: 6;
     padding: 0;
+    margin: 70px auto 50px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .form__footer > p {
+    margin: 0;
   }
 }
 
@@ -107,8 +171,21 @@
     justify-content: space-between;
   }
 
+  .form__user {
+    padding: 0;
+    margin: 60px auto;
+  }
+
+  .form__wrapper {
+    padding: 0;
+  }
+
+  .form__text textarea {
+    min-height: 125px;
+  }
+
   .form__footer {
     margin-top: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 }

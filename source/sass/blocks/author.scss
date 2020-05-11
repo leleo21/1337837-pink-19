@@ -1,7 +1,11 @@
 .author {
-  padding: 25px 13px;
+  padding: 20px 10px 20px 17px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  & div:first-child {
+    flex-grow: 0;
+  }
 }
 
 .author__name {
@@ -18,8 +22,11 @@
 }
 
 .author__comment {
-  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 0 10px;
   width: 100%;
+  flex-grow: 1;
 }
 
 .author--day {
@@ -27,12 +34,17 @@
 }
 
 @media (min-width: $tablet-width) {
-  .author--day {
-    justify-content: space-between;
+  .author {
+    padding: 20px 25px;
+  }
+
+  .author__comment {
+    margin: 0 0 20px 0;
   }
 
   .author--day .author__comment {
     order: 3;
+    margin: 0;
   }
 
   .author--day {
@@ -44,6 +56,9 @@
 @media (min-width: $desktop-width) {
   .author--day {
     width: 940px;
+    padding: 23px 25px;
     margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }

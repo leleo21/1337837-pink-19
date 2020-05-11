@@ -3,47 +3,51 @@
 }
 
 .page-photo__wrapper {
-  background-color: black;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 20%;
-  background-size: 100%;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-  }
+  background-color: #1d2631;
+  margin-top: -66px;
 }
 
 .page-photo__title {
   color: white;
-  min-height: 170px;
-  padding: 35px;
+  min-height: 236px;
+  padding: 100px 35px 35px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left top;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .page-photo__wrapper {
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: center -110px;
-    background-size: 1200px auto;
+    background-repeat: no-repeat;
+    background-position: center top;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
     }
   }
 
   .page-photo__title {
-    padding: 70px;
-    min-height: 330px;
+    padding: 180px 70px 70px;
+    min-height: 440px;
     font-size: 50px;
     line-height: 60px;
+    background-image: none;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-photo__wrapper {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center -110px;
+    background-position: center top;
     background-size: 2560px auto;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -51,7 +55,7 @@
   }
 
   .page-photo__title {
-    padding: 75px 230px;
-    min-height: 285px;
+    padding: 185px 230px 75px;
+    min-height: 395px;
   }
 }

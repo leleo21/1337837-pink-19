@@ -1,13 +1,7 @@
 .download {
   color: white;
   background-color: #1d2631;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: center -40%;
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 320px auto;
-  }
+  margin-top: -66px;
 }
 
 .download__container {
@@ -16,29 +10,32 @@
   position: relative;
 }
 
-.download__image {
-}
-
-.download__tagline {
+.download__title {
   margin: 0;
-  padding: 20px;
+  padding: 85px 20px 310px;
   text-align: center;
   font-size: 24px;
   font-weight: 300;
   z-index: 2;
+  background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png"), url("../img/bg-back-mobile@2x.jpg");
+    background-size: 258px auto, 320px auto;
+  }
 }
 
 .download__button {
-  margin-bottom: 28px;
 }
 
 .download__list {
-  margin: 0;
-  padding: 0;
+  margin: 30px 0 25px;
+  padding: 0 37px;
   list-style: none;
   display: flex;
   align-items: flex-end;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .download__app {
@@ -46,25 +43,36 @@
   flex-direction: column;
   padding: 28px 20px;
   z-index: 2;
-}
-
-.download__app p {
-  font-size: 14px;
-  line-height: 24px;
-  text-align: center;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
+  & p {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .download {
+    margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -110px;
+    background-position: center bottom;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
       background-size: 1200px auto;
+    }
+  }
+
+  .download__container {
+    min-height: 730px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
     }
   }
 
@@ -74,24 +82,25 @@
     overflow: hidden;
   }
 
-  .download__container {
-    min-height: 620px;
-    justify-content: space-between;
+  .download__title {
+    width: 300px;
+    font-size: 40px;
+    line-height: 46px;
+    padding: 210px 40px 30px;
+    background-image: none;
   }
 
-  .download__tagline {
-    font-size: 40px;
-    padding: 20px 40px;
+  .download__list {
+    margin: 45px 0 40px;
+    padding: 0 45px;
   }
 
   .download__app{
     width: 300px;
-    padding-bottom: 100px;
-  }
-
-  .download__tagline {
-    width: 300px;
-    padding-top: 100px;
+    padding: 0 0 100px;
+    & p {
+      font-size: 18px;
+    }
   }
 }
 
@@ -99,7 +108,7 @@
   .download {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center -110px;
+    background-position: center bottom;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
       background-size: 2560px auto;
@@ -107,15 +116,24 @@
   }
 
   .download__container {
-    min-height: 740px;
+    min-height: 853px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-repeat: no-repeat;
+    background-position: 15px bottom;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 
-  .download__image {
+  .download__list {
+    margin: 65px 0 60px;
+    padding: 0 45px;
   }
 
-  .download__tagline {
+  .download__title {
     font-size: 50px;
-    padding-left: 0;
-    padding-right: 0;
+    line-height: 60px;
+    padding: 220px 30px 50px;
   }
 }

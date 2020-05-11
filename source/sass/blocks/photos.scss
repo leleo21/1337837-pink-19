@@ -2,14 +2,15 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #283645;
+  color: $color-bluegrey;
 }
 
 .photos__tagline {
   width: 280px;
   margin: 0 auto;
   text-align: center;
-  padding: 45px 15px;
+  padding: 50px 15px;
+  font-size: 14px;
   line-height: 30px;
 }
 
@@ -22,6 +23,10 @@
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+}
+
+.photos__link {
+  cursor: zoom-in;
 }
 
 .photos__author {
@@ -40,13 +45,15 @@
 
 .photos__like button {
   width: 13px;
-  height: 12px;
-  margin: 0 18px;
+  height: 13px;
+  margin: 0 18px 0 0;
+  padding: 0;
   cursor: pointer;
   border: 0;
   background-image: url("../img/icon-heart.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0 0;
+  background-size: 100%;
 }
 
 /* Фотография дня */
@@ -57,8 +64,15 @@
   margin: 0 auto;
 }
 
-.photos__day-flag {
+.photos__day-image {
+  width: 320px;
+}
+
+.photos__day-image__wrapper::before {
+  content: "Панорама дня";
   position: absolute;
+  width: 140px;
+  height: 36px;
   top: 0;
   right: 20px;
   color: white;
@@ -75,11 +89,25 @@
     margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
-    padding: 100px 0 60px;
+    padding: 100px 0 75px;
   }
 
-  .photos__day-flag {
-    top: 55px;
+  .photos__day-image__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &::before {
+      top: 57px;
+    }
+  }
+
+  .photos__day {
+    margin: 0 auto 30px;
+    max-width: 700px;
+  }
+
+  .photos__day-image {
+    min-width: 700px;
   }
 
   .photos__list {
@@ -96,17 +124,15 @@
 
   .photos__like {
     flex-direction: row-reverse;
-    flex-grow: 1;
     justify-content: space-between;
+  }
+
+  .photos__like button {
+    margin: 0 0 0 18px;
   }
 
   .photos__day .photos__like {
     flex-grow: 0;
-  }
-
-  .photos__day {
-    margin: 0 auto;
-    max-width: 700px;
   }
 
   .photos__item:nth-of-type(2n) {
@@ -117,21 +143,25 @@
 @media (min-width: $desktop-width) {
   .photos__tagline {
     width: 600px;
-    padding: 100px 0 60px;
+    padding: 100px 0 90px;
   }
 
-  .photos__day-flag {
+  .photos__day-image__wrapper::before {
     right: 130px;
+    top: 54px;
   }
 
   .photos__day {
-    margin: 0 auto;
     max-width: 1200px;
+  }
+
+  .photos__day-image {
+    min-width: 1200px;
   }
 
   .photos__item {
     width: 300px;
-    margin-right: 20px;
+    margin-bottom: 34px;
   }
 
   .photos__item:nth-of-type(2n) {

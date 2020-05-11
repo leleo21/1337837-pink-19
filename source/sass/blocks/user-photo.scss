@@ -2,7 +2,7 @@
 }
 
 .user-photo__tagline {
-  padding: 30px 0;
+  padding: 40px 0;
 }
 
 .user-photo__tagline p {
@@ -15,23 +15,44 @@
 
 .user-photo__wrapper {
   background-color: #f2f2f2;
-  padding: 20px;
 }
 
 .user-photo__form {
+  padding: 20px 20px 41px;
   display: flex;
   flex-direction: column;
 }
 
-.user-photo__list {
-  padding: 35px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+.user-photo__image {
+  width: 280px;
+  height: 374px;
 }
 
-.user-photo__image {
-  margin: 0 auto;
+.user-photo__options {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0 47px;
+}
+
+.user-photo__item {
+  line-height: 0px;
+}
+
+.user-photo__control {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+}
+
+.user-photo__border {
+  height: 1px;
+  width: 320px;
+  margin: 35px 0 38px;
+  margin-left: -20px;
+  background-color: #dddfe0;
 }
 
 .user-photo__buttons {
@@ -43,47 +64,94 @@
 
 .user-photo__button {
   width: 280px;
-  margin: 6px 0;
-}
-
-.user-photo__controls {
-  text-align: center;
-  margin-bottom: 30px;
+  margin-top: 12px;
+  &:first-child {
+    margin-top: 0;
+  }
 }
 
 .user-photo__bar {
   appearance: none;
-  height: 2px;
   width: 240px;
-  background-color: #283645;
+  padding: 0;
+  height: 14px;
+  background: transparent;
   &:focus {
     outline: none;
   }
 }
 
+/* Начало оформления input-range для Chrome */
+
+.user-photo__bar::-webkit-slider-runnable-track {
+  margin: 0;
+  height: 2px;
+  background-color: $color-bluegrey;
+}
+
 .user-photo__bar::-webkit-slider-thumb {
   appearance: none;
+  cursor: pointer;
   width: 14px;
   height: 14px;
   background-color: white;
-  border: 2px solid #d22856;
+  border: 2px solid $color-darkred;
   border-radius: 50%;
-  top: -4px;
+  margin-top: -6px;
+  &:active {
+    background-color: $color-darkred;
+    transition: 0.3s;
+  }
 }
 
-.user-photo__control {
-  display: none;
+/* Конец оформления input-range для Chrome */
+
+/* Начало оформления input-range для ie11 */
+
+.user-photo__bar::-ms-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid $color-darkred;
+  border-radius: 50%;
+  &:active {
+    background-color: $color-darkred;
+    transition: 0.3s;
+  }
 }
 
-#option-1:checked ~ .user-photo__controls .editor-crop {
+.user-photo__bar::-ms-track {
+  width: 100%;
+  padding: 0;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+
+.user-photo__bar::-ms-fill-lower {
+  background: $color-bluegrey;
+}
+
+.user-photo__bar::-ms-fill-upper {
+  background: $color-bluegrey;
+}
+
+/* Конец оформления input-range для ie11 */
+
+
+#option-1:checked ~ .user-photo__item .editor-crop {
   display: block;
 }
 
-#option-2:checked ~ .user-photo__controls .editor-fill {
+#option-2:checked ~ .user-photo__item .editor-fill {
   display: block;
 }
 
-#option-3:checked ~ .user-photo__controls .editor-contrast {
+#option-3:checked ~ .user-photo__item .editor-contrast {
   display: block;
 }
 
@@ -95,16 +163,16 @@
   opacity: 0.5;
 }
 
-#option-1:checked ~ .user-photo__list label[for="option-1"] svg,
-#option-2:checked ~ .user-photo__list label[for="option-2"] svg,
-#option-3:checked ~ .user-photo__list label[for="option-3"] svg {
+#option-1:checked ~ .user-photo__item label[for="option-1"] svg,
+#option-2:checked ~ .user-photo__item label[for="option-2"] svg,
+#option-3:checked ~ .user-photo__item label[for="option-3"] svg {
   opacity: 1;
   fill: $color-darkred;
 }
 
 @media (min-width: $tablet-width) {
   .user-photo__wrapper {
-    padding: 55px 0;
+    padding: 57px 0 54px;
   }
 
   .user-photo__tagline p {
@@ -113,10 +181,11 @@
   }
 
   .user-photo__tagline {
-    padding: 55px 0;
+    padding: 70px 0;
   }
 
   .user-photo__form {
+    padding: 0;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -125,29 +194,55 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
   }
 
   .user-photo__image {
-    margin: 0 40px 0 20px;
+    width: 300px;
+    height: 400px;
+    margin-right: 45px;
   }
 
-  .user-photo__list {
-    flex-direction: column;
+  .user-photo__options {
     justify-content: space-between;
-    padding: 9px 0;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .user-photo__item {
+    padding: 23px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dddfe0;
+    width: 100%;
+    &:first-of-type {
+      padding-top: 9px;
+    }
+    & label {
+      padding: 0 30px 0 3px;
+    }
+  }
+
+  .user-photo__button {
+    margin-top: 24px;
+  }
+
+  .user-photo__bar {
+    width: 202px;
   }
 
   .user-photo__control {
     display: block;
+    position: static;
   }
 
-  .user-photo__options {
-    display: flex;
+  .user-photo__border {
+    display: none;
   }
 
   .user-photo__item svg {
-    width: 22px;
-    height: 22px;
+    width: 24px;
+    height: 24px;
     opacity: 1;
     fill: $color-darkred;
   }
@@ -156,21 +251,8 @@
     opacity: 1;
   }
 
-  .user-photo__item {
-    padding: 20px 0;
-  }
-
-  .user-photo__controls {
+  .user-photo__buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    .user-photo__control {
-      padding: 20px;
-    }
-  }
-
-  .user-photo__bar {
-    width: 202px;
   }
 
   .user-photo__button {
@@ -179,38 +261,54 @@
 }
 
 @media (min-width: $desktop-width) {
+  .user-photo__wrapper {
+    width: 940px;
+    margin: 0 auto 28px;
+    padding: 57px 60px 57px 80px;
+  }
+
+  .user-photo__tagline {
+    padding: 30px 0 65px;
+  }
+
   .user-photo__form {
     &.container {
       width: 100%;
     }
   }
 
+  .user-photo__image {
+    margin-right: 90px;
+  }
+
+  .user-photo__options {
+    margin-top: -12px;
+  }
+
+  .user-photo__item {
+    padding: 13px 0;
+  }
+
   .user-photo__item svg {
-    width: 44px;
-    height: 44px;
+    width: 48px;
+    height: 48px;
   }
 
   .user-photo__buttons {
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
   }
 
   .user-photo__button {
     width: 183px;
-    margin-right: 40px;
+    margin: 0 40px 0 0;
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  .user-photo__wrapper {
-    width: 940px;
-    margin: 0 auto;
-    padding: 60px;
   }
 
   .user-photo__bar {
     width: 288px;
   }
 }
-
