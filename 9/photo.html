@@ -22,14 +22,14 @@
 		<header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper">
-          <a class="page-header__logo" href="index.html">
-            <svg class="page-header__image page-header__image--mobile" width="75" height="22">
+          <a class="page-header__logo" href="index.html" aria-label="Логотоип приложения «Pink»">
+            <svg class="page-header__image page-header__image--mobile" width="75" height="22" role="img" focusable="false">
               <use xlink:href="svg/sprite.svg#logo-header-mobile"></use>
             </svg>
-            <svg class="page-header__image page-header__image--tablet" width="147" height="40">
+            <svg class="page-header__image page-header__image--tablet" width="147" height="40" role="img" focusable="false">
               <use xlink:href="svg/sprite.svg#logo-header-tablet"></use>
             </svg>
-            <svg class="page-header__image page-header__image--desktop" width="147" height="40">
+            <svg class="page-header__image page-header__image--desktop" width="147" height="40" role="img" focusable="false">
               <use xlink:href="svg/sprite.svg#logo-header-desktop"></use>
             </svg>
           </a>
@@ -64,8 +64,11 @@
         <div class="photos__day">
           <a class="photos__link" href="img/panorama-desktop@2x.jpg" target="blank">
             <picture class="photos__day-image__wrapper">
-              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg, img/panorama-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg, img/panorama-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/panorama-desktop@1x.webp 1x, img/panorama-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/panorama-tablet@1x.webp 1x, img/panorama-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/panorama-mobile@1x.webp 1x, img/panorama-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
               <img class="photos__day-image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Какой-то мост через реку"/>
             </picture>
           </a>
@@ -88,8 +91,11 @@
 					<li class="photos__item">
             <a class="photos__link" href="img/photo-car-desktop@2x.jpg" target="blank">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg, img/photo-car-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg, img/photo-car-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.webp 1x, img/photo-car-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.webp 1x, img/photo-car-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-car-mobile@1x.webp 1x, img/photo-car-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg 1x, img/photo-car-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
 						    <img class="" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Какая-то машина"/>
               </picture>
             </a>
@@ -111,8 +117,11 @@
 					<li class="photos__item">
             <a class="photos__link" href="img/photo-drumset-desktop@2x.jpg" target="blank">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg, img/photo-drumset-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg, img/photo-drumset-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.webp 1x, img/photo-drumset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.webp 1x, img/photo-drumset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-drumset-mobile@1x.webp 1x, img/photo-drumset-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg 1x, img/photo-drumset-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
 						    <img class="" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Какая-то барабанная установка"/>
               </picture>
             </a>
@@ -134,9 +143,12 @@
 					<li class="photos__item">
             <a class="photos__link" href="img/photo-window-desktop@2x.jpg" target="blank">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg, img/photo-window-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg, img/photo-window-tablet@2x.jpg 2x">
-						    <img class="" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Какая-то крыша"/>
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.webp 1x, img/photo-window-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.webp 1x, img/photo-window-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-window-mobile@1x.webp 1x, img/photo-window-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg 1x, img/photo-window-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
+						    <img class="" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Какое-то окно"/>
               </picture>
             </a>
 						<div class="photos__author author">
@@ -157,8 +169,11 @@
 					<li class="photos__item">
             <a class="photos__link" href="img/photo-fair-desktop@2x.jpg" target="blank">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg, img/photo-fair-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg, img/photo-fair-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.webp 1x, img/photo-fair-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.webp 1x, img/photo-fair-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-fair-mobile@1x.webp 1x, img/photo-fair-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg 1x, img/photo-fair-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
 						    <img class="" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Какая-то Кубанская бахча"/>
               </picture>
             </a>
@@ -180,8 +195,11 @@
 					<li class="photos__item">
             <a class="photos__link" href="img/photo-pov-desktop@2x.jpg" target="blank">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg, img/photo-pov-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg, img/photo-pov-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.webp 1x, img/photo-pov-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.webp 1x, img/photo-pov-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-pov-mobile@1x.webp 1x, img/photo-pov-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg 1x, img/photo-pov-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
 						    <img class="" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Какие-то горы и камни"/>
               </picture>
             </a>
@@ -203,8 +221,11 @@
 					<li class="photos__item">
             <a class="photos__link" href="img/photo-wing-desktop@2x.jpg" target="blank">
               <picture>
-                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg, img/photo-wing-desktop@2x.jpg 2x">
-                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg, img/photo-wing-tablet@2x.jpg 2x">
+                <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.webp 1x, img/photo-wing-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.webp 1x, img/photo-wing-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-wing-mobile@1x.webp 1x, img/photo-wing-mobile@2x.webp 2x">
+                <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg 1x, img/photo-wing-desktop@2x.jpg 2x">
+                <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
 						    <img class="" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Какое-то крыло самолёта"/>
               </picture>
             </a>
@@ -234,8 +255,11 @@
 				<div class="user-photo__wrapper">
 					<form class="user-photo__form container" action="https://echo.htmlacademy.ru" method="post">
             <picture>
-              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg, img/photo-road-desktop@2x.jpg 2x">
-              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@2x.jpg, img/photo-road-tablet@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-road-mobile@1x.webp 1x, imgphoto-road-mobile@2x.webp 2x">
+              <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
 						  <img class="user-photo__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Ваша фотография">
             </picture>
             <div class="user-photo__menu">
@@ -246,7 +270,7 @@
                 <div class="user-photo__item">
                   <label for="option-1">
                     <span class="visually-hidden">Фильтр 1</span>
-                    <svg class="user-photo__image-filter user-photo__image-filter--crop" width="48" height="48">
+                    <svg width="48" height="48" role="img" aria-label="Иконка опции «обрезать фото»" focusable="false">
                       <use xlink:href="svg/sprite.svg#icon-editor-crop"></use>
                     </svg>
                   </label>
@@ -257,7 +281,7 @@
                 <div class="user-photo__item">
                   <label for="option-2">
                     <span class="visually-hidden">Фильтр 2</span>
-                    <svg class="user-photo__image-filter user-photo__image-filter--fill" width="48" height="48">
+                    <svg width="48" height="48" role="img" aria-label="Иконка опции «заливка»" focusable="false">
                       <use xlink:href="svg/sprite.svg#icon-editor-fill"></use>
                     </svg>
                   </label>
@@ -268,7 +292,7 @@
                 <div class="user-photo__item">
                   <label for="option-3">
                     <span class="visually-hidden">Фильтр 3</span>
-                    <svg class="user-photo__image-filter user-photo__image-filter--contrast" width="32" height="32">
+                    <svg width="48" height="48" role="img" aria-label="Иконка опции «контраст»" focusable="false">
                       <use xlink:href="svg/sprite.svg#icon-editor-contrast"></use>
                     </svg>
                   </label>
@@ -288,11 +312,11 @@
 			</section>
 		</main>
 		<footer class="page-footer  container">
-			<a class="page-footer__logo" href="index.html">
-				<svg class="page-footer__image page-footer__image--mobile" width="147" height="40">
+			<a class="page-footer__logo" href="index.html" aria-label="Логотоип приложения «Pink»">
+				<svg class="page-footer__image page-footer__image--mobile" width="147" height="40" role="img" focusable="false">
           <use xlink:href="svg/sprite.svg#logo-footer-mobile"></use>
         </svg>
-        <svg class="page-footer__image page-footer__image--desktop" width="147" height="40">
+        <svg class="page-footer__image page-footer__image--desktop" width="147" height="40" role="img" focusable="false">
           <use xlink:href="svg/sprite.svg#logo-footer-desktop"></use>
         </svg>
 			</a>
@@ -313,9 +337,9 @@
           </a>
         </li>
       </ul>
-			<a class="page-footer__html" href="https://htmlacademy.ru/intensive/adaptive">
+			<a class="page-footer__html" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотоип «HTML Academy»">
         <p>Разработано</p>
-        <svg width="27" height="34">
+        <svg width="27" height="34" role="img" focusable="false">
           <use xlink:href="svg/sprite.svg#logo-htmlacademy"></use>
         </svg>
       </a>

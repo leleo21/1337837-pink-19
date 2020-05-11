@@ -1725,19 +1725,12 @@ a {
   .user-photo__border {
     display: none; }
   .user-photo__item svg {
+    width: 24px;
+    height: 24px;
     opacity: 1;
     fill: #d22856; }
   .user-photo__item:hover svg {
     opacity: 1; }
-  .user-photo__image-filter--crop {
-    width: 24px;
-    height: 22px; }
-  .user-photo__image-filter--fill {
-    width: 24px;
-    height: 22px; }
-  .user-photo__image-filter--contrast {
-    width: 24px;
-    height: 16px; }
   .user-photo__buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1760,16 +1753,9 @@ a {
     margin-top: -12px; }
   .user-photo__item {
     padding: 13px 0; }
-  .user-photo__image-filter--crop {
+  .user-photo__item svg {
     width: 48px;
-    height: 44px; }
-  .user-photo__image-filter--fill {
-    width: 48px;
-    height: 44px; }
-  .user-photo__image-filter--contrast {
-    width: 48px;
-    height: 44px;
-    padding: 6px 0; }
+    height: 48px; }
   .user-photo__buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
