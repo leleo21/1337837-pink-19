@@ -22,7 +22,7 @@
   color: white;
 }
 
-.page-header__logo[href] {
+.page-header__logo[href] svg {
   &:hover {
     color: $color-darkred;
     transition: 0.3s;

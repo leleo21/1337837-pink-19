@@ -33,7 +33,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 40px 0 37px;
+  padding: 40px 0 47px;
 }
 
 .user-photo__item {
@@ -71,30 +71,77 @@
 }
 
 .user-photo__bar {
-  margin: 0;
   appearance: none;
-  height: 2px;
   width: 240px;
-  vertical-align: middle;
-  background-color: #283645;
+  padding: 0;
+  height: 14px;
+  background: transparent;
   &:focus {
     outline: none;
   }
 }
 
+/* Начало оформления input-range для Chrome */
+
+.user-photo__bar::-webkit-slider-runnable-track {
+  margin: 0;
+  height: 2px;
+  background-color: $color-bluegrey;
+}
+
 .user-photo__bar::-webkit-slider-thumb {
   appearance: none;
+  cursor: pointer;
   width: 14px;
   height: 14px;
   background-color: white;
   border: 2px solid $color-darkred;
   border-radius: 50%;
-  top: -4px;
+  margin-top: -6px;
   &:active {
     background-color: $color-darkred;
     transition: 0.3s;
   }
 }
+
+/* Конец оформления input-range для Chrome */
+
+/* Начало оформления input-range для ie11 */
+
+.user-photo__bar::-ms-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid $color-darkred;
+  border-radius: 50%;
+  &:active {
+    background-color: $color-darkred;
+    transition: 0.3s;
+  }
+}
+
+.user-photo__bar::-ms-track {
+  width: 100%;
+  padding: 0;
+  height: 2px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 6px 0;
+  color: transparent;
+}
+
+.user-photo__bar::-ms-fill-lower {
+  background: $color-bluegrey;
+}
+
+.user-photo__bar::-ms-fill-upper {
+  background: $color-bluegrey;
+}
+
+/* Конец оформления input-range для ie11 */
+
 
 #option-1:checked ~ .user-photo__item .editor-crop {
   display: block;

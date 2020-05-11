@@ -10,7 +10,7 @@
   color: $color-bluegrey;
 }
 
-.page-footer__logo[href] {
+.page-footer__logo[href] svg {
   &:hover {
     color: $color-darkred;
     transition: 0.3s;
@@ -36,10 +36,6 @@
   display: flex;
   align-items: center;
   fill: $color-darkred;
-  &:hover,
-  &:active {
-    color: $color-bluegrey;
-  }
 }
 
 .page-footer__html p {

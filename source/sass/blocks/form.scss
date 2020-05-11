@@ -99,6 +99,9 @@
     background-color: #1c9b5e;
     transition: 0.3s;
   }
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .form__footer {
