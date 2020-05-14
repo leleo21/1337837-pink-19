@@ -105,6 +105,32 @@
 
 /* Конец оформления input-range для Chrome */
 
+
+/* Начало оформления input-range для Firefox */
+
+.user-photo__bar::-moz-range-thumb {
+  appearance: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid $color-darkred;
+  border-radius: 50%;
+  margin-top: -6px;
+  &:active {
+    background-color: $color-darkred;
+  }
+}
+
+.user-photo__bar::-moz-range-track {
+  margin: 0;
+  height: 2px;
+  background-color: $color-bluegrey;
+}
+
+/* Конец оформления input-range для Firefox */
+
+
 /* Начало оформления input-range для ie11 */
 
 .user-photo__bar::-ms-thumb {
