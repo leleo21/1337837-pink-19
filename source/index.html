@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 		<title>Мобильное приложение «Pink»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.ico">
     <link rel="apple-touch-icon-precomposed" sizes="64x64" href="img/favicons/favicon-64x64.ico">
     <script>
@@ -18,18 +18,21 @@
     <script>svg4everybody(); // run it now or whenever you are ready</script>
 	</head>
 	<body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 		<header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo" aria-label="Логотоип приложения «Pink»">
             <svg class="page-header__image page-header__image--mobile" width="75" height="22" role="img" focusable="false">
-              <use xlink:href="svg/sprite.svg#logo-header-mobile"></use>
+              <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
             <svg class="page-header__image page-header__image--tablet" width="147" height="40" role="img" focusable="false">
-              <use xlink:href="svg/sprite.svg#logo-header-tablet"></use>
+              <use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <svg class="page-header__image page-header__image--desktop" width="147" height="40" role="img" focusable="false">
-              <use xlink:href="svg/sprite.svg#logo-header-desktop"></use>
+              <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
         </div>
@@ -300,10 +303,10 @@
     <footer class="page-footer page-footer__index container">
       <a class="page-footer__logo" aria-label="Логотоип приложения «Pink»">
         <svg class="page-footer__image page-footer__image--mobile" width="147" height="40" role="img" focusable="false">
-          <use xlink:href="svg/sprite.svg#logo-footer-mobile"></use>
+          <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
         <svg class="page-footer__image page-footer__image--desktop" width="147" height="40" role="img" focusable="false">
-          <use xlink:href="svg/sprite.svg#logo-footer-desktop"></use>
+          <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>
       <ul class="page-footer__social social">
@@ -326,7 +329,7 @@
       <a class="page-footer__html" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотоип «HTML Academy»">
         <p>Разработано</p>
         <svg width="27" height="34" role="img" focusable="false">
-          <use xlink:href="svg/sprite.svg#logo-htmlacademy"></use>
+          <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>
     </footer>
