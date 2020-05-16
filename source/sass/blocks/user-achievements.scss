@@ -1,14 +1,10 @@
-.user-achievements {
-
-}
-
 .user-achievements__form {
   border: 0;
   padding: 0 20px;
 }
 
 .user-achievements__form legend {
-  padding: 0 20px 20px;
+  padding: 0 20px 15px;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -23,7 +19,7 @@
 }
 
 .user-achievements__item {
-  padding: 25px 0 25px 40px;
+  padding: 29px 0 29px 40px;
 }
 
 .user-achievements__item input {
@@ -31,7 +27,7 @@
 }
 
 .user-achievements__item input + label {
-  padding-left: 20px;
+  padding-left: 29px;
   position: relative;
   &::before {
     content: "";

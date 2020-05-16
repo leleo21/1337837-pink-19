@@ -4,7 +4,7 @@
 }
 
 .user-app__form legend {
-  padding: 0 20px;
+  padding: 0 20px 15px;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -19,7 +19,7 @@
 }
 
 .user-app__item {
-  padding: 25px 0 25px 40px;
+  padding: 26px 0 26px 40px;
 }
 
 .user-app__item input {
@@ -27,7 +27,7 @@
 }
 
 .user-app__item input + label {
-  padding-left: 20px;
+  padding-left: 29px;
   position: relative;
   &::before {
     content: "";
