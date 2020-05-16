@@ -1,15 +1,18 @@
 .time-effect__container {
   display: none;
-  justify-content: space-between;
-  padding: 60px 0;
-  align-items: center;
 }
 
 .time-effect__list {
-  padding: 40px 0 0 0;
+  padding: 0 0 27px;
   margin: 0;
   list-style: none;
   width: 310px;
+}
+
+.time-effect__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .time-effect__tagline {
@@ -24,6 +27,7 @@
   font-size: 14px;
   line-height: 24px;
   color: $color-bluegrey;
+  margin: 10px 0;
   padding-right: 10px;
 
 }
@@ -39,6 +43,9 @@
 @media (min-width: $tablet-width) {
   .time-effect__container {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 60px 0;
   }
 }
 
@@ -63,6 +70,9 @@
   .time-effect__text {
     font-size: 18px;
     line-height: 30px;
+    br {
+      display: none;
+    }
   }
 
   .time-effect__link {

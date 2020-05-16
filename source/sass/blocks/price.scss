@@ -16,9 +16,18 @@
 }
 
 .price__table {
+  border-collapse: collapse;
   margin: 0 0 43px 0;
   width: 300%;
   transition: transform 0.5s ease;
+}
+
+.price__table th {
+  border-left: 2px solid #f2f2f2;
+}
+
+.price__table td {
+  border: 2px solid #e5e5e5;
 }
 
 .price__table-head {
@@ -76,7 +85,7 @@
 
 .price__table tbody {
   background-color: #fff;
-  border:2px solid #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .price__table-value {
@@ -132,7 +141,7 @@
 
 @media (min-width: $tablet-width) {
   .price {
-    padding: 85px 0 68px;
+    padding: 87px 0 68px;
   }
 
   .price__wrapper .price__toggles {
@@ -157,7 +166,7 @@
   .price__table-head {
     overlflow: hidden;
     min-width: 150px;
-    padding: 18px 0 15px;
+    padding: 17px 0 14px;
   }
 
   .price__table-head--hit::before {
@@ -183,7 +192,7 @@
 
   .price__table-value {
     min-width: 152px;
-    padding: 22px 15px;
+    padding: 10px 15px;
     font-size: 0px;
     text-transform: capitalize;
     background-position: 50% 50%;

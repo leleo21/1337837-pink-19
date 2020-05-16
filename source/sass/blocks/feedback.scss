@@ -55,6 +55,10 @@
 
 
 @media (min-width: $tablet-width) {
+  .feedback {
+    padding-bottom: 20px;
+}
+
   .feedback__list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -63,12 +67,25 @@
 
   .feedback__item {
     width: 300px;
+    padding: 10px 10px;
+    &:first-of-type {
+      margin-right: 20px;
+      margin-bottom: 25px;
+    }
+    p {
+      margin-bottom: 5px;
+    }
   }
 
   .feedback__tagline {
-    padding: 50px 120px 45px;
+    padding: 7px 120px 32px;
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .feedback__item a,
+  .feedback__item address {
+    line-height: 30px;
   }
 
   .feedback__map {
