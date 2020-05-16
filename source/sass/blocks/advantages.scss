@@ -7,16 +7,21 @@
 
 .advantages__tagline {
   margin: 0;
-  padding-bottom: 30px;
+  padding-bottom: 25px;
   font-size: 24px;
+  line-height: 30px;
   color: $color-bluegrey;
   font-weight: 300;
 }
+
+ .advantages__container {
+ }
 
 .advantages__wrapper {
   position: relative;
   background-color: #f2f2f2;
   padding-top: 50px;
+  margin-top: 10px;
 }
 
 .advantages__wrapper::before {
@@ -38,7 +43,7 @@
 }
 
 .advantages__item {
-  margin: 0;
+  margin: 30px 0;
   z-index: 2;
   p, h3 {
     padding: 0 20px;
@@ -49,15 +54,17 @@
   font-size: 18px;
   line-height: 24px;
   color: black;
+  margin-bottom: 12px;
 }
 
 .advantages__item p {
   font-size: 14px;
   line-height: 24px;
+  margin: 0;
 }
 
 .advantages__image {
-  margin: 0 auto -43px;
+  margin: 0 auto -42px;
   z-index: 2;
 }
 

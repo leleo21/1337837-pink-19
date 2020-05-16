@@ -1,5 +1,5 @@
 .price {
-  padding: 90px 0 45px 0;
+  padding: 85px 0 47px 0;
   background-color: #f2f2f2;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -11,12 +11,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 20px;
+  padding: 3px 20px;
   overflow: hidden;
 }
 
 .price__table {
-  margin: 0 0 40px 0;
+  margin: 0 0 43px 0;
   width: 300%;
   transition: transform 0.5s ease;
 }
@@ -69,6 +69,7 @@
 
 .price__table-price {
   display: block;
+  padding-top: 2px;
   font-size: 24px;
   font-weight: 300;
 }
@@ -80,6 +81,7 @@
 
 .price__table-value {
   font-size: 14px;
+  line-height: 24px;
   min-width: 275px;
   padding: 17px 50px 17px 20px;
   text-transform: uppercase;
