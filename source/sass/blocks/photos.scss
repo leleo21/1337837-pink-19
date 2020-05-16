@@ -89,7 +89,7 @@
     margin: 0 auto;
     font-size: 18px;
     line-height: 30px;
-    padding: 100px 0 75px;
+    padding: 91px 0 76px;
   }
 
   .photos__day-image__wrapper {
@@ -120,6 +120,9 @@
     width: 300px;
     margin-right: 20px;
     padding: 0;
+    .photos__author {
+      min-height: 155px;
+    }
   }
 
   .photos__like {
