@@ -35,7 +35,7 @@
 
 @media (min-width: $tablet-width) {
   .author {
-    padding: 25px 33px 22px 25px;
+    padding: 23px 33px 22px 25px;
   }
 
   .author__comment {
@@ -48,7 +48,7 @@
   }
 
   .author--day {
-    padding: 23px 30px 25px 25px;
+    padding: 23px 30px 25px 27px;
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
@@ -57,9 +57,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .author {
+    padding: 25px 33px 20px 27px;
+  }
+
   .author--day {
     width: 940px;
-    padding: 23px 25px;
+    padding: 23px 32px 22px 27px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;
