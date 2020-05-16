@@ -69,14 +69,23 @@
 @media (min-width: $tablet-width) {
   .user-achievements__form {
     border: 2px solid #e5e5e5;
+    padding: 0 25px;
+  }
+
+  .user-achievements__form legend {
+    padding: 0 30px;
   }
 
   .user-achievements__list {
-    padding-left: 35px;
+    padding: 20px 0 28px 33px;
   }
 
   .user-achievements__item {
     padding-left: 40px;
+  }
+
+  .user-achievements__item input+label {
+    padding-left: 20px;
   }
 
   .user-achievements {
@@ -105,9 +114,5 @@
 
   .user-achievements__form {
     padding: 25px 0 35px 60px;
-  }
-
-  .user-achievements__form legend {
-    padding: 0 30px;
   }
 }

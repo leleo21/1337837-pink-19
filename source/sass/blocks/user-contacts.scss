@@ -30,8 +30,8 @@
 .user-contacts__item--icon-phone label::after {
   position: absolute;
   content: "";
-  width: 56px;
-  height: 56px;
+  width: 58px;
+  height: 59px;
   border-radius: 2px;
   top: 2px;
   right: 2px;
@@ -54,7 +54,13 @@
 @media (min-width: $tablet-width) {
   .user-contacts {
     border: 2px solid #e5e5e5;
-    padding: 35px 60px;
+    padding: 0px 58px;
+  }
+
+  .user-contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 37px 0 20px;
   }
 
   .user-contacts legend {
@@ -63,6 +69,7 @@
 
   .user-contacts__item {
     flex-direction: column-reverse;
+    margin-bottom: 25px;
   }
 
   .user-contacts {

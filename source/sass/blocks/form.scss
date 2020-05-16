@@ -135,7 +135,7 @@
 
 @media (min-width: $tablet-width) {
   .form__wrapper {
-    padding: 60px 0;
+    padding: 58px 0 57px;
     background-color: white;
   }
 
@@ -144,7 +144,7 @@
   }
 
   .form__user {
-    padding: 35px 0 0;
+    padding: 40px 0 0;
   }
 
   .form__text {
@@ -152,19 +152,24 @@
   }
 
   .form__text textarea {
-    min-height: 190px;
+    min-height: 195px;
   }
 
   .form__user label {
     padding-top: 10px;
+    padding-left: 20px;
   }
 
   .form__footer {
     order: 6;
     padding: 0;
-    margin: 70px auto 50px;
+    margin: 67px auto 50px;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .form__button {
+    min-width: 300px;
   }
 
   .form__footer > p {

@@ -14,17 +14,13 @@
 
 @media (min-width: $tablet-width) {
   .user-emotions {
+    order: 5;
     border: 2px solid #e5e5e5;
-    padding: 30px 60px 50px;
+    padding: 37px 57px 45px;
   }
 
   .user-emotions legend {
     display: block;
     padding: 0 38px;
-  }
-
-  .user-emotions {
-    order: 5;
-    padding: 30px 60px 35px;
   }
 }
