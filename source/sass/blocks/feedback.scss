@@ -100,12 +100,28 @@
 }
 
 @media (min-width: $desktop-width) {
+  .feedback {
+    padding-bottom: 10px;
+  }
+
+  .feedback__list {
+    justify-content: space-between;
+  }
+
+  .feedback__item:first-of-type {
+    margin: 0;
+  }
+
   .feedback__item:nth-child(2) {
     order: 3;
   }
 
+  .feedback__item p {
+    margin-bottom: 25px;
+  }
+
   .feedback__tagline {
-    padding: 75px 220px 55px;
+    padding: 25px 220px 45px;
     font-size: 50px;
     line-height: 60px;
   }

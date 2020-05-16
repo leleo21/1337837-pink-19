@@ -78,7 +78,7 @@
 
 @media (min-width: $desktop-width) {
   .map__wrapper {
-    height: 520px;
+    height: 500px;
     max-width: 1200px;
   }
 
@@ -93,7 +93,7 @@
 
   .map__image {
     min-width: 1200px;
-    margin-top: -260px;
+    margin-top: -280px;
   }
 
   .map__wrapper::after {

@@ -137,7 +137,7 @@
 
 @media (min-width: $desktop-width) {
   .advantages {
-    padding-top: 70px;
+    padding-top: 67px;
   }
 
   .advantages__wrapper {
@@ -158,14 +158,15 @@
   }
 
   .advantages__list {
-    flex-direction: row;
     width: 100%;
+    padding: 0;
+    margin-top: -5px;
+    flex-direction: row;
     text-align: center;
   }
 
   .advantages__item {
-    flex-grow: 1;
-    width: 33%;
+    width: 300px;
     br {
       display: none;
     }
@@ -178,13 +179,14 @@
   .advantages__item h3 {
     font-size: 30px;
     line-height: 30px;
-    padding: 0 37px;
+    padding: 0 30px;
+    margin: 55px 0 25px;
   }
 
   .advantages__item p {
     font-size: 18px;
     line-height: 30px;
-    padding: 0 37px;
+    padding: 0 30px;
   }
 
   .advantages__image--desktop {

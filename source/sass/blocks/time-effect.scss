@@ -56,6 +56,7 @@
 
   .time-effect__container {
     padding: 50px 0 67px;
+    justify-content: flex-start;
   }
 
   .time-effect__img {
@@ -64,12 +65,19 @@
   }
 
   .time-effect__list {
-    width: 520px;
+    width: 570px;
+    margin-left: 67px;
+    padding-bottom: 45px;
+  }
+
+  .time-effect__tagline br {
+    display: none;
   }
 
   .time-effect__text {
     font-size: 18px;
     line-height: 30px;
+    margin: 20px 0 30px;
     br {
       display: none;
     }

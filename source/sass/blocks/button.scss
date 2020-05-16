@@ -56,3 +56,10 @@
     color: rgba(210,40,86,0.3);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button--white {
+    font-size: 21px;
+
+  }
+}

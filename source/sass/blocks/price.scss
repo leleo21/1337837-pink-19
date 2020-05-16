@@ -218,13 +218,15 @@
     padding: 20px 0;
   }
 
-  .price__table--head--hit::before {
-    left: 0px;
+  .price__table-head--hit::before {
+    width: 73px;
+    height: 73px;
+    background-image: url("../img/bg-hit.svg");
   }
 
   .price__table-head--hit::after {
-    top: 5px;
-    left: 5px;
+    top: 9px;
+    left: 7px;
   }
 
   .price__table-title {
@@ -237,7 +239,7 @@
 
   .price__table-value {
     min-width: 233px;
-    padding: 15px 22px;
+    padding: 14px 22px;
   }
 
   .price__table-value--empty {
