@@ -91,10 +91,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
   .user-contacts {
-    padding: 30px 60px 5px;
+    padding: 33px 58px 13px;
   }
 
   .user-contacts__item {
@@ -104,5 +105,9 @@
 
   .user-contacts legend {
     padding: 0 30px;
+  }
+
+  .user-contacts__item input {
+    margin-bottom: 10px;
   }
 }

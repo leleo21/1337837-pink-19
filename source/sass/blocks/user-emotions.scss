@@ -16,11 +16,17 @@
   .user-emotions {
     order: 5;
     border: 2px solid #e5e5e5;
-    padding: 37px 57px 45px;
+    padding: 35px 57px 47px 59px;
   }
 
   .user-emotions legend {
     display: block;
     padding: 0 38px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-emotions {
+    padding: 35px 57px 40px 59px;
   }
 }

@@ -80,10 +80,6 @@
     padding: 20px 0 28px 33px;
   }
 
-  .user-achievements__item {
-    padding-left: 40px;
-  }
-
   .user-achievements__item input+label {
     padding-left: 20px;
   }
@@ -95,17 +91,23 @@
 
 @media (min-width: $desktop-width) {
   .user-achievements {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .user-achievements__list {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 0px;
+    padding: 0px;
   }
 
   .user-achievements__item {
-    width: 290px;
+    width: 265px;
+    margin-right: 40px;
+  }
+
+  .user-achievements__item:nth-child(5),
+  .user-achievements__item:nth-child(6) {
+    margin-right: 0;
   }
 
   .user-achievements__item:nth-child(even) {
@@ -113,6 +115,10 @@
   }
 
   .user-achievements__form {
-    padding: 25px 0 35px 60px;
+    padding: 22px 0 34px 58px;
+  }
+
+  .user-achievements__form legend {
+    padding: 0 33px;
   }
 }

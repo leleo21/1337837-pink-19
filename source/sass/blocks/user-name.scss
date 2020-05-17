@@ -1,5 +1,7 @@
 .user-name {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .user-name__item {

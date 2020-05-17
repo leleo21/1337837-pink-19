@@ -129,8 +129,12 @@
   font-size: 14px;
 }
 
-.form__footer span {
+.form__footer span:first-child {
   color: #d22856;
+}
+
+.form_footer-text {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -186,13 +190,19 @@
     justify-content: space-between;
   }
 
-  .form__user {
-    padding: 0;
-    margin: 60px auto;
-  }
-
   .form__wrapper {
     padding: 0;
+  }
+
+  .form__user {
+    padding: 0;
+    margin: 60px auto 57px;
+  }
+
+  .form__user label {
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-right: 20px;
   }
 
   .form__text textarea {
@@ -202,5 +212,10 @@
   .form__footer {
     margin-top: 65px;
     margin-bottom: 0;
+  }
+
+  .form_footer-text {
+    display: inline-block;
+    vertical-align: bottom;
   }
 }

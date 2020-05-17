@@ -84,7 +84,7 @@
 
 @media (min-width: $desktop-width) {
   .page-footer__logo {
-    margin: 70px 25px 87px 0;
+    margin: 70px 15px 87px 0;
   }
 
   .page-footer__image--mobile {
@@ -97,6 +97,7 @@
 
   .page-footer__html {
     margin: 85px 0 78px;
+    align-items: flex-start;
   }
 
   .page-footer__html p {
