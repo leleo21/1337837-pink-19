@@ -33,13 +33,16 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   color: $color-bluegrey;
+
   &::placeholder {
     color: $color-bluegrey;
   }
+
   &:hover {
     border-color: $color-bluegrey;
     transition: 0.3s;
   }
+
   &:focus {
     outline: none;
     border-color: $color-darkred;
@@ -73,13 +76,16 @@
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   color: $color-bluegrey;
+
   &::placeholder {
     color: $color-bluegrey;
   }
+
   &:hover {
     border-color: $color-bluegrey;
     transition: 0.3s;
   }
+
   &:focus {
     outline: none;
     border-color: $color-darkred;
@@ -98,17 +104,20 @@
   font-family: "OpenSans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
+
   &:hover,
   &:focus {
     background-color: #1c9b5e;
     outline: none;
     transition: 0.3s;
   }
+
   &:active {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
     background-color: #1c9b5e;
     transition: 0.3s;
   }
+
   &:disabled {
     background-color: #e5e5e5;
   }

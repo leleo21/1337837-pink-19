@@ -6,8 +6,9 @@
 }
 
 .page-header--menu-hide {
-  background-color: rgba(0,0,0,0.3);
-  .page-header__wrapper {
+  background-color: rgba(0, 0, 0, 0.3);
+
+  & .page-header__wrapper {
     border: none;
   }
 }
@@ -27,6 +28,7 @@
     color: $color-darkred;
     transition: 0.3s;
   }
+
   &:active {
     color: white;
     opacity: 0.3;

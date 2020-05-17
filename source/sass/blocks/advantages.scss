@@ -42,10 +42,13 @@
 .advantages__item {
   margin: 30px 0;
   z-index: 2;
-  p, h3 {
+
+  & p,
+  & h3 {
     padding: 0 20px;
   }
-  br {
+
+  & br {
     display: none;
   }
 }
@@ -86,6 +89,7 @@
     font-size: 40px;
     line-height: 48px;
     padding: 0;
+
     &:last-of-type {
       padding-bottom: 50px;
     }
@@ -109,10 +113,12 @@
 
   .advantages__item {
     margin: 0 0 15px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
-    br {
+
+    & br {
       display: block;
     }
   }
@@ -148,6 +154,7 @@
     font-size: 50px;
     line-height: 60px;
     padding: 0;
+
     &:last-of-type {
       padding-bottom: 80px;
     }
@@ -167,7 +174,8 @@
 
   .advantages__item {
     width: 300px;
-    br {
+
+    & br {
       display: none;
     }
   }

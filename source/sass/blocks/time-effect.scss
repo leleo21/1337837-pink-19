@@ -29,7 +29,6 @@
   color: $color-bluegrey;
   margin: 10px 0;
   padding-right: 10px;
-
 }
 
 .time-effect__link {
@@ -78,7 +77,8 @@
     font-size: 18px;
     line-height: 30px;
     margin: 20px 0 30px;
-    br {
+
+    & br {
       display: none;
     }
   }

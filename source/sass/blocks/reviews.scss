@@ -56,7 +56,7 @@
 #review-1:checked ~ .reviews__toggles label[for="review-1"],
 #review-2:checked ~ .reviews__toggles label[for="review-2"],
 #review-3:checked ~ .reviews__toggles label[for="review-3"] {
-  background-color: #fff;
+  background-color: #ffffff;
   box-shadow: 0 0 0 3px $color-bluegrey;
   opacity: 1;
 }
@@ -128,6 +128,8 @@
 
   .reviews__inner {
     margin: 0;
+    width: 700px;
+    padding-top: 50px;
   }
 
   .reviews__name h3 {
@@ -145,15 +147,10 @@
     width: 700px;
   }
 
-  .reviews__inner {
-    width: 700px;
-    padding-top: 50px;
-  }
-
   #review-1:checked ~ .reviews__toggles label[for="review-1"],
   #review-2:checked ~ .reviews__toggles label[for="review-2"],
   #review-3:checked ~ .reviews__toggles label[for="review-3"] {
-  box-shadow: none;
+    box-shadow: none;
   }
 
   .reviews__toggles .slider__toggle {
@@ -176,11 +173,13 @@
     background-size: 100%;
     border: 0;
     cursor: pointer;
-    left: 0px;
+    left: 0;
     opacity: 0.3;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.1;
     }
@@ -202,11 +201,13 @@
     background-size: 100%;
     border: 0;
     cursor: pointer;
-    right: 0px;
+    right: 0;
     opacity: 0.3;
+
     &:hover {
       opacity: 0.6;
     }
+
     &:active {
       opacity: 0.1;
     }

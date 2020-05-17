@@ -2,12 +2,14 @@ html {
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 body {
-  background: #fff;
+  background: #ffffff;
   min-width: 320px;
   margin: 0;
   padding: 0;

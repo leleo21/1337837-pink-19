@@ -29,6 +29,7 @@
 .user-achievements__item input + label {
   padding-left: 29px;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -80,7 +81,7 @@
     padding: 20px 0 28px 33px;
   }
 
-  .user-achievements__item input+label {
+  .user-achievements__item input + label {
     padding-left: 20px;
   }
 
@@ -97,7 +98,7 @@
   .user-achievements__list {
     display: flex;
     flex-wrap: wrap;
-    padding: 0px;
+    padding: 0;
   }
 
   .user-achievements__item {

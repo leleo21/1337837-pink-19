@@ -14,14 +14,16 @@
   color: #d22856;
   border: 3px solid $color-darkred;
   background-color: white;
+
   &:hover,
   &:focus {
     color: white;
     background-color: $color-darkred;
     transition: 0.3s;
   }
+
   &:active {
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
     background-color: $color-darkred;
   }
 }
@@ -31,14 +33,16 @@
   border: 3px solid $color-bluegrey;
   background-color: white;
   opacity: 0.1;
+
   &:hover,
   &:focus {
     opacity: 0.3;
     transition: 0.3s;
   }
+
   &:active {
     background-color: $color-bluegrey;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
     opacity: 0.3;
   }
 }
@@ -46,20 +50,21 @@
 .button--white {
   color: white;
   border: 3px solid white;
+
   &:hover,
   &:focus {
     color: $color-darkred;
     background-color: white;
     transition: 0.3s;
   }
+
   &:active {
-    color: rgba(210,40,86,0.3);
+    color: rgba(210, 40, 86, 0.3);
   }
 }
 
 @media (min-width: $desktop-width) {
   .button--white {
     font-size: 21px;
-
   }
 }

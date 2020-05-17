@@ -19,10 +19,12 @@
     margin-bottom: 52px;
     flex-direction: row;
     align-items: center;
-    input {
+
+    & input {
       flex-grow: 1;
     }
-    label {
+
+    & label {
       padding-left: 0;
     }
   }

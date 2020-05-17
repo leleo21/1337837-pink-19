@@ -29,6 +29,7 @@
 .user-app__item input + label {
   padding-left: 29px;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -71,12 +72,12 @@
 
 @media (min-width: $tablet-width) {
   .user-app__form {
-    padding: 0px 25px;
+    padding: 0 25px;
     border: 2px solid #e5e5e5;
   }
 
   .user-app__form legend {
-    padding: 0 25px;;
+    padding: 0 25px;
   }
 
   .user-app__list {
@@ -85,7 +86,7 @@
     padding: 25px 0 35px 33px;
   }
 
-  .user-app__item input+label {
+  .user-app__item input + label {
     padding-left: 20px;
   }
 
@@ -97,8 +98,9 @@
 @media (min-width: $desktop-width) {
   .user-app {
     width: 435px;
-    .container {
-    width: 435px;
+
+    & .container {
+      width: 435px;
     }
   }
 

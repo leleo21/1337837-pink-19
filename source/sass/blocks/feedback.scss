@@ -45,6 +45,7 @@
     text-decoration: underline;
     transition: 0.3s;
   }
+
   &:active {
     color: $color-bluegrey;
     text-decoration: underline;
@@ -57,7 +58,7 @@
 @media (min-width: $tablet-width) {
   .feedback {
     padding-bottom: 20px;
-}
+  }
 
   .feedback__list {
     flex-direction: row;
@@ -68,11 +69,13 @@
   .feedback__item {
     width: 300px;
     padding: 10px 10px;
+
     &:first-of-type {
       margin-right: 20px;
       margin-bottom: 25px;
     }
-    p {
+
+    & p {
       margin-bottom: 5px;
     }
   }
