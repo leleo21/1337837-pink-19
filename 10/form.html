@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 		<title>Мобильное приложение «Pink»</title>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.ico">
     <link rel="apple-touch-icon-precomposed" sizes="64x64" href="img/favicons/favicon-64x64.ico">
@@ -49,7 +50,7 @@
               <a>Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__toggle" type="button">
@@ -113,11 +114,11 @@
         <fieldset class="form__user user-contacts container">
           <legend>Контактная информация</legend>
           <div class="user-contacts__wrapper">
-				    <div class="user-contacts__item user-contacts__item--icon-mail">
+				    <div class="user-contacts__item user-contacts__item--icon-phone">
 				    	<label for="phone">Номер телефона</label>
               <input id="phone" type="tel" name="phone" placeholder="Номер, пожалуйста">
 				    </div>
-				    <div class="user-contacts__item user-contacts__item--icon-phone">
+				    <div class="user-contacts__item user-contacts__item--icon-mail">
 				    	<label for="email">Адрес почты</label>
               <input class="user-email-js" id="email" type="email" name="email" placeholder="Введите почту *" required="">
 				    </div>
@@ -148,7 +149,7 @@
 				</fieldset>
         <div class="form__footer container">
 				  <button class="form__button" type="submit">Отправить форму</button>
-				  <p><span>*</span> — Обязательные поля</p>
+				  <p><span>*</span> — Обязательные <span class="form_footer-text">для заполнения</span> поля</p>
         </div>
 			</form>
 		</main>
