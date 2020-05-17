@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
 		<title>Мобильное приложение «Pink»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.ico">
     <link rel="apple-touch-icon-precomposed" sizes="64x64" href="img/favicons/favicon-64x64.ico">
     <script>
@@ -18,18 +19,21 @@
     <script>svg4everybody(); // run it now or whenever you are ready</script>
 	</head>
 	<body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 		<header class="page-header">
       <div class="page-header__container">
         <div class="page-header__wrapper">
           <a class="page-header__logo" aria-label="Логотоип приложения «Pink»">
             <svg class="page-header__image page-header__image--mobile" width="75" height="22" role="img" focusable="false">
-              <use xlink:href="svg/sprite.svg#logo-header-mobile"></use>
+              <use xlink:href="#logo-pink-white-mobile"></use>
             </svg>
             <svg class="page-header__image page-header__image--tablet" width="147" height="40" role="img" focusable="false">
-              <use xlink:href="svg/sprite.svg#logo-header-tablet"></use>
+              <use xlink:href="#logo-pink-white-tablet"></use>
             </svg>
             <svg class="page-header__image page-header__image--desktop" width="147" height="40" role="img" focusable="false">
-              <use xlink:href="svg/sprite.svg#logo-header-desktop"></use>
+              <use xlink:href="#logo-pink-white-desktop"></use>
             </svg>
           </a>
         </div>
@@ -45,7 +49,7 @@
             	<a href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-            	<a href="https://htmlacademy.ru/intensive/adaptive">Html Academy</a>
+            	<a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
           <button class="main-nav__toggle" type="button">
@@ -66,17 +70,17 @@
 				    <ul class="download__list">
               <li>
 						    <a class="download__item" href="" title="Скачать приложение на Apple" download>
-                  <img src="img/logo-apple.svg" width="46.21" height="56.753" alt="Иконка для скачивания приложения на устройства Apple">
+                  <img src="img/logo-apple.svg" width="46" height="57" alt="Иконка для скачивания приложения на устройства Apple">
                 </a>
               </li>
               <li>
 						    <a class="download__item" href="" title="Скачать приложение на Android" download>
-                  <img src="img/logo-android.svg" width="42.084" height="47.041" alt="Иконка для скачивания приложения на устройства Android">
+                  <img src="img/logo-android.svg" width="42" height="47" alt="Иконка для скачивания приложения на устройства Android">
                 </a>
               </li>
               <li>
 						    <a class="download__item" href="" title="Скачать приложение на Windows" download>
-                  <img src="img/logo-microsoft.svg" width="43.922" height="41.992" alt="Иконка для скачивания приложения на устройства Microsoft">
+                  <img src="img/logo-microsoft.svg" width="44" height="42" alt="Иконка для скачивания приложения на устройства Microsoft">
                 </a>
               </li>
 				    </ul>
@@ -108,7 +112,7 @@
                   <img class="advantages__image--desktop" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" alt="Реклама приложения «Pink»">
                 </picture>
                 <h3>Меняет мир вокруг</h3>
-                <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+                <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы<br> усилить эффект</p>
               </li>
               <li class="advantages__item">
                 <picture>
@@ -129,12 +133,13 @@
 				</div>
 			</section>
       <section class="time-effect">
+        <h2 class="visually-hidden">Эффективность мобильного приложения «Pink»</h2>
         <div class="time-effect__container container">
           <img class="time-effect__img" src="img/24.png" width="238" height="276" alt="Длительность эффекта от приложания «Pink» 24 часа">
           <ul class="time-effect__list">
             <li class="time-effect__item">
               <p class="time-effect__tagline">Эффект<br> на 24 часа!</p>
-              <p class="time-effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <p class="time-effect__text">Британские ученые провели исследования и доказали, что положительный эффект<br> от использования приложения длится целые сутки!</p>
               <a class="time-effect__link">Узнать больше об исследовании</a>
             </li>
           </ul>
@@ -224,7 +229,7 @@
                 <td class="price__table-value price__table-value--include price__table-value--empty">
                   Смайлики
                 </td>
-                <td class="price__table-value price__table-value--include">
+                <td class="price__table-value price__table-value--not-include">
                   Смайлики
                 </td>
                 <td class="price__table-value price__table-value--include">
@@ -260,33 +265,30 @@
 			<!--Обратная связь и контакты-->
 			<section class="feedback">
 				<h2 class="visually-hidden">Как с нами связаться!</h2>
-        <div class="feedback__wrapper">
-          <div class="container">
-				    <p class="feedback__tagline">Остались вопросы? Свяжитесь с нами!</p>
-				    <ul class="feedback__list">
-              <li class="feedback__item">
-				  		  <p>Звоните:</p>
-				  		  <a href="tel:+78125556666">+7 (812) 555-66-66</a>
-              </li>
-              <li class="feedback__item feedback__item--mail">
-				  		  <p>Пишите:</p>
-				  		  <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-              </li>
-              <li class="feedback__item">
-				  		  <p>Приезжайте в гости:</p>
-				  		  <address>ул. Большая Конюшенная, 19/8</address>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="feedback__map">
+        <div class="container">
+				  <p class="feedback__tagline">Остались вопросы? Свяжитесь с нами!</p>
+				  <ul class="feedback__list">
+            <li class="feedback__item">
+				  		<p>Звоните:</p>
+				  		<a href="tel:+78125556666">+7 (812) 555-66-66</a>
+            </li>
+            <li class="feedback__item feedback__item--mail">
+				  		<p>Пишите:</p>
+				  		<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </li>
+            <li class="feedback__item">
+				  		<p>Приезжайте в гости:</p>
+				  		<address>ул. Большая Конюшенная, 19/8</address>
+            </li>
+          </ul>
         </div>
 			</section>
       <section class="map">
         <h2 class="visually-hidden">Как до нас добраться!</h2>
         <div class="map__wrapper">
-          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5607817553096!2d30.322758940212946!3d59.93943004076303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588882462037!5m2!1sru!2sru" width="320" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-          <picture class="map__picture">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5607817553096!2d30.322758940212946!3d59.93943004076303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588882462037!5m2!1sru!2sru" width="320" height="200" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <div class="map__picture">
+          <picture>
             <source type="image/webp" media="(min-width: 960px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
@@ -294,16 +296,17 @@
             <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
             <img class="map__image" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Карта проезда на ул. Большая Конюшенная, 19/8">
           </picture>
+          </div>
         </div>
       </section>
 		</main>
     <footer class="page-footer page-footer__index container">
       <a class="page-footer__logo" aria-label="Логотоип приложения «Pink»">
         <svg class="page-footer__image page-footer__image--mobile" width="147" height="40" role="img" focusable="false">
-          <use xlink:href="svg/sprite.svg#logo-footer-mobile"></use>
+          <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
         <svg class="page-footer__image page-footer__image--desktop" width="147" height="40" role="img" focusable="false">
-          <use xlink:href="svg/sprite.svg#logo-footer-desktop"></use>
+          <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>
       <ul class="page-footer__social social">
@@ -326,7 +329,7 @@
       <a class="page-footer__html" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотоип «HTML Academy»">
         <p>Разработано</p>
         <svg width="27" height="34" role="img" focusable="false">
-          <use xlink:href="svg/sprite.svg#logo-htmlacademy"></use>
+          <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>
     </footer>

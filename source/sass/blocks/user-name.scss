@@ -1,9 +1,11 @@
 .user-name {
-
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .user-name__item {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
   display: flex;
   flex-direction: column;
 }
@@ -17,10 +19,12 @@
     margin-bottom: 52px;
     flex-direction: row;
     align-items: center;
-    input {
+
+    & input {
       flex-grow: 1;
     }
-    label {
+
+    & label {
       padding-left: 0;
     }
   }
