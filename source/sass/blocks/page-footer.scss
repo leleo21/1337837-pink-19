@@ -50,12 +50,12 @@
 
 .page-footer__html {
   fill: $color-darkred;
-  &:hover svg,
-  &:focus svg {
+  &:hover,
+  &:focus {
     fill: $color-bluegrey;
     transition: 0.3s;
   }
-  &:active svg {
+  &:active {
     fill: $color-bluegrey;
     opacity: 0.3;
     transition: 0.3s;

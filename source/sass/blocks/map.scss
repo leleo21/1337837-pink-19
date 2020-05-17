@@ -1,17 +1,16 @@
 .map {
   position: relative;
-}
-
-.map__wrapper {
-  margin: 0 auto;
   height: 200px;
-  max-width: 320px;
-  overflow: hidden;
-  position: relative;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+}
+
+.map__wrapper {
+  width: 320px;
+  position: relative;
 }
 
 .map__wrapper::before {
@@ -30,7 +29,8 @@
 .map__wrapper::after {
   content: "";
   position: absolute;
-  bottom: 70px;
+  top: 95px;
+  left: 142px;
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -40,6 +40,8 @@
 
 .map__iframe {
   z-index: 2;
+  position: absolute;
+  left: 0;
 }
 
 .map__picture {
@@ -52,13 +54,21 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map__wrapper {
+  .map {
     height: 370px;
-    max-width: 700px;
+  }
+
+  .map__wrapper {
+    width: 700px;
   }
 
   .map__wrapper::before {
     height: 75px;
+  }
+
+  .map__wrapper::after {
+    top: 190px;
+    left: 332px;
   }
 
   .map__iframe {
@@ -70,20 +80,24 @@
     min-width: 700px;
     margin-top: -350px;
   }
-
-  .map__wrapper::after {
-    bottom: 145px;
-  }
 }
 
 @media (min-width: $desktop-width) {
-  .map__wrapper {
+  .map {
     height: 500px;
-    max-width: 1200px;
+  }
+
+  .map__wrapper {
+    width: 1200px;
   }
 
   .map__wrapper::before {
     height: 125px;
+  }
+
+  .map__wrapper::after {
+    top: 260px;
+    left: 582px;
   }
 
   .map__iframe {
@@ -94,9 +108,5 @@
   .map__image {
     min-width: 1200px;
     margin-top: -280px;
-  }
-
-  .map__wrapper::after {
-    bottom: 205px;
   }
 }
