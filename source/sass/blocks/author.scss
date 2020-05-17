@@ -1,8 +1,9 @@
 .author {
-  padding: 20px 10px 20px 17px;
+  padding: 19px 10px 20px 18px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+
   & div:first-child {
     flex-grow: 0;
   }
@@ -24,7 +25,7 @@
 .author__comment {
   font-size: 14px;
   line-height: 24px;
-  margin: 0 0 10px;
+  margin: 0 0 9px;
   width: 100%;
   flex-grow: 1;
 }
@@ -35,11 +36,11 @@
 
 @media (min-width: $tablet-width) {
   .author {
-    padding: 20px 25px;
+    padding: 23px 33px 22px 25px;
   }
 
   .author__comment {
-    margin: 0 0 20px 0;
+    margin: 0 0 12px 0;
   }
 
   .author--day .author__comment {
@@ -48,15 +49,22 @@
   }
 
   .author--day {
+    padding: 23px 30px 25px 27px;
+    flex-direction: row;
+    justify-content: space-between;
     width: 620px;
     margin: 0 auto;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .author {
+    padding: 25px 33px 20px 27px;
+  }
+
   .author--day {
     width: 940px;
-    padding: 23px 25px;
+    padding: 23px 32px 22px 27px;
     margin: 0 auto;
     flex-direction: row;
     justify-content: space-between;

@@ -1,14 +1,10 @@
-.user-achievements {
-
-}
-
 .user-achievements__form {
   border: 0;
   padding: 0 20px;
 }
 
 .user-achievements__form legend {
-  padding: 0 20px 20px;
+  padding: 0 20px 15px;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -23,7 +19,7 @@
 }
 
 .user-achievements__item {
-  padding: 25px 0 25px 40px;
+  padding: 29px 0 29px 40px;
 }
 
 .user-achievements__item input {
@@ -31,8 +27,9 @@
 }
 
 .user-achievements__item input + label {
-  padding-left: 20px;
+  padding-left: 29px;
   position: relative;
+
   &::before {
     content: "";
     position: absolute;
@@ -73,14 +70,19 @@
 @media (min-width: $tablet-width) {
   .user-achievements__form {
     border: 2px solid #e5e5e5;
+    padding: 0 25px;
+  }
+
+  .user-achievements__form legend {
+    padding: 0 30px;
   }
 
   .user-achievements__list {
-    padding-left: 35px;
+    padding: 20px 0 28px 33px;
   }
 
-  .user-achievements__item {
-    padding-left: 40px;
+  .user-achievements__item input + label {
+    padding-left: 20px;
   }
 
   .user-achievements {
@@ -90,16 +92,23 @@
 
 @media (min-width: $desktop-width) {
   .user-achievements {
-    margin-bottom: 60px;
+    margin-bottom: 57px;
   }
 
   .user-achievements__list {
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
   }
 
   .user-achievements__item {
-    width: 290px;
+    width: 265px;
+    margin-right: 40px;
+  }
+
+  .user-achievements__item:nth-child(5),
+  .user-achievements__item:nth-child(6) {
+    margin-right: 0;
   }
 
   .user-achievements__item:nth-child(even) {
@@ -107,10 +116,10 @@
   }
 
   .user-achievements__form {
-    padding: 25px 0 35px 60px;
+    padding: 22px 0 34px 58px;
   }
 
   .user-achievements__form legend {
-    padding: 0 30px;
+    padding: 0 33px;
   }
 }

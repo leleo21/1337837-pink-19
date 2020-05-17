@@ -13,25 +13,22 @@
 }
 
 .user-contacts__item {
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .user-contacts__item:last-of-type {
-  margin-bottom: 0px;
-}
-
-.user-contacts__item {
-  position: relative;
+  margin-bottom: 0;
 }
 
 .user-contacts__item--icon-mail label::after,
 .user-contacts__item--icon-phone label::after {
   position: absolute;
   content: "";
-  width: 56px;
-  height: 56px;
+  width: 58px;
+  height: 59px;
   border-radius: 2px;
   top: 2px;
   right: 2px;
@@ -54,7 +51,14 @@
 @media (min-width: $tablet-width) {
   .user-contacts {
     border: 2px solid #e5e5e5;
-    padding: 35px 60px;
+    padding: 0 58px;
+    order: 3;
+  }
+
+  .user-contacts__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 37px 0 20px;
   }
 
   .user-contacts legend {
@@ -63,10 +67,7 @@
 
   .user-contacts__item {
     flex-direction: column-reverse;
-  }
-
-  .user-contacts {
-    order: 3;
+    margin-bottom: 25px;
   }
 
   .user-contacts__item input {
@@ -84,10 +85,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 0;
   }
 
   .user-contacts {
-    padding: 30px 60px 5px;
+    padding: 33px 58px 13px;
   }
 
   .user-contacts__item {
@@ -97,5 +99,9 @@
 
   .user-contacts legend {
     padding: 0 30px;
+  }
+
+  .user-contacts__item input {
+    margin-bottom: 10px;
   }
 }

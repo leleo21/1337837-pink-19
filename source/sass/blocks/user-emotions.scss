@@ -4,7 +4,7 @@
 }
 
 .user-emotions legend {
-  padding: 15px;
+  padding: 17px;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -14,17 +14,19 @@
 
 @media (min-width: $tablet-width) {
   .user-emotions {
+    order: 5;
     border: 2px solid #e5e5e5;
-    padding: 30px 60px 50px;
+    padding: 35px 57px 47px 59px;
   }
 
   .user-emotions legend {
     display: block;
     padding: 0 38px;
   }
+}
 
+@media (min-width: $desktop-width) {
   .user-emotions {
-    order: 5;
-    padding: 30px 60px 35px;
+    padding: 35px 57px 40px 59px;
   }
 }
