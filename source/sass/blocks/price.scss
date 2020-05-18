@@ -23,7 +23,7 @@
 }
 
 .price__table th {
-  border-left: 2px solid #f2f2f2;
+  border-right: 2px solid #f2f2f2;
 }
 
 .price__table td {
@@ -31,7 +31,6 @@
 }
 
 .price__table-head {
-  position: relative;
   min-width: 275px;
   padding: 20px 0 20px 0;
   color: #ffffff;
@@ -49,9 +48,13 @@
   border: none;
 }
 
-.price__table-head--hit::before {
+.price__hit {
+  position: relative;
+ }
+
+.price__hit::before {
   position: absolute;
-  top: 0;
+  top: -20px;
   left: 0;
   content: "";
   width: 74px;
@@ -59,9 +62,9 @@
   background-image: url("../img/bg-hit.svg");
 }
 
-.price__table-head--hit::after {
+.price__hit::after {
   position: absolute;
-  top: 8px;
+  top: -10px;
   left: 6px;
   content: "хит";
   font-weight: 400;
@@ -169,17 +172,17 @@
     padding: 17px 0 14px;
   }
 
-  .price__table-head--hit::before {
-    top: 0;
+  .price__hit::before {
+    top: -17px;
     left: 0;
     width: 61px;
     height: 61px;
     background-image: url("../img/bg-hit-tablet.svg");
   }
 
-  .price__table-head--hit::after {
-    top: 0;
-    left: 0;
+  .price__hit::after {
+    top: -15px;
+    left: 2px;
   }
 
   .price__table-title {
@@ -194,6 +197,7 @@
     min-width: 152px;
     padding: 10px 15px;
     font-size: 0;
+    line-height: 24px;
     text-transform: capitalize;
     background-position: 50% 50%;
   }
@@ -218,14 +222,16 @@
     padding: 20px 0;
   }
 
-  .price__table-head--hit::before {
+  .price__hit::before {
+    top: -20px;
+    left: 0;
     width: 73px;
     height: 73px;
     background-image: url("../img/bg-hit.svg");
   }
 
-  .price__table-head--hit::after {
-    top: 9px;
+  .price__hit::after {
+    top: -12px;
     left: 7px;
   }
 
