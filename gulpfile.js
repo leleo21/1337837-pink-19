@@ -15,6 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var htmlmin = require("gulp-htmlmin");
 
 /*Создаёт css файл и минимализирует его*/
 gulp.task("css", function () {
@@ -105,5 +106,12 @@ gulp.task("clean", function () {
   return del("build");
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
+/*Минимализирует html файлы*/
+gulp.task("minihtml", function () {
+  return  gulp.src("build/*.html")
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minihtml"));
 gulp.task("start", gulp.series("build", "server"));
