@@ -81,10 +81,11 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 })
 
-/*Вставляем svg-sprite в include*/
+/*Вставляем svg-sprite в include и минимализирует html*/
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([include()]))
+    .pipe(htmlmin({collapseWhitespace: true}))
     .pipe(gulp.dest("build"));
 })
 
@@ -107,11 +108,6 @@ gulp.task("clean", function () {
 });
 
 /*Минимализирует html файлы*/
-gulp.task("minihtml", function () {
-  return  gulp.src("build/*.html")
-    .pipe(htmlmin({collapseWhitespace: true}))
-    .pipe(gulp.dest("build"));
-});
 
-gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html", "minihtml"));
+gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
 gulp.task("start", gulp.series("build", "server"));
