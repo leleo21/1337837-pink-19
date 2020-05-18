@@ -15,7 +15,7 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
-var htmlmin = require("gulp-htmlmin")
+var htmlmin = require("gulp-htmlmin");
 
 /*Создаёт css файл и минимализирует его*/
 gulp.task("css", function () {
@@ -106,6 +106,7 @@ gulp.task("clean", function () {
   return del("build");
 });
 
+/*Минимализирует html файлы*/
 gulp.task("minihtml", function () {
   return  gulp.src("build/*.html")
     .pipe(htmlmin({collapseWhitespace: true}))
