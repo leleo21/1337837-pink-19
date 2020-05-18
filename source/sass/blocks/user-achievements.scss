@@ -25,12 +25,22 @@
 }
 
 .user-achievements__item input {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .user-achievements__item input + label {
   padding-left: 29px;
   position: relative;
+  display: block;
 
   &::before {
     content: "";
@@ -45,7 +55,8 @@
   }
 }
 
-.user-achievements__item input:hover + label::before {
+.user-achievements__item input:hover + label::before,
+.user-achievements__item input:focus + label::before {
   border-color: $color-bluegrey;
   transition: 0.3s;
 }
