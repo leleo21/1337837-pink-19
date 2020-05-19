@@ -11,6 +11,19 @@
   position: relative;
 }
 
+.reviews__wrapper input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .reviews__inner {
   overflow: hidden;
   margin: 0 0 35px 0;
@@ -211,5 +224,15 @@
     &:active {
       opacity: 0.1;
     }
+  }
+
+  #review-1:focus ~ .reviews__toggles label[for="review-2"],
+  #review-2:focus ~ .reviews__toggles label[for="review-3"],
+  #review-3:focus ~ .reviews__toggles label[for="review-1"],
+  #review-1:focus ~ .reviews__toggles label[for="review-3"],
+  #review-2:focus ~ .reviews__toggles label[for="review-1"],
+  #review-3:focus ~ .reviews__toggles label[for="review-2"] {
+    opacity: 0.6;
+    outline: 2px solid skyblue;
   }
 }
