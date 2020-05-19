@@ -33,6 +33,19 @@
   padding: 40px 35px 47px;
 }
 
+.user-photo__option {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .user-photo__item {
   line-height: 0;
 }
@@ -80,6 +93,7 @@
   }
 }
 
+
 /* Начало оформления input-range для Chrome */
 
 .user-photo__bar::-webkit-slider-runnable-track {
@@ -103,10 +117,20 @@
   }
 }
 
+.user-photo__bar:focus::-webkit-slider-thumb {
+  background-color: $color-darkred;
+}
+
 /* Конец оформления input-range для Chrome */
 
 
 /* Начало оформления input-range для Firefox */
+
+.user-photo__bar::-moz-range-track {
+  margin: 0;
+  height: 2px;
+  background-color: $color-bluegrey;
+}
 
 .user-photo__bar::-moz-range-thumb {
   appearance: none;
@@ -123,29 +147,14 @@
   }
 }
 
-.user-photo__bar::-moz-range-track {
-  margin: 0;
-  height: 2px;
-  background-color: $color-bluegrey;
+.user-photo__bar:focus::-moz-range-thumb {
+  background-color: $color-darkred;
 }
 
 /* Конец оформления input-range для Firefox */
 
 
 /* Начало оформления input-range для ie11 */
-
-.user-photo__bar::-ms-thumb {
-  appearance: none;
-  width: 10px;
-  height: 10px;
-  background-color: white;
-  border: 2px solid $color-darkred;
-  border-radius: 50%;
-
-  &:active {
-    background-color: $color-darkred;
-  }
-}
 
 .user-photo__bar::-ms-track {
   width: 100%;
@@ -164,6 +173,23 @@
 
 .user-photo__bar::-ms-fill-upper {
   background: $color-bluegrey;
+}
+
+.user-photo__bar::-ms-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 2px solid $color-darkred;
+  border-radius: 50%;
+
+  &:active {
+    background-color: $color-darkred;
+  }
+}
+
+.user-photo__bar:focus::-ms-thumb {
+  background-color: $color-darkred;
 }
 
 /* Конец оформления input-range для ie11 */
@@ -233,6 +259,10 @@
     justify-content: space-between;
     flex-direction: column;
     padding: 0;
+  }
+
+  .user-photo__option {
+    display: none;
   }
 
   .user-photo__item {
